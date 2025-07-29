@@ -105,7 +105,7 @@ export default function HomePage() {
             <Badge className="bg-orange-500/20 text-orange-300 border-orange-500/30 mb-8 px-8 py-3 text-lg font-medium backdrop-blur-sm">
               Family Owned • Veteran Founded • Since 1990
             </Badge>
-            <h1 className="text-7xl md:text-9xl font-thin mb-12 leading-none tracking-tight">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-thin mb-12 leading-none tracking-tight px-4">
               Taylor Leonard
               <span className="block font-extralight text-orange-400 transform hover:scale-105 transition-transform duration-500">
                 Corp
@@ -160,7 +160,7 @@ export default function HomePage() {
             <div className="w-32 h-1 bg-gradient-to-r from-orange-500 to-orange-600 mx-auto" />
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 max-w-7xl mx-auto">
             {[
               { number: "30+", label: "Years of Excellence", icon: Award, delay: "0ms" },
               { number: "2M+", label: "Square Feet Built", icon: Building, delay: "200ms" },
@@ -168,15 +168,15 @@ export default function HomePage() {
               { number: "100%", label: "Satisfaction Rating", icon: Shield, delay: "600ms" },
             ].map((stat, index) => (
               <div key={index} className="zoom-animate group cursor-pointer" style={{ transitionDelay: stat.delay }}>
-                <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-8 shadow-2xl hover:shadow-orange-500/20 transition-all duration-700 group-hover:scale-110 group-hover:-translate-y-4 border border-slate-700/50">
+                <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-4 sm:p-6 lg:p-8 shadow-2xl hover:shadow-orange-500/20 transition-all duration-700 group-hover:scale-110 group-hover:-translate-y-4 border border-slate-700/50">
                   <div className="text-center">
-                    <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-125 transition-transform duration-500">
-                      <stat.icon className="h-8 w-8 text-white" />
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-5 lg:mb-6 group-hover:scale-125 transition-transform duration-500">
+                      <stat.icon className="h-6 w-6 sm:h-7 sm:w-7 lg:h-8 lg:w-8 text-white" />
                     </div>
-                    <div className="text-5xl md:text-6xl font-thin text-white mb-4 group-hover:text-orange-400 transition-colors duration-500">
+                    <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-thin text-white mb-2 sm:mb-3 lg:mb-4 group-hover:text-orange-400 transition-colors duration-500">
                       {stat.number}
                     </div>
-                    <div className="text-lg font-medium text-slate-400 tracking-wide group-hover:text-white transition-colors duration-500">
+                    <div className="text-sm sm:text-base lg:text-lg font-medium text-slate-400 tracking-wide group-hover:text-white transition-colors duration-500">
                       {stat.label}
                     </div>
                   </div>

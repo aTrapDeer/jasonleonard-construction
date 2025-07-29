@@ -20,6 +20,7 @@ export function Header() {
   const [scrollY, setScrollY] = useState(0)
   const [lastScrollY, setLastScrollY] = useState(0)
   const [isVisible, setIsVisible] = useState(true)
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
   const pathname = usePathname()
   const isHomepage = pathname === "/"
 
@@ -61,11 +62,7 @@ export function Header() {
   }
 
   const getHeaderStyle = () => {
-    if (isHomepage && isVisible) {
-      return {
-        transform: `translateY(${Math.min(scrollY * 0.1, 10)}px)`,
-      }
-    }
+    // Remove the transform that was causing the gap at the top
     return {}
   }
 
@@ -115,7 +112,7 @@ export function Header() {
           </div>
 
           {/* Mobile Menu */}
-          <Sheet>
+          <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
             <SheetTrigger asChild>
               <Button
                 variant="outline"
@@ -142,6 +139,7 @@ export function Header() {
                   <Link
                     key={item.name}
                     href={item.href}
+                    onClick={() => setIsMenuOpen(false)}
                     className={`font-medium py-3 border-b border-white/10 transition-colors duration-300 ${
                       pathname === item.href 
                         ? "text-orange-400 border-orange-400/30" 
@@ -153,7 +151,7 @@ export function Header() {
                 ))}
                 <div className="pt-6">
                   <Button asChild className="w-full bg-orange-500 hover:bg-orange-600 rounded-full py-3 transition-all duration-300 hover:scale-105">
-                    <Link href="/quote">Get a Quote</Link>
+                    <Link href="/quote" onClick={() => setIsMenuOpen(false)}>Get a Quote</Link>
                   </Button>
                 </div>
               </nav>
