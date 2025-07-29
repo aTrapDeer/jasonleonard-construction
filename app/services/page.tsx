@@ -32,7 +32,7 @@ const mainServices = [
     title: "Design-Build",
     icon: Compass,
     gradient: "from-blue-500 to-blue-600",
-    description: "Integrated design and construction services under one roof for seamless project delivery.",
+    description: "Complete design and construction services under one roof for seamless project delivery.",
     features: [
       "Single point of responsibility",
       "Faster project delivery",
@@ -42,27 +42,27 @@ const mainServices = [
     ],
     process: [
       "Initial Consultation & Vision Planning",
-      "Conceptual Design & 3D Modeling",
-      "Design Development & Engineering",
+      "Design Schematics & 3D Modeling",
       "Construction Documentation & Permits",
+      "Value Engineering & Optimization",
       "Construction & Quality Control",
     ],
-    idealFor: ["Complex commercial projects", "Custom residential homes", "Tight timeline projects"],
+    idealFor: ["Complex commercial projects", "Custom residential homes", "Banks and financial institutions"],
     image: "/placeholder.svg?height=300&width=400&text=Design-Build+Projects",
-    stats: { experience: "25+ Years", projects: "200+", satisfaction: "100%" },
+    stats: { experience: "30+ Years", projects: "575+", satisfaction: "100%" },
   },
   {
-    id: "general-contracting",
-    title: "General Contracting",
-    icon: HardHat,
+    id: "commercial-construction",
+    title: "Commercial Construction",
+    icon: Building2,
     gradient: "from-orange-500 to-red-500",
-    description: "Full-service construction management and execution with comprehensive project oversight.",
+    description: "Specialized construction for banks, schools, medical buildings, and warehousing facilities.",
     features: [
-      "Comprehensive project management",
-      "Skilled trade coordination",
-      "Quality control and assurance",
-      "Schedule and budget management",
-      "Permit and regulatory compliance",
+      "Bank and financial institution expertise",
+      "Educational facility construction",
+      "Medical building specialization",
+      "Warehousing and industrial projects",
+      "Security-focused construction",
     ],
     process: [
       "Project Planning & Resource Allocation",
@@ -71,62 +71,62 @@ const mainServices = [
       "Quality Control & Inspections",
       "Project Completion & Handover",
     ],
-    idealFor: ["Large commercial buildings", "Multi-unit residential", "Industrial facilities"],
-    image: "/placeholder.svg?height=300&width=400&text=General+Contracting",
-    stats: { experience: "25+ Years", projects: "150+", satisfaction: "100%" },
+    idealFor: ["Banks and financial institutions", "Schools and educational facilities", "Medical buildings"],
+    image: "/placeholder.svg?height=300&width=400&text=Commercial+Construction",
+    stats: { experience: "30+ Years", projects: "75+", satisfaction: "100%" },
   },
   {
-    id: "preconstruction",
-    title: "Preconstruction Services",
-    icon: Calculator,
+    id: "residential-construction",
+    title: "Residential Construction",
+    icon: HardHat,
     gradient: "from-green-500 to-emerald-600",
-    description: "Strategic planning and cost analysis to ensure your project starts on the right foundation.",
+    description: "Custom residential construction with exceptional craftsmanship and attention to detail.",
     features: [
-      "Accurate cost estimation",
-      "Risk identification and mitigation",
-      "Value engineering opportunities",
-      "Constructability analysis",
-      "Schedule optimization",
+      "Custom home construction",
+      "Residential renovations",
+      "Quality craftsmanship",
+      "Personalized service",
+      "Timely project delivery",
     ],
     process: [
-      "Cost Estimation & Budget Analysis",
-      "Value Engineering & Optimization",
-      "Schedule Development & Planning",
-      "Risk Assessment & Mitigation",
-      "Final Recommendations & Strategy",
+      "Design Consultation & Planning",
+      "Permit Processing & Approvals",
+      "Foundation & Framing",
+      "Systems Installation & Finishing",
+      "Final Walkthrough & Handover",
     ],
-    idealFor: ["Budget-conscious projects", "Complex developments", "Investment properties"],
-    image: "/placeholder.svg?height=300&width=400&text=Preconstruction+Planning",
-    stats: { experience: "25+ Years", projects: "300+", satisfaction: "100%" },
+    idealFor: ["Custom homes", "Residential renovations", "Family residences"],
+    image: "/placeholder.svg?height=300&width=400&text=Residential+Construction",
+    stats: { experience: "30+ Years", projects: "500+", satisfaction: "100%" },
   },
   {
-    id: "renovations",
-    title: "Renovations & Remodeling",
-    icon: Hammer,
-    gradient: "from-purple-500 to-pink-500",
-    description: "Transforming existing spaces with expert craftsmanship and minimal disruption.",
-    features: [
-      "Minimal disruption to operations",
-      "Historic preservation expertise",
-      "Code compliance updates",
-      "Energy efficiency improvements",
-      "Increased property value",
-    ],
-    process: [
-      "Space Assessment & Planning",
-      "Design Integration & Permits",
-      "Phased Construction Approach",
-      "Systems Upgrade & Modernization",
-      "Final Integration & Testing",
-    ],
-    idealFor: ["Historic buildings", "Office renovations", "Retail updates"],
-    image: "/placeholder.svg?height=300&width=400&text=Renovation+Projects",
-    stats: { experience: "25+ Years", projects: "100+", satisfaction: "100%" },
-  },
-  {
-    id: "project-management",
-    title: "Construction Management",
+    id: "property-management",
+    title: "Property Management Services",
     icon: Settings,
+    gradient: "from-purple-500 to-pink-500",
+    description: "Resident general contractor services tailored for commercial buildings and ongoing maintenance.",
+    features: [
+      "Resident GC services",
+      "Commercial building focus",
+      "Ongoing maintenance programs",
+      "Emergency response services",
+      "Vendor coordination",
+    ],
+    process: [
+      "Property Assessment & Planning",
+      "Service Agreement Development",
+      "Maintenance Schedule Creation",
+      "Regular Inspections & Updates",
+      "Emergency Response & Repairs",
+    ],
+    idealFor: ["Commercial buildings", "Office complexes", "Multi-tenant facilities"],
+    image: "/placeholder.svg?height=300&width=400&text=Property+Management",
+    stats: { experience: "30+ Years", projects: "100+", satisfaction: "100%" },
+  },
+  {
+    id: "construction-management",
+    title: "Construction Management",
+    icon: Calculator,
     gradient: "from-red-500 to-rose-600",
     description: "Professional oversight and coordination ensuring quality, schedule, and budget objectives.",
     features: [
@@ -143,9 +143,9 @@ const mainServices = [
       "Quality Control & Standards",
       "Project Closeout & Documentation",
     ],
-    idealFor: ["Owner-direct projects", "Complex coordination needs", "Multi-phase developments"],
+    idealFor: ["Large-scale projects", "Complex coordination needs", "Multi-phase developments"],
     image: "/placeholder.svg?height=300&width=400&text=Construction+Management",
-    stats: { experience: "25+ Years", projects: "175+", satisfaction: "100%" },
+    stats: { experience: "30+ Years", projects: "200+", satisfaction: "100%" },
   },
   {
     id: "consulting",
@@ -167,40 +167,40 @@ const mainServices = [
       "Implementation Support",
       "Ongoing Advisory & Monitoring",
     ],
-    idealFor: ["Feasibility studies", "Dispute resolution", "Due diligence"],
+    idealFor: ["Feasibility studies", "Project evaluation", "Due diligence"],
     image: "/placeholder.svg?height=300&width=400&text=Construction+Consulting",
-    stats: { experience: "25+ Years", projects: "250+", satisfaction: "100%" },
+    stats: { experience: "30+ Years", projects: "150+", satisfaction: "100%" },
   },
 ]
 
 const specialtyServices = [
   {
-    title: "Healthcare Construction",
-    description: "Specialized medical facility construction with strict compliance requirements",
+    title: "Financial Institution Construction",
+    description: "Specialized construction for banks with security-focused design and implementation",
     icon: Shield,
     color: "bg-blue-100 text-blue-600",
-    features: ["Medical-grade systems", "Infection control", "Regulatory compliance"],
+    features: ["Security-first design", "Vault construction", "Regulatory compliance"],
   },
   {
     title: "Educational Facilities",
-    description: "Creating inspiring learning environments with safety-first design",
+    description: "Creating safe and inspiring learning environments for schools and educational institutions",
     icon: Building2,
     color: "bg-green-100 text-green-600",
-    features: ["Safety-first design", "Flexible spaces", "Technology integration"],
+    features: ["Safety-first design", "Flexible spaces", "ADA compliance"],
   },
   {
-    title: "Sustainable Building",
-    description: "Environmentally responsible construction with LEED certification",
+    title: "Medical Buildings",
+    description: "Specialized medical facility construction with strict compliance requirements",
     icon: Award,
     color: "bg-emerald-100 text-emerald-600",
-    features: ["LEED certification", "Energy efficiency", "Green technologies"],
+    features: ["Medical-grade systems", "Infection control", "Regulatory compliance"],
   },
   {
-    title: "Emergency Services",
-    description: "24/7 rapid response for construction emergencies and disasters",
+    title: "Warehousing & Industrial",
+    description: "Large-scale industrial and warehousing construction with focus on functionality",
     icon: Truck,
     color: "bg-red-100 text-red-600",
-    features: ["24/7 availability", "Rapid mobilization", "Insurance coordination"],
+    features: ["Large-scale construction", "Industrial systems", "Efficient design"],
   },
 ]
 
@@ -219,15 +219,16 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <Badge className="bg-orange-500 text-white mb-6 px-4 py-2 text-sm">
-              Comprehensive Construction Solutions
+              Full Service Design-Build Construction
             </Badge>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               Expert Services for
               <span className="text-orange-500 block">Every Construction Need</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-300 mb-8 max-w-3xl mx-auto">
-              From initial concept to final completion, we deliver excellence at every stage. Our comprehensive suite of
-              construction services ensures your project succeeds on time, on budget, and beyond expectations.
+              From initial design schematics to final construction, we deliver excellence at every stage. 
+              Our comprehensive suite of construction services ensures your project succeeds on time, 
+              on budget, and beyond expectations.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-orange-500 hover:bg-orange-600 px-8 py-4 text-lg">
@@ -259,6 +260,7 @@ export default function ServicesPage() {
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Our Core Services</h2>
             <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto">
               Six specialized service areas designed to meet every construction challenge with precision and expertise.
+              60% Commercial • 40% Residential
             </p>
           </div>
 
@@ -446,11 +448,11 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Why Choose JLTC */}
+      {/* Why Choose Taylor Leonard Corp */}
       <section className="py-16 md:py-20 bg-slate-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Why Choose JLTC?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Why Choose Taylor Leonard Corp?</h2>
             <p className="text-lg md:text-xl text-slate-600 mb-12">
               Our commitment to excellence, safety, and client satisfaction sets us apart in the construction industry.
             </p>
@@ -460,29 +462,29 @@ export default function ServicesPage() {
                 <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Award className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-2">25+ Years</h3>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">30+ Years</h3>
                 <p className="text-slate-600">Industry Experience</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Shield className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Safety First</h3>
-                <p className="text-slate-600">Industry-Leading Standards</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">Perfect Safety</h3>
+                <p className="text-slate-600">No Safety Violations</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-2">Expert Team</h3>
-                <p className="text-slate-600">Skilled Professionals</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">Family Owned</h3>
+                <p className="text-slate-600">Veteran Founded</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Clock className="h-8 w-8 text-white" />
+                  <Target className="h-8 w-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-900 mb-2">On-Time</h3>
-                <p className="text-slate-600">Delivery Guarantee</p>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">100%</h3>
+                <p className="text-slate-600">Satisfaction Rating</p>
               </div>
             </div>
           </div>

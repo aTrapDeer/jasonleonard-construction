@@ -29,17 +29,12 @@ export function Header() {
       setScrollY(currentScrollY)
       setIsScrolled(currentScrollY > 50)
 
-      // For non-homepage pages, handle show/hide behavior
-      if (!isHomepage) {
-        if (currentScrollY > lastScrollY && currentScrollY > 100) {
-          // Scrolling down & past 100px
-          setIsVisible(false)
-        } else if (currentScrollY < lastScrollY) {
-          // Scrolling up
-          setIsVisible(true)
-        }
-      } else {
-        // Homepage always visible
+      // Apply show/hide behavior to all pages including homepage
+      if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        // Scrolling down & past 100px
+        setIsVisible(false)
+      } else if (currentScrollY < lastScrollY) {
+        // Scrolling up
         setIsVisible(true)
       }
 
@@ -48,25 +43,25 @@ export function Header() {
 
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
-  }, [lastScrollY, isHomepage])
+  }, [lastScrollY])
 
   // Different styles for homepage vs other pages
   const getHeaderClasses = () => {
+    const baseTransform = `transform ${isVisible ? "translate-y-0" : "-translate-y-full"}`
+    
     if (isHomepage) {
-      // Homepage: transparent to black/blur on scroll
-      return `fixed top-0 w-full z-50 transition-all duration-500 ${
+      // Homepage: transparent to black/blur on scroll + hide/show behavior
+      return `fixed top-0 w-full z-50 transition-all duration-500 ${baseTransform} ${
         isScrolled ? "bg-black/80 backdrop-blur-xl border-b border-white/10 shadow-2xl" : "bg-transparent"
       }`
     } else {
-      // Other pages: black background, hide/show on scroll
-      return `fixed top-0 w-full z-50 transition-all duration-500 bg-black/95 backdrop-blur-xl border-b border-white/10 shadow-2xl transform ${
-        isVisible ? "translate-y-0" : "-translate-y-full"
-      }`
+      // Other pages: black background + hide/show behavior
+      return `fixed top-0 w-full z-50 transition-all duration-500 bg-black/95 backdrop-blur-xl border-b border-white/10 shadow-2xl ${baseTransform}`
     }
   }
 
   const getHeaderStyle = () => {
-    if (isHomepage) {
+    if (isHomepage && isVisible) {
       return {
         transform: `translateY(${Math.min(scrollY * 0.1, 10)}px)`,
       }
@@ -81,11 +76,11 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3 group">
             <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-              <span className="text-white font-bold text-lg md:text-xl">JL</span>
+              <span className="text-white font-bold text-lg md:text-xl">TL</span>
             </div>
             <div className="hidden sm:block">
-              <div className="font-bold text-white text-lg md:text-xl tracking-tight">JLTC</div>
-              <div className="text-xs text-slate-400 -mt-1 tracking-widest">CONSTRUCTION</div>
+              <div className="font-bold text-white text-lg md:text-xl tracking-tight">Taylor Leonard</div>
+              <div className="text-xs text-slate-400 -mt-1 tracking-widest">CORP</div>
             </div>
           </Link>
 
@@ -115,7 +110,7 @@ export function Header() {
               asChild
               className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-full font-medium shadow-lg hover:shadow-orange-500/25 transition-all duration-300 hover:scale-105"
             >
-              <Link href="/contact">Get a Quote</Link>
+              <Link href="/quote">Get a Quote</Link>
             </Button>
           </div>
 
@@ -134,11 +129,11 @@ export function Header() {
             <SheetContent side="right" className="w-80 bg-black/95 backdrop-blur-xl border-l border-white/10">
               <div className="flex items-center space-x-3 mb-8">
                 <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg">
-                  <span className="text-white font-bold text-xl">JL</span>
+                  <span className="text-white font-bold text-xl">TL</span>
                 </div>
                 <div>
-                  <div className="font-bold text-white text-xl tracking-tight">JLTC</div>
-                  <div className="text-xs text-slate-400 -mt-1 tracking-widest">CONSTRUCTION</div>
+                  <div className="font-bold text-white text-xl tracking-tight">Taylor Leonard</div>
+                  <div className="text-xs text-slate-400 -mt-1 tracking-widest">CORP</div>
                 </div>
               </div>
 
@@ -158,7 +153,7 @@ export function Header() {
                 ))}
                 <div className="pt-6">
                   <Button asChild className="w-full bg-orange-500 hover:bg-orange-600 rounded-full py-3 transition-all duration-300 hover:scale-105">
-                    <Link href="/contact">Get a Quote</Link>
+                    <Link href="/quote">Get a Quote</Link>
                   </Button>
                 </div>
               </nav>

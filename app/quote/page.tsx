@@ -403,7 +403,7 @@ export default function QuotePage() {
                     <div className="flex items-start space-x-2">
                       <Checkbox id="newsletter" name="newsletter" />
                       <Label htmlFor="newsletter" className="text-sm text-slate-600">
-                        I'd like to receive updates about JLTC projects and construction insights
+                        I'd like to receive updates about Taylor Leonard Corp projects and construction insights
                       </Label>
                     </div>
 

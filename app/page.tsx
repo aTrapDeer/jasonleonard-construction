@@ -103,16 +103,16 @@ export default function HomePage() {
             }}
           >
             <Badge className="bg-orange-500/20 text-orange-300 border-orange-500/30 mb-8 px-8 py-3 text-lg font-medium backdrop-blur-sm">
-              Premium Construction Excellence
+              Family Owned • Veteran Founded • Since 1990
             </Badge>
             <h1 className="text-7xl md:text-9xl font-thin mb-12 leading-none tracking-tight">
-              Building
+              Taylor Leonard
               <span className="block font-extralight text-orange-400 transform hover:scale-105 transition-transform duration-500">
-                Tomorrow
+                Corp
               </span>
             </h1>
             <p className="text-2xl md:text-3xl font-light text-slate-300 mb-16 max-w-4xl mx-auto leading-relaxed">
-              Where architectural vision meets construction mastery
+              Full Service Design-Build Construction Excellence
             </p>
 
             <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
@@ -162,10 +162,10 @@ export default function HomePage() {
 
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
             {[
-              { number: "25+", label: "Years of Excellence", icon: Award, delay: "0ms" },
+              { number: "30+", label: "Years of Excellence", icon: Award, delay: "0ms" },
               { number: "2M+", label: "Square Feet Built", icon: Building, delay: "200ms" },
-              { number: "150+", label: "Projects Completed", icon: Users, delay: "400ms" },
-              { number: "0.85", label: "EMR Safety Rating", icon: Shield, delay: "600ms" },
+              { number: "575+", label: "Projects Completed", icon: Users, delay: "400ms" },
+              { number: "100%", label: "Satisfaction Rating", icon: Shield, delay: "600ms" },
             ].map((stat, index) => (
               <div key={index} className="zoom-animate group cursor-pointer" style={{ transitionDelay: stat.delay }}>
                 <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-8 shadow-2xl hover:shadow-orange-500/20 transition-all duration-700 group-hover:scale-110 group-hover:-translate-y-4 border border-slate-700/50">
@@ -193,7 +193,7 @@ export default function HomePage() {
           <div className="zoom-animate text-center mb-20">
             <h2 className="text-6xl md:text-7xl font-thin text-white mb-8">Our Expertise</h2>
             <p className="text-2xl font-light text-slate-400 max-w-4xl mx-auto leading-relaxed">
-              Comprehensive construction services tailored to your vision
+              60% Commercial • 40% Residential Construction Services
             </p>
             <div className="w-32 h-1 bg-gradient-to-r from-orange-500 to-orange-600 mx-auto mt-8" />
           </div>
@@ -202,19 +202,19 @@ export default function HomePage() {
             {[
               {
                 title: "Design-Build",
-                description: "Seamless integration from concept to completion with innovative solutions",
+                description: "Complete design and construction services from concept to completion",
                 image: "/placeholder.svg?height=400&width=600&text=Design+Build",
                 delay: "0ms",
               },
               {
                 title: "Commercial Construction",
-                description: "Large-scale projects executed with precision and unmatched expertise",
+                description: "Banks, schools, medical buildings, and warehousing projects",
                 image: "/placeholder.svg?height=400&width=600&text=Commercial",
                 delay: "300ms",
               },
               {
-                title: "Luxury Residential",
-                description: "Premium homes crafted to perfection with attention to every detail",
+                title: "Residential Construction",
+                description: "Custom homes and residential projects with exceptional craftsmanship",
                 image: "/placeholder.svg?height=400&width=600&text=Residential",
                 delay: "600ms",
               },
@@ -259,21 +259,21 @@ export default function HomePage() {
                   Featured Project
                 </Badge>
                 <h2 className="text-6xl md:text-7xl font-thin leading-tight">
-                  Metro Medical
-                  <span className="block text-orange-400 font-extralight">Center</span>
+                  Bonan
+                  <span className="block text-orange-400 font-extralight">Towers</span>
                 </h2>
                 <p className="text-2xl font-light text-slate-300 leading-relaxed">
-                  A 125,000 sq ft state-of-the-art medical facility that redefines healthcare architecture. Completed on
-                  time and 15% under budget with revolutionary design solutions.
+                  A stunning 81,000 sq ft commercial development that showcases our expertise in large-scale construction. 
+                  Completed over 4 years with exceptional attention to detail and quality craftsmanship.
                 </p>
                 <div className="grid grid-cols-2 gap-12">
                   <div className="text-center">
-                    <div className="text-5xl font-thin text-orange-400 mb-3">125K</div>
+                    <div className="text-5xl font-thin text-orange-400 mb-3">81K</div>
                     <div className="text-lg font-medium text-slate-400 tracking-wide">SQUARE FEET</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-5xl font-thin text-orange-400 mb-3">18</div>
-                    <div className="text-lg font-medium text-slate-400 tracking-wide">MONTHS</div>
+                    <div className="text-5xl font-thin text-orange-400 mb-3">4</div>
+                    <div className="text-lg font-medium text-slate-400 tracking-wide">YEARS</div>
                   </div>
                 </div>
                 <Button
@@ -291,8 +291,8 @@ export default function HomePage() {
                 <div className="zoom-animate">
                   <div className="relative rounded-3xl overflow-hidden shadow-2xl hover:shadow-orange-500/20 transition-all duration-700 group">
                     <Image
-                      src="/placeholder.svg?height=700&width=900&text=Medical+Center"
-                      alt="Metro Medical Center"
+                      src="https://bonantowers.com/wp-content/uploads/2024/12/04-3.jpg"
+                      alt="Bonan Towers"
                       width={900}
                       height={700}
                       className="object-cover group-hover:scale-105 transition-transform duration-1000"
@@ -314,8 +314,8 @@ export default function HomePage() {
               <div className="w-32 h-1 bg-gradient-to-r from-orange-500 to-orange-600 mx-auto mb-16" />
               <blockquote className="text-4xl md:text-5xl font-light text-white leading-relaxed mb-16 relative">
                 <span className="text-orange-400 text-8xl absolute -top-8 -left-4 opacity-50">"</span>
-                JLTC transformed our vision into reality with unmatched precision and professionalism. Their attention
-                to detail is extraordinary.
+                Taylor Leonard Corp transformed our vision into reality with unmatched precision and professionalism. 
+                Their attention to detail is extraordinary.
                 <span className="text-orange-400 text-8xl absolute -bottom-8 -right-4 opacity-50">"</span>
               </blockquote>
               <div className="flex items-center justify-center space-x-6">
@@ -329,8 +329,8 @@ export default function HomePage() {
                   />
                 </div>
                 <div className="text-left">
-                  <div className="text-2xl font-medium text-white">Dr. Sarah Mitchell</div>
-                  <div className="text-xl text-slate-400 font-light">Chief Administrator, Metro Medical</div>
+                  <div className="text-2xl font-medium text-white">Project Owner</div>
+                  <div className="text-xl text-slate-400 font-light">Bonan Towers Development</div>
                 </div>
               </div>
             </div>

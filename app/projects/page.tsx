@@ -14,45 +14,44 @@ import { useState, useMemo } from "react"
 const projects = [
   {
     id: 1,
-    title: "Riverside Luxury Estate",
-    category: "Residential",
-    market: "Luxury Residential",
-    location: "Waterfront District, BC",
-    completionYear: 2023,
-    size: "8,500 SQ FT",
-    budget: "$2.8M",
-    duration: "14 months",
-    image: "/placeholder.svg?height=400&width=600",
+    title: "Bonan Towers",
+    category: "Commercial",
+    market: "Commercial Development",
+    location: "Missouri",
+    completionYear: 2024,
+    size: "81,000 SQ FT",
+    budget: "Major Commercial Project",
+    duration: "4 years",
+    image: "https://bonantowers.com/wp-content/uploads/2024/12/04-3.jpg",
     gallery: [
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
+      "https://bonantowers.com/wp-content/uploads/2024/12/04-3.jpg",
+      "https://bonantowers.com/wp-content/uploads/2025/03/0002-1-2.jpg",
     ],
     description:
-      "A stunning waterfront estate featuring custom millwork, smart home integration, and luxury finishes throughout.",
+      "Our flagship commercial development showcasing 81,000 square feet of exceptional construction over 4 years, demonstrating our expertise in large-scale commercial projects.",
     challenge:
-      "Building on a challenging waterfront lot with strict environmental regulations and complex foundation requirements due to proximity to water.",
+      "Managing a large-scale commercial development with complex systems and coordination requirements over an extended timeline.",
     solution:
-      "Implemented specialized foundation systems and worked closely with environmental consultants to ensure compliance while maximizing the waterfront views.",
+      "Implemented comprehensive project management systems with phased construction approach, ensuring quality control throughout the 4-year development process.",
     results:
-      "Delivered a breathtaking estate that exceeded client expectations, featuring panoramic water views and sustainable construction practices.",
-    features: ["Custom millwork", "Smart home integration", "Infinity pool", "Wine cellar", "Panoramic water views"],
-    services: ["Design-Build", "Custom Construction", "Interior Design"],
+      "Successfully delivered a landmark commercial development that stands as a testament to our construction capabilities and attention to detail.",
+    features: ["Large-scale construction", "Advanced building systems", "Quality materials", "Professional project management", "Long-term development"],
+    services: ["Design-Build", "Commercial Construction", "Project Management"],
     testimonial: {
-      quote: "JLTC transformed our vision into reality. The attention to detail and craftsmanship is exceptional.",
-      author: "Michael & Sarah Chen",
-      role: "Homeowners",
+      quote: "Taylor Leonard Corp delivered exceptional results on this major project. Their attention to detail and commitment to quality is outstanding.",
+      author: "Project Stakeholder",
+      role: "Bonan Towers Development",
     },
   },
   {
     id: 2,
-    title: "Metro Medical Center",
+    title: "Fox School District - Meramec Heights Elementary",
     category: "Commercial",
-    market: "Healthcare",
-    location: "Downtown District, BC",
+    market: "Educational",
+    location: "Fox School District, Missouri",
     completionYear: 2023,
-    size: "125,000 SQ FT",
-    budget: "$18.5M",
+    size: "Educational Facility",
+    budget: "Educational Project",
     duration: "18 months",
     image: "/placeholder.svg?height=400&width=600",
     gallery: [
@@ -61,38 +60,38 @@ const projects = [
       "/placeholder.svg?height=400&width=600",
     ],
     description:
-      "State-of-the-art medical facility with advanced patient care areas, surgical suites, and cutting-edge medical technology infrastructure.",
+      "Educational facility construction focused on providing accessibility for disabled students and creating a safe, modern learning environment.",
     challenge:
-      "Constructing a fully operational medical facility while maintaining strict infection control standards and accommodating complex medical equipment installations.",
+      "Ensuring full ADA compliance and accessibility features while maintaining a safe construction environment around an active school district.",
     solution:
-      "Phased construction approach with specialized HVAC systems, medical-grade finishes, and coordination with medical equipment vendors for seamless integration.",
+      "Worked closely with school district officials to implement comprehensive accessibility features and safety protocols throughout construction.",
     results:
-      "Delivered a world-class medical facility that serves over 50,000 patients annually with the highest standards of care and safety.",
+      "Delivered a fully accessible educational facility that serves students with disabilities and provides a modern learning environment for all students.",
     features: [
-      "Advanced surgical suites",
-      "Medical-grade HVAC",
-      "Emergency power systems",
-      "Patient-centered design",
-      "LEED Gold certified",
+      "ADA compliance",
+      "Accessibility features",
+      "Safety-first design",
+      "Modern learning spaces",
+      "Educational facility systems",
     ],
-    services: ["General Contracting", "Medical Construction", "Project Management"],
+    services: ["Commercial Construction", "Educational Facilities", "ADA Compliance"],
     testimonial: {
       quote:
-        "The team's expertise in healthcare construction was evident throughout the project. Exceptional quality and attention to detail.",
-      author: "Dr. Jennifer Martinez",
-      role: "Chief Medical Officer",
+        "Taylor Leonard Corp's commitment to accessibility and safety made this project a success. They understand the unique needs of educational facilities.",
+      author: "Fox School District",
+      role: "District Administration",
     },
   },
   {
     id: 3,
-    title: "Tech Campus Phase II",
+    title: "Regional Bank Branch",
     category: "Commercial",
-    market: "Office",
-    location: "Innovation District, BC",
-    completionYear: 2022,
-    size: "200,000 SQ FT",
-    budget: "$25.2M",
-    duration: "20 months",
+    market: "Financial",
+    location: "Missouri",
+    completionYear: 2023,
+    size: "8,000 SQ FT",
+    budget: "Commercial Project",
+    duration: "14 months",
     image: "/placeholder.svg?height=400&width=600",
     gallery: [
       "/placeholder.svg?height=400&width=600",
@@ -100,37 +99,37 @@ const projects = [
       "/placeholder.svg?height=400&width=600",
     ],
     description:
-      "Modern office complex designed for technology companies with flexible workspaces, collaboration areas, and sustainable features.",
+      "Specialized bank construction featuring security-focused design and advanced systems for a trusted financial institution.",
     challenge:
-      "Creating flexible spaces that could adapt to rapidly changing technology company needs while maintaining energy efficiency and modern aesthetics.",
+      "Implementing high-security features and specialized banking systems while maintaining an welcoming customer environment.",
     solution:
-      "Designed modular workspace systems with advanced building automation, sustainable materials, and future-ready infrastructure for technology integration.",
+      "Leveraged our expertise in financial institution construction to deliver security systems, vault construction, and customer-focused design elements.",
     results:
-      "Achieved LEED Platinum certification and 100% occupancy within 6 months of completion, becoming a landmark in the Innovation District.",
+      "Successfully completed a secure and functional bank branch that serves the community while meeting all security and regulatory requirements.",
     features: [
-      "Flexible workspace design",
-      "LEED Platinum",
-      "Advanced building automation",
-      "Rooftop gardens",
-      "Electric vehicle charging",
+      "Security-focused design",
+      "Vault construction",
+      "Customer service areas",
+      "Drive-through facilities",
+      "Advanced security systems",
     ],
-    services: ["Design-Build", "Sustainable Construction", "Technology Integration"],
+    services: ["Commercial Construction", "Security Systems", "Financial Institution Expertise"],
     testimonial: {
       quote:
-        "JLTC delivered a building that perfectly balances functionality, sustainability, and modern design. Our teams love working here.",
-      author: "David Park",
-      role: "Facilities Director, TechCorp",
+        "Taylor Leonard Corp's expertise in bank construction was evident throughout the project. They understand the unique security and operational needs.",
+      author: "Bank Executive",
+      role: "Regional Bank",
     },
   },
   {
     id: 4,
-    title: "Heritage Home Restoration",
+    title: "Custom Family Residence",
     category: "Residential",
-    market: "Historic Renovation",
-    location: "Historic District, BC",
+    market: "Custom Homes",
+    location: "Missouri",
     completionYear: 2023,
-    size: "4,800 SQ FT",
-    budget: "$1.4M",
+    size: "3,500 SQ FT",
+    budget: "Residential Project",
     duration: "12 months",
     image: "/placeholder.svg?height=400&width=600",
     gallery: [
@@ -139,37 +138,37 @@ const projects = [
       "/placeholder.svg?height=400&width=600",
     ],
     description:
-      "Meticulous restoration of a 1920s heritage home, preserving historical character while adding modern amenities and systems.",
+      "Custom home construction featuring quality craftsmanship and personalized design elements tailored to the family's specific needs.",
     challenge:
-      "Balancing historical preservation requirements with modern building codes and client desires for contemporary amenities.",
+      "Creating a custom home that balances modern amenities with traditional craftsmanship while staying within budget and timeline.",
     solution:
-      "Worked with heritage consultants and city planners to develop solutions that preserved historical integrity while incorporating modern systems discretely.",
+      "Applied our residential construction expertise to deliver custom design elements with quality materials and exceptional attention to detail.",
     results:
-      "Successfully restored a piece of local history while creating a comfortable, modern living space that received heritage preservation awards.",
+      "Delivered a beautiful custom home that exceeds the family's expectations and demonstrates our commitment to residential construction excellence.",
     features: [
-      "Period restoration",
+      "Custom design elements",
+      "Quality craftsmanship",
       "Modern amenities",
-      "Original hardwood preservation",
-      "Updated electrical/plumbing",
-      "Heritage designation maintained",
+      "Energy efficient systems",
+      "Personalized features",
     ],
-    services: ["Historic Renovation", "Custom Restoration", "Heritage Consulting"],
+    services: ["Residential Construction", "Custom Design", "Quality Craftsmanship"],
     testimonial: {
       quote:
-        "They brought our historic home back to life while respecting its heritage. The craftsmanship is outstanding.",
-      author: "Robert & Linda Thompson",
-      role: "Homeowners",
+        "Taylor Leonard Corp built our dream home with incredible attention to detail. Their craftsmanship and professionalism exceeded our expectations.",
+      author: "Homeowners",
+      role: "Custom Home Clients",
     },
   },
   {
     id: 5,
-    title: "Retail Shopping Center",
+    title: "Medical Office Building",
     category: "Commercial",
-    market: "Retail",
-    location: "Suburban Plaza, BC",
+    market: "Healthcare",
+    location: "Missouri",
     completionYear: 2022,
-    size: "85,000 SQ FT",
-    budget: "$12.8M",
+    size: "12,000 SQ FT",
+    budget: "Medical Project",
     duration: "16 months",
     image: "/placeholder.svg?height=400&width=600",
     gallery: [
@@ -178,38 +177,38 @@ const projects = [
       "/placeholder.svg?height=400&width=600",
     ],
     description:
-      "Modern retail center with anchor tenant spaces, outdoor dining areas, and contemporary architectural design.",
+      "Medical facility construction with specialized systems and compliance requirements for healthcare operations.",
     challenge:
-      "Creating an attractive retail destination that would draw customers while managing complex tenant requirements and phased occupancy.",
+      "Meeting strict medical building codes and regulations while installing specialized medical-grade systems and equipment.",
     solution:
-      "Designed flexible retail spaces with modern facades and amenities, coordinating construction to allow early tenant fit-outs and phased openings.",
+      "Utilized our experience in medical building construction to ensure compliance with healthcare regulations and proper installation of medical systems.",
     results:
-      "Achieved 95% occupancy before completion and became a popular community gathering place, exceeding projected foot traffic by 30%.",
+      "Completed a fully compliant medical facility that serves healthcare providers and patients with specialized medical-grade infrastructure.",
     features: [
-      "Anchor tenant spaces",
-      "Outdoor dining areas",
-      "Modern facades",
-      "Ample parking",
-      "Community gathering spaces",
+      "Medical-grade systems",
+      "Healthcare compliance",
+      "Patient accessibility",
+      "Specialized equipment support",
+      "Infection control measures",
     ],
-    services: ["Commercial Construction", "Tenant Coordination", "Retail Development"],
+    services: ["Medical Construction", "Healthcare Compliance", "Specialized Systems"],
     testimonial: {
       quote:
-        "The shopping center has exceeded our expectations. JLTC's attention to both aesthetics and functionality is remarkable.",
-      author: "Maria Rodriguez",
-      role: "Property Manager",
+        "The team understood the unique requirements of medical construction. The facility meets all our operational needs perfectly.",
+      author: "Medical Practice",
+      role: "Healthcare Provider",
     },
   },
   {
     id: 6,
-    title: "Modern Hillside Residence",
-    category: "Residential",
-    market: "Custom Homes",
-    location: "Hills Estates, BC",
-    completionYear: 2023,
-    size: "6,200 SQ FT",
-    budget: "$2.1M",
-    duration: "13 months",
+    title: "Warehouse Facility",
+    category: "Commercial",
+    market: "Industrial",
+    location: "Missouri",
+    completionYear: 2022,
+    size: "25,000 SQ FT",
+    budget: "Industrial Project",
+    duration: "12 months",
     image: "/placeholder.svg?height=400&width=600",
     gallery: [
       "/placeholder.svg?height=400&width=600",
@@ -217,33 +216,33 @@ const projects = [
       "/placeholder.svg?height=400&width=600",
     ],
     description:
-      "Contemporary hillside home with floor-to-ceiling windows, sustainable materials, and stunning valley views.",
+      "Large-scale warehouse construction focusing on functionality, efficiency, and industrial-grade systems.",
     challenge:
-      "Building on a steep hillside lot while maximizing views and incorporating sustainable design elements within budget constraints.",
+      "Delivering a large-scale industrial facility with efficient design and robust systems within tight timeline constraints.",
     solution:
-      "Engineered custom foundation solutions and used sustainable materials throughout, creating seamless indoor-outdoor living spaces that capture the views.",
+      "Applied our warehousing construction expertise to create an efficient layout with industrial-grade systems and materials.",
     results:
-      "Delivered an award-winning sustainable home that showcases modern design while respecting the natural landscape and achieving net-zero energy consumption.",
+      "Successfully completed a functional warehouse facility that meets industrial operational requirements and provides efficient workflow.",
     features: [
-      "Floor-to-ceiling windows",
-      "Sustainable materials",
-      "Rooftop terrace",
-      "Home theater",
-      "Net-zero energy",
+      "Large-scale construction",
+      "Industrial systems",
+      "Efficient design",
+      "Robust materials",
+      "Operational functionality",
     ],
-    services: ["Custom Construction", "Sustainable Design", "Site Engineering"],
+    services: ["Industrial Construction", "Warehouse Design", "Large-Scale Projects"],
     testimonial: {
       quote:
-        "Our dream home became reality. The integration with the landscape and attention to sustainability exceeded our hopes.",
-      author: "James & Patricia Wilson",
-      role: "Homeowners",
+        "Taylor Leonard Corp delivered exactly what we needed - a functional, well-built warehouse that supports our operations perfectly.",
+      author: "Operations Manager",
+      role: "Industrial Client",
     },
   },
 ]
 
 const categories = ["All", "Residential", "Commercial"]
-const markets = ["All", "Luxury Residential", "Healthcare", "Office", "Historic Renovation", "Retail", "Custom Homes"]
-const years = ["All", "2023", "2022", "2021"]
+const markets = ["All", "Commercial Development", "Educational", "Financial", "Custom Homes", "Healthcare", "Industrial"]
+const years = ["All", "2024", "2023", "2022", "2021"]
 
 export default function ProjectsPage() {
   const [searchTerm, setSearchTerm] = useState("")
@@ -280,20 +279,20 @@ export default function ProjectsPage() {
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 max-w-3xl mx-auto">
               <div className="text-center">
-                <div className="text-3xl font-bold text-orange-500 mb-2">125+</div>
+                <div className="text-3xl font-bold text-orange-500 mb-2">575+</div>
                 <div className="text-sm text-slate-400">Projects Completed</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-orange-500 mb-2">$500M+</div>
+                <div className="text-3xl font-bold text-orange-500 mb-2">$50M+</div>
                 <div className="text-sm text-slate-400">Total Project Value</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-orange-500 mb-2">2.5M+</div>
+                <div className="text-3xl font-bold text-orange-500 mb-2">2M+</div>
                 <div className="text-sm text-slate-400">Square Feet Built</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-orange-500 mb-2">98%</div>
-                <div className="text-sm text-slate-400">On-Time Delivery</div>
+                <div className="text-3xl font-bold text-orange-500 mb-2">100%</div>
+                <div className="text-sm text-slate-400">Satisfaction Rating</div>
               </div>
             </div>
           </div>
@@ -423,8 +422,8 @@ export default function ProjectsPage() {
                         {project.size}
                       </div>
                       <div className="flex items-center">
-                        <DollarSign className="h-4 w-4 mr-1" />
-                        {project.budget}
+                        <Calendar className="h-4 w-4 mr-1" />
+                        {project.duration}
                       </div>
                     </div>
                     <p className="text-slate-600 mb-4 line-clamp-2">{project.description}</p>
@@ -474,14 +473,10 @@ export default function ProjectsPage() {
 
                       <p className="text-slate-600 mb-4">{project.description}</p>
 
-                      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
+                      <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-4">
                         <div className="flex items-center text-sm">
                           <Ruler className="h-4 w-4 mr-2 text-orange-500" />
                           <span>{project.size}</span>
-                        </div>
-                        <div className="flex items-center text-sm">
-                          <DollarSign className="h-4 w-4 mr-2 text-orange-500" />
-                          <span>{project.budget}</span>
                         </div>
                         <div className="flex items-center text-sm">
                           <Calendar className="h-4 w-4 mr-2 text-orange-500" />

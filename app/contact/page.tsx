@@ -34,7 +34,7 @@ export default function ContactPage() {
             <CheckCircle className="h-16 w-16 text-green-500 mx-auto mb-4" />
             <h2 className="text-2xl font-bold text-slate-900 mb-4">Message Sent Successfully!</h2>
             <p className="text-slate-600 mb-6">
-              Thank you for contacting JLTC. We'll review your message and get back to you within 24 hours.
+              Thank you for contacting Taylor Leonard Corp. We'll review your message and get back to you within 24 hours.
             </p>
             <Button onClick={() => setIsSubmitted(false)} className="bg-orange-500 hover:bg-orange-600">
               Send Another Message
@@ -51,10 +51,10 @@ export default function ContactPage() {
       <section className="py-16 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-3xl md:text-5xl font-bold mb-4 md:mb-6">Contact JLTC</h1>
+            <h1 className="text-3xl md:text-5xl font-bold mb-4 md:mb-6">Contact Taylor Leonard Corp</h1>
             <p className="text-lg md:text-xl text-slate-300">
-              Ready to discuss your construction project? Get in touch with our team for expert guidance and
-              personalized service.
+              Have questions about our construction services? Want to discuss a potential project? 
+              Get in touch with our team for expert guidance and personalized service.
             </p>
           </div>
         </div>
@@ -83,9 +83,9 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-semibold text-slate-900 mb-1">Office Location</h3>
                       <p className="text-slate-600">
-                        123 Construction Way
+                        2017 S Moor Dr
                         <br />
-                        Builder City, BC 12345
+                        Foristell, MO 63348
                       </p>
                     </div>
                   </div>
@@ -96,8 +96,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-slate-900 mb-1">Phone</h3>
-                      <p className="text-slate-600">(555) 123-4567</p>
-                      <p className="text-sm text-slate-500">Mon-Fri 8:00 AM - 6:00 PM</p>
+                      <p className="text-slate-600">314-489-3229</p>
+                      <p className="text-sm text-slate-500">9am - 5pm</p>
                     </div>
                   </div>
 
@@ -107,7 +107,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-slate-900 mb-1">Email</h3>
-                      <p className="text-slate-600">info@jltconstruction.com</p>
+                      <p className="text-slate-600">taylorleonardcorp@gmail.com</p>
                       <p className="text-sm text-slate-500">We respond within 24 hours</p>
                     </div>
                   </div>
@@ -119,23 +119,23 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-semibold text-slate-900 mb-1">Business Hours</h3>
                       <div className="text-slate-600 space-y-1">
-                        <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
-                        <p>Saturday: 9:00 AM - 4:00 PM</p>
+                        <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                        <p>Saturday: By Appointment</p>
                         <p>Sunday: Closed</p>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                {/* Emergency Contact */}
+                {/* Project Consultation */}
                 <Card className="bg-orange-50 border-orange-200">
                   <CardContent className="p-6">
-                    <h3 className="font-semibold text-slate-900 mb-2">Emergency Contact</h3>
+                    <h3 className="font-semibold text-slate-900 mb-2">Project Consultation</h3>
                     <p className="text-slate-600 text-sm mb-3">
-                      For urgent construction-related emergencies on active job sites:
+                      For project consultations and detailed discussions about your construction needs:
                     </p>
-                    <p className="font-semibold text-orange-600">(555) 123-HELP</p>
-                    <p className="text-xs text-slate-500 mt-1">Available 24/7 for active projects</p>
+                    <p className="font-semibold text-orange-600">314-489-3229</p>
+                    <p className="text-xs text-slate-500 mt-1">Available during business hours</p>
                   </CardContent>
                 </Card>
               </div>
@@ -179,69 +179,29 @@ export default function ContactPage() {
                       <Input id="company" name="company" />
                     </div>
 
-                    <div className="grid sm:grid-cols-2 gap-4 md:gap-6">
-                      <div className="space-y-2">
-                        <Label htmlFor="projectType">Project Type</Label>
-                        <Select name="projectType">
-                          <SelectTrigger>
-                            <SelectValue placeholder="Select project type" />
-                          </SelectTrigger>
-                          <SelectContent>
-                            <SelectItem value="residential">Residential</SelectItem>
-                            <SelectItem value="commercial">Commercial</SelectItem>
-                            <SelectItem value="renovation">Renovation</SelectItem>
-                            <SelectItem value="design-build">Design-Build</SelectItem>
-                            <SelectItem value="other">Other</SelectItem>
-                          </SelectContent>
-                        </Select>
-                      </div>
-                      <div className="space-y-2">
-                        <Label htmlFor="timeline">Desired Timeline</Label>
-                        <Select name="timeline">
-                          <SelectTrigger>
-                            <SelectValue placeholder="Select timeline" />
-                          </SelectTrigger>
-                          <SelectContent>
-                            <SelectItem value="immediate">Immediate (1-3 months)</SelectItem>
-                            <SelectItem value="short">Short-term (3-6 months)</SelectItem>
-                            <SelectItem value="medium">Medium-term (6-12 months)</SelectItem>
-                            <SelectItem value="long">Long-term (12+ months)</SelectItem>
-                            <SelectItem value="planning">Planning phase</SelectItem>
-                          </SelectContent>
-                        </Select>
-                      </div>
-                    </div>
-
                     <div className="space-y-2">
-                      <Label htmlFor="budget">Estimated Budget Range</Label>
-                      <Select name="budget">
+                      <Label htmlFor="inquiryType">Type of Inquiry</Label>
+                      <Select name="inquiryType">
                         <SelectTrigger>
-                          <SelectValue placeholder="Select budget range" />
+                          <SelectValue placeholder="Select inquiry type" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="under-500k">Under $500K</SelectItem>
-                          <SelectItem value="500k-1m">$500K - $1M</SelectItem>
-                          <SelectItem value="1m-2m">$1M - $2M</SelectItem>
-                          <SelectItem value="2m-5m">$2M - $5M</SelectItem>
-                          <SelectItem value="5m-10m">$5M - $10M</SelectItem>
-                          <SelectItem value="over-10m">Over $10M</SelectItem>
-                          <SelectItem value="not-sure">Not sure yet</SelectItem>
+                          <SelectItem value="general">General Information</SelectItem>
+                          <SelectItem value="project">Project Discussion</SelectItem>
+                          <SelectItem value="services">Services Inquiry</SelectItem>
+                          <SelectItem value="consultation">Consultation Request</SelectItem>
+                          <SelectItem value="other">Other</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="location">Project Location</Label>
-                      <Input id="location" name="location" placeholder="City, State or Address" />
-                    </div>
-
-                    <div className="space-y-2">
-                      <Label htmlFor="message">Project Details *</Label>
+                      <Label htmlFor="message">Message *</Label>
                       <Textarea
                         id="message"
                         name="message"
                         rows={6}
-                        placeholder="Please describe your project, including scope, requirements, and any specific questions you have..."
+                        placeholder="Please tell us about your inquiry, questions, or how we can help you..."
                         required
                       />
                     </div>
@@ -255,7 +215,7 @@ export default function ContactPage() {
                           className="mt-1 h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded"
                         />
                         <Label htmlFor="newsletter" className="text-sm text-slate-600">
-                          I'd like to receive updates about JLTC projects and construction industry insights
+                          I'd like to receive updates about Taylor Leonard Corp projects and construction industry insights
                         </Label>
                       </div>
 

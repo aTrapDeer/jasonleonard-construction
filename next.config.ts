@@ -5,6 +5,16 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: false,
     dirs: ['app', 'components', 'lib'],
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'bonantowers.com',
+        port: '',
+        pathname: '/wp-content/uploads/**',
+      },
+    ],
+  },
   // You can also configure ESLint rules here if needed
 };
 

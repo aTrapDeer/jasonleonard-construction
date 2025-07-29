@@ -7,73 +7,64 @@ import Link from "next/link"
 
 const teamMembers = [
   {
-    name: "Jason Leonard Taylor",
+    name: "Jason",
     title: "Founder & CEO",
     image: "/placeholder.svg?height=300&width=300",
-    bio: "With over 25 years in construction, Jason founded JLTC with a vision to deliver exceptional quality while maintaining the highest safety standards. His hands-on approach and commitment to client relationships have been the foundation of our success.",
-    experience: "25+ years",
+    bio: "Veteran founder with extensive experience in construction. Jason leads Taylor Leonard Corp with a commitment to quality and client satisfaction across all projects.",
+    experience: "30+ years",
     specialties: ["Project Leadership", "Client Relations", "Strategic Planning"],
   },
   {
-    name: "Maria Rodriguez",
-    title: "Vice President of Operations",
+    name: "Sam",
+    title: "Operations Manager",
     image: "/placeholder.svg?height=300&width=300",
-    bio: "Maria brings 18 years of operational excellence to JLTC. Her expertise in project management and team coordination ensures every project runs smoothly from start to finish.",
-    experience: "18 years",
+    bio: "Sam brings operational excellence to Taylor Leonard Corp, ensuring smooth project execution and quality control across all construction activities.",
+    experience: "20+ years",
     specialties: ["Operations Management", "Quality Control", "Team Leadership"],
   },
   {
-    name: "David Chen",
-    title: "Chief Project Manager",
+    name: "Joe",
+    title: "Project Manager",
     image: "/placeholder.svg?height=300&width=300",
-    bio: "David's engineering background and 15 years of project management experience help us tackle the most complex construction challenges with precision and innovation.",
-    experience: "15 years",
-    specialties: ["Project Management", "Engineering Solutions", "Risk Management"],
-  },
-  {
-    name: "Sarah Mitchell",
-    title: "Director of Safety & Compliance",
-    image: "/placeholder.svg?height=300&width=300",
-    bio: "Sarah's dedication to safety excellence has helped JLTC maintain our industry-leading safety record. Her proactive approach to compliance keeps our teams and clients protected.",
-    experience: "12 years",
-    specialties: ["Safety Management", "Regulatory Compliance", "Training Programs"],
+    bio: "Joe's project management expertise helps tackle complex construction challenges with precision and ensures projects are delivered on time and within budget.",
+    experience: "15+ years",
+    specialties: ["Project Management", "Construction Coordination", "Client Communication"],
   },
 ]
 
 const timeline = [
   {
-    year: "1998",
-    title: "Company Founded",
+    year: "1990",
+    title: "Brush Ups Founded",
     description:
-      "Jason Leonard Taylor establishes JLTC with a focus on quality residential construction and client satisfaction.",
+      "The company began as Brush Ups, establishing a foundation in construction services.",
   },
   {
     year: "2003",
-    title: "Commercial Expansion",
-    description: "Expanded into commercial construction, completing our first major office building project.",
+    title: "Rebranded to Taylor Leonard Corp",
+    description: "After significant events, the company was rebranded and reorganized as Taylor Leonard Corp.",
   },
   {
-    year: "2008",
+    year: "2010",
+    title: "Commercial Expansion",
+    description: "Expanded into major commercial construction, focusing on banks, schools, and medical buildings.",
+  },
+  {
+    year: "2015",
     title: "Safety Excellence",
     description:
-      "Achieved industry-leading safety certification and implemented comprehensive safety training programs.",
+      "Achieved exceptional safety record with no health or safety violations, establishing industry-leading standards.",
   },
   {
-    year: "2012",
-    title: "Sustainable Building",
-    description: "Became certified in green building practices and completed our first LEED-certified project.",
+    year: "2020",
+    title: "Property Management Services",
+    description: "Added property management services as resident GC, tailored for commercial buildings.",
   },
   {
-    year: "2018",
-    title: "Technology Integration",
+    year: "2024",
+    title: "Over 2,000 Projects",
     description:
-      "Invested in cutting-edge construction technology and project management systems for enhanced efficiency.",
-  },
-  {
-    year: "2023",
-    title: "25 Years Strong",
-    description:
-      "Celebrating 25 years of excellence with over 125 completed projects and a growing team of dedicated professionals.",
+      "Celebrating over 2,000 completed projects with 100% satisfaction rating and $50M+ in total project value.",
   },
 ]
 
@@ -81,32 +72,32 @@ const coreValues = [
   {
     icon: Shield,
     title: "Safety First",
-    description: "Every decision we make prioritizes the safety and well-being of our team, clients, and communities.",
+    description: "No records of health or safety violations - we prioritize the safety and well-being of everyone.",
   },
   {
     icon: Award,
     title: "Quality Excellence",
-    description: "We're committed to delivering exceptional craftsmanship that stands the test of time.",
+    description: "100% satisfaction rating across 2,000+ projects with exceptional craftsmanship.",
   },
   {
     icon: Handshake,
-    title: "Honest Relationships",
-    description: "We build lasting partnerships through transparency, integrity, and open communication.",
+    title: "Trusted Partnerships",
+    description: "Trusted with top financial institutions and providing security for high-profile projects.",
   },
   {
     icon: Target,
-    title: "Reliable Delivery",
-    description: "Our clients count on us to deliver projects on time, on budget, and beyond expectations.",
+    title: "Full Service",
+    description: "Complete design-build services from initial schematics through final construction.",
   },
   {
     icon: Users,
-    title: "Team Excellence",
-    description: "We invest in our people because great teams build great projects.",
+    title: "Family Owned",
+    description: "Veteran founded and family owned business with deep commitment to our community.",
   },
   {
     icon: Clock,
-    title: "Continuous Improvement",
-    description: "We're always learning, growing, and finding better ways to serve our clients.",
+    title: "Proven Experience",
+    description: "Over 30 years of experience with 575+ completed projects and 2M+ square feet built.",
   },
 ]
 
@@ -118,19 +109,19 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h1 className="text-3xl md:text-5xl font-bold mb-4 md:mb-6">About JLTC</h1>
+              <h1 className="text-3xl md:text-5xl font-bold mb-4 md:mb-6">About Taylor Leonard Corp</h1>
               <p className="text-lg md:text-xl text-slate-300 mb-6 md:mb-8">
-                For over 25 years, we've been more than just builders—we've been partners in bringing visions to life.
-                Our story is one of steady growth, unwavering values, and a simple commitment: to do right by our
-                clients, our team, and our community.
+                Since 1990, we've been a family-owned, veteran-founded construction company delivering exceptional 
+                results across commercial and residential markets. Our commitment to quality and safety has earned 
+                us a 100% satisfaction rating across over 2,000 completed projects.
               </p>
               <div className="grid grid-cols-2 gap-4 md:gap-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-orange-500 mb-2">1998</div>
+                  <div className="text-3xl font-bold text-orange-500 mb-2">1990</div>
                   <div className="text-sm text-slate-400">Founded</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-orange-500 mb-2">125+</div>
+                  <div className="text-3xl font-bold text-orange-500 mb-2">2000+</div>
                   <div className="text-sm text-slate-400">Projects Completed</div>
                 </div>
               </div>
@@ -138,7 +129,7 @@ export default function AboutPage() {
             <div className="relative">
               <Image
                 src="/placeholder.svg?height=500&width=600"
-                alt="JLTC team at construction site"
+                alt="Taylor Leonard Corp team at construction site"
                 width={600}
                 height={500}
                 className="rounded-lg shadow-xl"
@@ -161,33 +152,33 @@ export default function AboutPage() {
 
             <div className="prose prose-lg max-w-none text-slate-600">
               <p className="text-xl leading-relaxed mb-6">
-                JLTC began with a simple belief: construction should be about more than just building structures—it
-                should be about building relationships, trust, and lasting value for our clients and communities.
+                Taylor Leonard Corp began with a simple belief: construction should be about more than just building 
+                structures—it should be about building relationships, trust, and lasting value for our clients and communities.
               </p>
 
               <p className="mb-6">
-                When Jason Leonard Taylor founded our company in 1998, he brought with him years of hands-on experience
-                and a vision for how construction could be done better. Not flashier or faster, but better—with more
-                attention to detail, clearer communication, and a genuine commitment to doing what's right.
+                Originally founded as Brush Ups in 1990, our company was rebranded and reorganized as Taylor Leonard Corp 
+                in 2003. This transformation marked the beginning of our current era of excellence, bringing together 
+                veteran leadership and a commitment to exceptional service.
               </p>
 
               <p className="mb-6">
-                Over the years, we've grown from a small residential contractor to a full-service construction company
-                handling everything from luxury homes to complex commercial projects. But our core values haven't
-                changed. We still believe in showing up every day with the same work ethic, the same attention to
-                safety, and the same respect for our clients that got us started.
+                As a family-owned, veteran-founded business, we've grown to serve both commercial and residential markets, 
+                with 60% of our work in commercial construction including banks, schools, medical buildings, and warehousing, 
+                and 40% in residential projects. We provide complete design-build services, handling everything from initial 
+                schematics through final construction.
               </p>
 
               <p className="mb-6">
-                We're proud of what we've built—not just the buildings, but the relationships, the reputation, and the
-                team of dedicated professionals who make it all possible. Every project is a chance to prove ourselves
-                again, and we don't take that responsibility lightly.
+                Our partnership with ServiPro and our role as resident general contractor for commercial property management 
+                services demonstrates our commitment to long-term client relationships. We're trusted by top financial 
+                institutions, providing security and reliability in every project we undertake.
               </p>
 
               <p className="text-lg font-medium text-slate-800">
-                Today, JLTC stands as a testament to what's possible when you combine experience, integrity, and a
-                genuine desire to serve others. We're not the biggest construction company out there, and that's by
-                design. We'd rather be known for the quality of our work than the quantity of our projects.
+                Today, Taylor Leonard Corp stands as a testament to what's possible when you combine experience, integrity, 
+                and a genuine desire to serve others. With over 2,000 completed projects, 2 million+ square feet built, 
+                and a perfect safety record, we continue to set the standard for construction excellence.
               </p>
             </div>
           </div>
@@ -231,7 +222,7 @@ export default function AboutPage() {
             <div>
               <h2 className="text-3xl font-bold text-slate-900 mb-6">What We Deliver</h2>
               <p className="text-lg text-slate-600 mb-8">
-                Every JLTC project comes with our complete commitment to excellence. Here's what you can expect when you
+                Every Taylor Leonard Corp project comes with our complete commitment to excellence. Here's what you can expect when you
                 work with us:
               </p>
 
@@ -241,10 +232,9 @@ export default function AboutPage() {
                     <Shield className="h-5 w-5 text-orange-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-slate-900 mb-2">Safety-First Approach</h3>
+                    <h3 className="font-semibold text-slate-900 mb-2">Perfect Safety Record</h3>
                     <p className="text-slate-600">
-                      Industry-leading safety protocols that protect everyone on the job site and ensure peace of mind
-                      for our clients.
+                      No records of any health or safety violations - we maintain the highest safety standards on every project.
                     </p>
                   </div>
                 </div>
@@ -254,10 +244,9 @@ export default function AboutPage() {
                     <Award className="h-5 w-5 text-orange-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-slate-900 mb-2">Exceptional Craftsmanship</h3>
+                    <h3 className="font-semibold text-slate-900 mb-2">100% Satisfaction</h3>
                     <p className="text-slate-600">
-                      Attention to detail and quality materials that result in buildings designed to last for
-                      generations.
+                      Perfect satisfaction rating across over 2,000 completed projects with exceptional attention to detail.
                     </p>
                   </div>
                 </div>
@@ -267,23 +256,21 @@ export default function AboutPage() {
                     <Handshake className="h-5 w-5 text-orange-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-slate-900 mb-2">Clear Communication</h3>
+                    <h3 className="font-semibold text-slate-900 mb-2">Trusted by Financial Institutions</h3>
                     <p className="text-slate-600">
-                      Regular updates, transparent pricing, and honest conversations throughout every phase of your
-                      project.
+                      Providing security and reliability for top financial institutions through our proven track record.
                     </p>
                   </div>
                 </div>
 
                 <div className="flex items-start space-x-4">
                   <div className="p-2 bg-orange-100 rounded-lg flex-shrink-0">
-                    <Clock className="h-5 w-5 text-orange-600" />
+                    <Target className="h-5 w-5 text-orange-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-slate-900 mb-2">On-Time, On-Budget Delivery</h3>
+                    <h3 className="font-semibold text-slate-900 mb-2">Full Service Design-Build</h3>
                     <p className="text-slate-600">
-                      Reliable project management that respects your timeline and budget without compromising on
-                      quality.
+                      Complete services from design and construction schematics through final build and delivery.
                     </p>
                   </div>
                 </div>
@@ -293,9 +280,9 @@ export default function AboutPage() {
                     <Users className="h-5 w-5 text-orange-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-slate-900 mb-2">Collaborative Partnership</h3>
+                    <h3 className="font-semibold text-slate-900 mb-2">Family Owned Values</h3>
                     <p className="text-slate-600">
-                      We work with you, not just for you, ensuring your vision guides every decision we make.
+                      Veteran founded and family owned business with personal commitment to every client relationship.
                     </p>
                   </div>
                 </div>
@@ -305,15 +292,15 @@ export default function AboutPage() {
             <div className="relative">
               <Image
                 src="/placeholder.svg?height=600&width=500"
-                alt="JLTC construction quality"
+                alt="Taylor Leonard Corp construction quality"
                 width={500}
                 height={600}
                 className="rounded-lg shadow-xl"
               />
               <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-lg shadow-lg">
-                <div className="text-2xl font-bold text-orange-500 mb-1">0.85</div>
-                <div className="text-sm text-slate-600">EMR Safety Rating</div>
-                <div className="text-xs text-slate-500 mt-1">Industry Leading</div>
+                <div className="text-2xl font-bold text-orange-500 mb-1">$50M+</div>
+                <div className="text-sm text-slate-600">Total Project Value</div>
+                <div className="text-xs text-slate-500 mt-1">2,000+ Projects</div>
               </div>
             </div>
           </div>
@@ -326,12 +313,12 @@ export default function AboutPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-slate-900 mb-4">Our Leadership Team</h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              Meet the experienced professionals who guide JLTC's vision and ensure every project meets our high
+              Meet the experienced professionals who guide Taylor Leonard Corp's vision and ensure every project meets our high
               standards.
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+          <div className="grid sm:grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 max-w-4xl mx-auto">
             {teamMembers.map((member, index) => (
               <Card key={index} className="text-center hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
@@ -369,7 +356,7 @@ export default function AboutPage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-slate-900 mb-4">Our Journey</h2>
             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-              25 years of steady growth, continuous learning, and unwavering commitment to our clients and community.
+              Over 30 years of steady growth, continuous learning, and unwavering commitment to our clients and community.
             </p>
           </div>
 
