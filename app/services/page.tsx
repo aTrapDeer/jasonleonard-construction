@@ -7,7 +7,6 @@ import {
   ArrowRight,
   Building2,
   Compass,
-  Hammer,
   Shield,
   Clock,
   Users,
@@ -265,10 +264,9 @@ export default function ServicesPage() {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12">
-            {mainServices.map((service, index) => {
+            {mainServices.map((service) => {
               const Icon = service.icon
               const isExpanded = expandedService === service.id
-              const isEven = index % 2 === 0
 
               return (
                 <Card
