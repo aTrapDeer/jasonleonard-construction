@@ -33,47 +33,47 @@ export function Footer() {
           {/* Company Info */}
           <div className="sm:col-span-2 lg:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">JL</span>
+              <div className="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-lg">TL</span>
               </div>
               <div>
-                <div className="font-bold text-white text-lg">JLTC</div>
+                <div className="font-bold text-white text-lg">Taylor Leonard Corp</div>
                 <div className="text-xs text-slate-400 -mt-1">CONSTRUCTION</div>
               </div>
             </div>
             <p className="text-slate-300 mb-6 max-w-md">
-              Building excellence for over 25 years. From commercial developments to luxury residential projects, JLTC
-              delivers exceptional results with safety-first practices.
+              Family-owned, veteran-founded construction company since 2003. Full-service design-build specialists 
+              trusted by top financial institutions with no safety violations on record.
             </p>
 
             {/* Contact Info */}
             <div className="space-y-2 mb-6">
               <div className="flex items-center space-x-2 text-slate-300">
                 <MapPin className="h-4 w-4" />
-                <span>123 Construction Way, Builder City, BC 12345</span>
+                <span>2017 S Moor Dr, Foristell, MO 63348</span>
               </div>
               <div className="flex items-center space-x-2 text-slate-300">
                 <Phone className="h-4 w-4" />
-                <span>(555) 123-4567</span>
+                <span>314-489-3229 (9am - 5pm)</span>
               </div>
               <div className="flex items-center space-x-2 text-slate-300">
                 <Mail className="h-4 w-4" />
-                <span>info@jltconstruction.com</span>
+                <span>taylorleonardcorp@gmail.com</span>
               </div>
             </div>
 
             {/* Social Links */}
             <div className="flex space-x-4">
-              <Link href="#" className="text-slate-400 hover:text-orange-500 transition-colors">
+              <Link href="#" className="text-slate-400 hover:text-blue-500 transition-colors">
                 <Facebook className="h-5 w-5" />
               </Link>
-              <Link href="#" className="text-slate-400 hover:text-orange-500 transition-colors">
+              <Link href="#" className="text-slate-400 hover:text-blue-500 transition-colors">
                 <Twitter className="h-5 w-5" />
               </Link>
-              <Link href="#" className="text-slate-400 hover:text-orange-500 transition-colors">
+              <Link href="#" className="text-slate-400 hover:text-blue-500 transition-colors">
                 <Linkedin className="h-5 w-5" />
               </Link>
-              <Link href="#" className="text-slate-400 hover:text-orange-500 transition-colors">
+              <Link href="#" className="text-slate-400 hover:text-blue-500 transition-colors">
                 <Instagram className="h-5 w-5" />
               </Link>
             </div>
@@ -85,7 +85,7 @@ export function Footer() {
             <ul className="space-y-2">
               {markets.map((item) => (
                 <li key={item.name}>
-                  <Link href={item.href} className="text-slate-300 hover:text-orange-500 transition-colors">
+                  <Link href={item.href} className="text-slate-300 hover:text-blue-500 transition-colors">
                     {item.name}
                   </Link>
                 </li>
@@ -99,7 +99,7 @@ export function Footer() {
             <ul className="space-y-2">
               {services.map((item) => (
                 <li key={item.name}>
-                  <Link href={item.href} className="text-slate-300 hover:text-orange-500 transition-colors">
+                  <Link href={item.href} className="text-slate-300 hover:text-blue-500 transition-colors">
                     {item.name}
                   </Link>
                 </li>
@@ -113,7 +113,7 @@ export function Footer() {
             <ul className="space-y-2">
               {company.map((item) => (
                 <li key={item.name}>
-                  <Link href={item.href} className="text-slate-300 hover:text-orange-500 transition-colors">
+                  <Link href={item.href} className="text-slate-300 hover:text-blue-500 transition-colors">
                     {item.name}
                   </Link>
                 </li>
@@ -127,7 +127,7 @@ export function Footer() {
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="mb-4 md:mb-0">
               <h3 className="font-semibold text-white mb-2">Stay Updated</h3>
-              <p className="text-slate-300">Get the latest news and project updates from JLTC.</p>
+              <p className="text-slate-300">Get the latest news and project updates from Taylor Leonard Corp.</p>
             </div>
             <div className="flex flex-col sm:flex-row w-full sm:w-auto">
               <Input
@@ -135,7 +135,7 @@ export function Footer() {
                 placeholder="Enter your email"
                 className="bg-slate-800 border-slate-700 text-white placeholder-slate-400 rounded-r-none sm:rounded-r-none mb-2 sm:mb-0"
               />
-              <Button className="bg-orange-500 hover:bg-orange-600 rounded-l-none sm:rounded-l-none">Subscribe</Button>
+              <Button className="bg-blue-500 hover:bg-blue-600 rounded-l-none sm:rounded-l-none">Subscribe</Button>
             </div>
           </div>
         </div>
@@ -143,13 +143,13 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-slate-800 mt-8 pt-8 flex flex-col md:flex-row items-center justify-between">
           <p className="text-slate-400 text-sm">
-            © {new Date().getFullYear()} Jason Leonard Taylor Construction. All rights reserved.
+            © {new Date().getFullYear()} Taylor Leonard Corp. All rights reserved.
           </p>
           <div className="flex space-x-4 md:space-x-6 mt-4 md:mt-0 text-center sm:text-left">
-            <Link href="/privacy" className="text-slate-400 hover:text-orange-500 text-sm transition-colors">
+            <Link href="/privacy" className="text-slate-400 hover:text-blue-500 text-sm transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/terms" className="text-slate-400 hover:text-orange-500 text-sm transition-colors">
+            <Link href="/terms" className="text-slate-400 hover:text-blue-500 text-sm transition-colors">
               Terms of Service
             </Link>
           </div>

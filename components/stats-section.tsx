@@ -82,7 +82,7 @@ function AnimatedCounter({ target, format, suffix }: { target: number; format?: 
   }, [target])
 
   return (
-    <span className="text-5xl md:text-6xl font-thin text-white group-hover:text-orange-400 transition-colors duration-500">
+    <span className="text-5xl md:text-6xl font-thin text-white group-hover:text-blue-400 transition-colors duration-500">
       {formatNumber(count, format)}
       {suffix}
     </span>
@@ -95,15 +95,15 @@ export function StatsSection() {
       <div className="container mx-auto px-4">
         <div className="zoom-animate text-center mb-20">
           <h2 className="text-6xl md:text-7xl font-thin text-white mb-8">Excellence in Numbers</h2>
-          <div className="w-32 h-1 bg-gradient-to-r from-orange-500 to-orange-600 mx-auto" />
+          <div className="w-32 h-1 bg-gradient-to-r from-blue-500 to-blue-600 mx-auto" />
         </div>
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
           {stats.map((stat, index) => (
             <div key={index} className="zoom-animate group cursor-pointer" style={{ transitionDelay: stat.delay }}>
-              <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-8 shadow-2xl hover:shadow-orange-500/20 transition-all duration-700 group-hover:scale-110 group-hover:-translate-y-4 border border-slate-700/50">
+              <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-8 shadow-2xl hover:shadow-blue-500/20 transition-all duration-700 group-hover:scale-110 group-hover:-translate-y-4 border border-slate-700/50">
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-125 transition-transform duration-500">
+                  <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-125 transition-transform duration-500">
                     <stat.icon className="h-8 w-8 text-white" />
                   </div>
                   <div className="mb-4">

@@ -49,16 +49,16 @@ export default function QuotePage() {
               Thank you for your detailed quote request. Our team will review your project requirements and contact you
               within 2-3 business days to schedule a consultation.
             </p>
-            <div className="bg-orange-50 border border-orange-200 rounded-lg p-4 mb-6">
-              <h3 className="font-semibold text-orange-800 mb-2">What happens next?</h3>
-              <ul className="text-sm text-orange-700 space-y-1 text-left">
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
+              <h3 className="font-semibold text-blue-800 mb-2">What happens next?</h3>
+              <ul className="text-sm text-blue-700 space-y-1 text-left">
                 <li>• Initial review of your project details (24-48 hours)</li>
                 <li>• Site visit scheduling call from our team</li>
                 <li>• On-site consultation and measurements</li>
                 <li>• Detailed quote delivery (5-7 business days)</li>
               </ul>
             </div>
-            <Button onClick={() => setIsSubmitted(false)} className="bg-orange-500 hover:bg-orange-600">
+            <Button onClick={() => setIsSubmitted(false)} className="bg-blue-500 hover:bg-blue-600">
               Submit Another Request
             </Button>
           </CardContent>
@@ -80,21 +80,21 @@ export default function QuotePage() {
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-8 max-w-3xl mx-auto">
               <div className="text-center">
-                <div className="p-4 bg-orange-500 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                <div className="p-4 bg-blue-500 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                   <FileText className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="font-semibold mb-2">Submit Details</h3>
                 <p className="text-sm text-slate-300">Provide project information and requirements</p>
               </div>
               <div className="text-center">
-                <div className="p-4 bg-orange-500 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                <div className="p-4 bg-blue-500 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                   <Calendar className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="font-semibold mb-2">Site Consultation</h3>
                 <p className="text-sm text-slate-300">Schedule an on-site visit with our experts</p>
               </div>
               <div className="text-center">
-                <div className="p-4 bg-orange-500 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                <div className="p-4 bg-blue-500 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                   <Clock className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="font-semibold mb-2">Receive Quote</h3>
@@ -299,7 +299,7 @@ export default function QuotePage() {
                   <div className="border-2 border-dashed border-slate-300 rounded-lg p-6 text-center">
                     <Upload className="h-12 w-12 text-slate-400 mx-auto mb-4" />
                     <Label htmlFor="fileUpload" className="cursor-pointer">
-                      <span className="text-orange-600 hover:text-orange-700 font-medium">Click to upload files</span>
+                      <span className="text-blue-600 hover:text-blue-700 font-medium">Click to upload files</span>
                       <span className="text-slate-600"> or drag and drop</span>
                     </Label>
                     <Input
@@ -411,11 +411,11 @@ export default function QuotePage() {
                       <Checkbox id="terms" name="terms" required />
                       <Label htmlFor="terms" className="text-sm text-slate-600">
                         I agree to the{" "}
-                        <a href="/privacy" className="text-orange-600 hover:underline">
+                        <a href="/privacy" className="text-blue-600 hover:underline">
                           Privacy Policy
                         </a>{" "}
                         and{" "}
-                        <a href="/terms" className="text-orange-600 hover:underline">
+                        <a href="/terms" className="text-blue-600 hover:underline">
                           Terms of Service
                         </a>{" "}
                         *
@@ -423,9 +423,9 @@ export default function QuotePage() {
                     </div>
                   </div>
 
-                  <div className="bg-orange-50 border border-orange-200 rounded-lg p-4">
-                    <h4 className="font-semibold text-orange-800 mb-2">Quote Process Timeline</h4>
-                    <ul className="text-sm text-orange-700 space-y-1">
+                  <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
+                    <h4 className="font-semibold text-blue-800 mb-2">Quote Process Timeline</h4>
+                    <ul className="text-sm text-blue-700 space-y-1">
                       <li>• Initial review: 24-48 hours</li>
                       <li>• Consultation scheduling: 2-3 business days</li>
                       <li>• Site visit (if needed): Within 1 week</li>
@@ -437,7 +437,7 @@ export default function QuotePage() {
                     type="submit"
                     size="lg"
                     disabled={isSubmitting}
-                    className="w-full bg-orange-500 hover:bg-orange-600 text-lg py-6"
+                    className="w-full bg-blue-500 hover:bg-blue-600 text-lg py-6"
                   >
                     {isSubmitting ? "Submitting Request..." : "Submit Quote Request"}
                   </Button>

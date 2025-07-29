@@ -36,7 +36,7 @@ export default function ContactPage() {
             <p className="text-slate-600 mb-6">
               Thank you for contacting Taylor Leonard Corp. We'll review your message and get back to you within 24 hours.
             </p>
-            <Button onClick={() => setIsSubmitted(false)} className="bg-orange-500 hover:bg-orange-600">
+            <Button onClick={() => setIsSubmitted(false)} className="bg-blue-500 hover:bg-blue-600">
               Send Another Message
             </Button>
           </CardContent>
@@ -77,8 +77,8 @@ export default function ContactPage() {
                 {/* Contact Methods */}
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
-                    <div className="p-3 bg-orange-100 rounded-lg">
-                      <MapPin className="h-6 w-6 text-orange-600" />
+                    <div className="p-3 bg-blue-100 rounded-lg">
+                      <MapPin className="h-6 w-6 text-blue-600" />
                     </div>
                     <div>
                       <h3 className="font-semibold text-slate-900 mb-1">Office Location</h3>
@@ -91,8 +91,8 @@ export default function ContactPage() {
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="p-3 bg-orange-100 rounded-lg">
-                      <Phone className="h-6 w-6 text-orange-600" />
+                    <div className="p-3 bg-blue-100 rounded-lg">
+                      <Phone className="h-6 w-6 text-blue-600" />
                     </div>
                     <div>
                       <h3 className="font-semibold text-slate-900 mb-1">Phone</h3>
@@ -102,8 +102,8 @@ export default function ContactPage() {
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="p-3 bg-orange-100 rounded-lg">
-                      <Mail className="h-6 w-6 text-orange-600" />
+                    <div className="p-3 bg-blue-100 rounded-lg">
+                      <Mail className="h-6 w-6 text-blue-600" />
                     </div>
                     <div>
                       <h3 className="font-semibold text-slate-900 mb-1">Email</h3>
@@ -113,8 +113,8 @@ export default function ContactPage() {
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="p-3 bg-orange-100 rounded-lg">
-                      <Clock className="h-6 w-6 text-orange-600" />
+                    <div className="p-3 bg-blue-100 rounded-lg">
+                      <Clock className="h-6 w-6 text-blue-600" />
                     </div>
                     <div>
                       <h3 className="font-semibold text-slate-900 mb-1">Business Hours</h3>
@@ -128,13 +128,13 @@ export default function ContactPage() {
                 </div>
 
                 {/* Project Consultation */}
-                <Card className="bg-orange-50 border-orange-200">
+                <Card className="bg-blue-50 border-blue-200">
                   <CardContent className="p-6">
                     <h3 className="font-semibold text-slate-900 mb-2">Project Consultation</h3>
                     <p className="text-slate-600 text-sm mb-3">
                       For project consultations and detailed discussions about your construction needs:
                     </p>
-                    <p className="font-semibold text-orange-600">314-489-3229</p>
+                    <p className="font-semibold text-blue-600">314-489-3229</p>
                     <p className="text-xs text-slate-500 mt-1">Available during business hours</p>
                   </CardContent>
                 </Card>
@@ -212,7 +212,7 @@ export default function ContactPage() {
                           type="checkbox"
                           id="newsletter"
                           name="newsletter"
-                          className="mt-1 h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded"
+                          className="mt-1 h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
                         />
                         <Label htmlFor="newsletter" className="text-sm text-slate-600">
                           I'd like to receive updates about Taylor Leonard Corp projects and construction industry insights
@@ -225,15 +225,15 @@ export default function ContactPage() {
                           id="terms"
                           name="terms"
                           required
-                          className="mt-1 h-4 w-4 text-orange-600 focus:ring-orange-500 border-gray-300 rounded"
+                          className="mt-1 h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
                         />
                         <Label htmlFor="terms" className="text-sm text-slate-600">
                           I agree to the{" "}
-                          <a href="/privacy" className="text-orange-600 hover:underline">
+                          <a href="/privacy" className="text-blue-600 hover:underline">
                             Privacy Policy
                           </a>{" "}
                           and{" "}
-                          <a href="/terms" className="text-orange-600 hover:underline">
+                          <a href="/terms" className="text-blue-600 hover:underline">
                             Terms of Service
                           </a>{" "}
                           *
@@ -245,7 +245,7 @@ export default function ContactPage() {
                       type="submit"
                       size="lg"
                       disabled={isSubmitting}
-                      className="w-full bg-orange-500 hover:bg-orange-600 py-3 md:py-4"
+                      className="w-full bg-blue-500 hover:bg-blue-600 py-3 md:py-4"
                     >
                       {isSubmitting ? "Sending Message..." : "Send Message"}
                     </Button>

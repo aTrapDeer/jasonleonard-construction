@@ -75,7 +75,7 @@ export function FeaturedProjects() {
               <div className="relative h-64">
                 <Image src={project.image || "/placeholder.svg"} alt={project.title} fill className="object-cover" />
                 <div className="absolute top-4 left-4">
-                  <Badge className="bg-orange-500 text-white">{project.market}</Badge>
+                  <Badge className="bg-blue-500 text-white">{project.market}</Badge>
                 </div>
               </div>
               <CardContent className="p-6">
@@ -109,7 +109,7 @@ export function FeaturedProjects() {
                   className="object-cover"
                 />
                 <div className="absolute top-4 left-4">
-                  <Badge className="bg-orange-500 text-white">{projects[currentIndex].market}</Badge>
+                  <Badge className="bg-blue-500 text-white">{projects[currentIndex].market}</Badge>
                 </div>
               </div>
               <CardContent className="p-6">
@@ -154,7 +154,7 @@ export function FeaturedProjects() {
               <button
                 key={index}
                 className={`w-2 h-2 rounded-full transition-colors ${
-                  index === currentIndex ? "bg-orange-500" : "bg-slate-300"
+                  index === currentIndex ? "bg-blue-500" : "bg-slate-300"
                 }`}
                 onClick={() => setCurrentIndex(index)}
               />
@@ -163,7 +163,7 @@ export function FeaturedProjects() {
         </div>
 
         <div className="text-center mt-8">
-          <Button asChild size="lg" className="bg-orange-500 hover:bg-orange-600">
+          <Button asChild size="lg" className="bg-blue-500 hover:bg-blue-600">
             <Link href="/projects">
               View All Projects
               <ArrowRight className="ml-2 h-4 w-4" />

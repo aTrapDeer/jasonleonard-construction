@@ -58,7 +58,7 @@ export function TestimonialsSection() {
           <div className="relative">
             <Card className="border-0 shadow-lg">
               <CardContent className="p-8 md:p-12">
-                <Quote className="h-12 w-12 text-orange-500 mb-6" />
+                <Quote className="h-12 w-12 text-blue-500 mb-6" />
                 <blockquote className="text-xl md:text-2xl text-slate-700 mb-8 leading-relaxed">
                   "{testimonials[currentIndex].quote}"
                 </blockquote>
@@ -73,7 +73,7 @@ export function TestimonialsSection() {
                   <div>
                     <div className="font-semibold text-slate-900">{testimonials[currentIndex].author}</div>
                     <div className="text-slate-600">{testimonials[currentIndex].title}</div>
-                    <div className="text-orange-600 font-medium">{testimonials[currentIndex].company}</div>
+                    <div className="text-blue-600 font-medium">{testimonials[currentIndex].company}</div>
                   </div>
                 </div>
               </CardContent>
@@ -104,7 +104,7 @@ export function TestimonialsSection() {
               <button
                 key={index}
                 className={`w-3 h-3 rounded-full transition-colors ${
-                  index === currentIndex ? "bg-orange-500" : "bg-slate-300"
+                  index === currentIndex ? "bg-blue-500" : "bg-slate-300"
                 }`}
                 onClick={() => setCurrentIndex(index)}
               />

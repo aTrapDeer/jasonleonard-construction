@@ -102,12 +102,12 @@ export default function HomePage() {
               opacity: Math.max(1 - scrollY * 0.002, 0),
             }}
           >
-            <Badge className="bg-orange-500/20 text-orange-300 border-orange-500/30 mb-8 px-8 py-3 text-lg font-medium backdrop-blur-sm">
-              Family Owned • Veteran Founded • Since 1990
+            <Badge className="bg-blue-500/20 text-blue-300 border-blue-500/30 mb-8 px-8 py-3 text-lg font-medium backdrop-blur-sm">
+              Family Owned • Veteran Founded • Since 2003
             </Badge>
             <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-thin mb-12 leading-none tracking-tight px-4">
               Taylor Leonard
-              <span className="block font-extralight text-orange-400 transform hover:scale-105 transition-transform duration-500">
+              <span className="block font-extralight text-blue-400 transform hover:scale-105 transition-transform duration-500">
                 Corp
               </span>
             </h1>
@@ -119,7 +119,7 @@ export default function HomePage() {
               <Button
                 size="lg"
                 asChild
-                className="bg-orange-500 hover:bg-orange-600 text-white px-16 py-6 text-xl font-medium rounded-full shadow-2xl hover:shadow-orange-500/25 transition-all duration-500 hover:scale-105"
+                className="bg-blue-500 hover:bg-blue-600 text-white px-16 py-6 text-xl font-medium rounded-full shadow-2xl hover:shadow-blue-500/25 transition-all duration-500 hover:scale-105"
               >
                 <Link href="/projects">Explore Our Work</Link>
               </Button>
@@ -157,7 +157,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="zoom-animate text-center mb-20">
             <h2 className="text-6xl md:text-7xl font-thin text-white mb-8">Excellence in Numbers</h2>
-            <div className="w-32 h-1 bg-gradient-to-r from-orange-500 to-orange-600 mx-auto" />
+            <div className="w-32 h-1 bg-gradient-to-r from-blue-500 to-blue-600 mx-auto" />
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 max-w-7xl mx-auto">
@@ -168,12 +168,12 @@ export default function HomePage() {
               { number: "100%", label: "Satisfaction Rating", icon: Shield, delay: "600ms" },
             ].map((stat, index) => (
               <div key={index} className="zoom-animate group cursor-pointer" style={{ transitionDelay: stat.delay }}>
-                <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-4 sm:p-6 lg:p-8 shadow-2xl hover:shadow-orange-500/20 transition-all duration-700 group-hover:scale-110 group-hover:-translate-y-4 border border-slate-700/50">
+                <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-4 sm:p-6 lg:p-8 shadow-2xl hover:shadow-blue-500/20 transition-all duration-700 group-hover:scale-110 group-hover:-translate-y-4 border border-slate-700/50">
                   <div className="text-center">
-                    <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-5 lg:mb-6 group-hover:scale-125 transition-transform duration-500">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-5 lg:mb-6 group-hover:scale-125 transition-transform duration-500">
                       <stat.icon className="h-6 w-6 sm:h-7 sm:w-7 lg:h-8 lg:w-8 text-white" />
                     </div>
-                    <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-thin text-white mb-2 sm:mb-3 lg:mb-4 group-hover:text-orange-400 transition-colors duration-500">
+                    <div className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-thin text-white mb-2 sm:mb-3 lg:mb-4 group-hover:text-blue-400 transition-colors duration-500">
                       {stat.number}
                     </div>
                     <div className="text-sm sm:text-base lg:text-lg font-medium text-slate-400 tracking-wide group-hover:text-white transition-colors duration-500">
@@ -193,9 +193,9 @@ export default function HomePage() {
           <div className="zoom-animate text-center mb-20">
             <h2 className="text-6xl md:text-7xl font-thin text-white mb-8">Our Expertise</h2>
             <p className="text-2xl font-light text-slate-400 max-w-4xl mx-auto leading-relaxed">
-              60% Commercial • 40% Residential Construction Services
+              Full Service Design-Build Construction Services
             </p>
-            <div className="w-32 h-1 bg-gradient-to-r from-orange-500 to-orange-600 mx-auto mt-8" />
+            <div className="w-32 h-1 bg-gradient-to-r from-blue-500 to-blue-600 mx-auto mt-8" />
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
@@ -220,7 +220,7 @@ export default function HomePage() {
               },
             ].map((service, index) => (
               <div key={index} className="zoom-animate group cursor-pointer" style={{ transitionDelay: service.delay }}>
-                <div className="relative overflow-hidden rounded-3xl bg-slate-900 h-96 group-hover:scale-105 transition-all duration-700 shadow-2xl hover:shadow-orange-500/20 border border-slate-700/50">
+                <div className="relative overflow-hidden rounded-3xl bg-slate-900 h-96 group-hover:scale-105 transition-all duration-700 shadow-2xl hover:shadow-blue-500/20 border border-slate-700/50">
                   <div className="absolute inset-0 group-hover:scale-110 transition-transform duration-1000">
                     <Image
                       src={service.image || "/placeholder.svg"}
@@ -231,13 +231,13 @@ export default function HomePage() {
                   </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
                   <div className="absolute bottom-8 left-8 right-8 text-white transform group-hover:translate-y-0 translate-y-4 transition-transform duration-500">
-                    <h3 className="text-3xl font-light mb-4 group-hover:text-orange-400 transition-colors duration-500">
+                    <h3 className="text-3xl font-light mb-4 group-hover:text-blue-400 transition-colors duration-500">
                       {service.title}
                     </h3>
                     <p className="text-slate-300 font-light leading-relaxed text-lg mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200">
                       {service.description}
                     </p>
-                    <div className="flex items-center text-orange-400 group-hover:translate-x-2 transition-transform duration-300 opacity-0 group-hover:opacity-100 delay-300">
+                    <div className="flex items-center text-blue-400 group-hover:translate-x-2 transition-transform duration-300 opacity-0 group-hover:opacity-100 delay-300">
                       <span className="text-lg font-medium tracking-wide">EXPLORE SERVICE</span>
                       <ArrowRight className="ml-3 h-5 w-5" />
                     </div>
@@ -255,12 +255,12 @@ export default function HomePage() {
           <div className="zoom-animate max-w-7xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div className="space-y-8">
-                <Badge className="bg-orange-500/20 text-orange-300 border-orange-500/30 px-6 py-3 text-lg backdrop-blur-sm">
+                <Badge className="bg-blue-500/20 text-blue-300 border-blue-500/30 px-6 py-3 text-lg backdrop-blur-sm">
                   Featured Project
                 </Badge>
                 <h2 className="text-6xl md:text-7xl font-thin leading-tight">
                   Bonan
-                  <span className="block text-orange-400 font-extralight">Towers</span>
+                  <span className="block text-blue-400 font-extralight">Towers</span>
                 </h2>
                 <p className="text-2xl font-light text-slate-300 leading-relaxed">
                   A stunning 81,000 sq ft commercial development that showcases our expertise in large-scale construction. 
@@ -268,18 +268,18 @@ export default function HomePage() {
                 </p>
                 <div className="grid grid-cols-2 gap-12">
                   <div className="text-center">
-                    <div className="text-5xl font-thin text-orange-400 mb-3">81K</div>
+                    <div className="text-5xl font-thin text-blue-400 mb-3">81K</div>
                     <div className="text-lg font-medium text-slate-400 tracking-wide">SQUARE FEET</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-5xl font-thin text-orange-400 mb-3">4</div>
+                    <div className="text-5xl font-thin text-blue-400 mb-3">4</div>
                     <div className="text-lg font-medium text-slate-400 tracking-wide">YEARS</div>
                   </div>
                 </div>
                 <Button
                   asChild
                   size="lg"
-                  className="bg-orange-500 hover:bg-orange-600 text-white px-12 py-6 rounded-full font-medium text-xl hover:scale-105 transition-all duration-300"
+                  className="bg-blue-500 hover:bg-blue-600 text-white px-12 py-6 rounded-full font-medium text-xl hover:scale-105 transition-all duration-300"
                 >
                   <Link href="/projects">
                     View All Projects
@@ -289,7 +289,7 @@ export default function HomePage() {
               </div>
               <div className="relative">
                 <div className="zoom-animate">
-                  <div className="relative rounded-3xl overflow-hidden shadow-2xl hover:shadow-orange-500/20 transition-all duration-700 group">
+                  <div className="relative rounded-3xl overflow-hidden shadow-2xl hover:shadow-blue-500/20 transition-all duration-700 group">
                     <Image
                       src="https://bonantowers.com/wp-content/uploads/2024/12/04-3.jpg"
                       alt="Bonan Towers"
@@ -311,15 +311,15 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="zoom-animate max-w-6xl mx-auto text-center">
             <div className="relative">
-              <div className="w-32 h-1 bg-gradient-to-r from-orange-500 to-orange-600 mx-auto mb-16" />
+              <div className="w-32 h-1 bg-gradient-to-r from-blue-500 to-blue-600 mx-auto mb-16" />
               <blockquote className="text-4xl md:text-5xl font-light text-white leading-relaxed mb-16 relative">
-                <span className="text-orange-400 text-8xl absolute -top-8 -left-4 opacity-50">"</span>
+                <span className="text-blue-400 text-8xl absolute -top-8 -left-4 opacity-50">"</span>
                 Taylor Leonard Corp transformed our vision into reality with unmatched precision and professionalism. 
                 Their attention to detail is extraordinary.
-                <span className="text-orange-400 text-8xl absolute -bottom-8 -right-4 opacity-50">"</span>
+                <span className="text-blue-400 text-8xl absolute -bottom-8 -right-4 opacity-50">"</span>
               </blockquote>
               <div className="flex items-center justify-center space-x-6">
-                <div className="w-20 h-20 rounded-full overflow-hidden border-4 border-orange-500/30">
+                <div className="w-20 h-20 rounded-full overflow-hidden border-4 border-blue-500/30">
                   <Image
                     src="/placeholder.svg?height=80&width=80&text=Client"
                     alt="Client"
@@ -344,7 +344,7 @@ export default function HomePage() {
           <div className="zoom-animate text-center max-w-5xl mx-auto">
             <h2 className="text-6xl md:text-7xl font-thin text-white mb-12 leading-tight">
               Ready to Build
-              <span className="block text-orange-400 font-extralight">Something Extraordinary?</span>
+              <span className="block text-blue-400 font-extralight">Something Extraordinary?</span>
             </h2>
             <p className="text-2xl font-light text-slate-300 mb-16 leading-relaxed max-w-4xl mx-auto">
               Let's discuss your vision and create something remarkable together. Your dream project awaits.
@@ -353,7 +353,7 @@ export default function HomePage() {
               <Button
                 size="lg"
                 asChild
-                className="bg-orange-500 hover:bg-orange-600 text-white px-16 py-6 text-xl font-medium rounded-full shadow-2xl hover:shadow-orange-500/25 transition-all duration-500 hover:scale-105"
+                className="bg-blue-500 hover:bg-blue-600 text-white px-16 py-6 text-xl font-medium rounded-full shadow-2xl hover:shadow-blue-500/25 transition-all duration-500 hover:scale-105"
               >
                 <Link href="/contact">Start Your Project</Link>
               </Button>

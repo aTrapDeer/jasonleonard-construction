@@ -79,19 +79,19 @@ export default function MarketsPage() {
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
               <div className="text-center">
-                <div className="text-3xl font-bold text-orange-500 mb-2">500+</div>
+                <div className="text-3xl font-bold text-blue-500 mb-2">500+</div>
                 <div className="text-sm text-slate-400">Residential Projects</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-orange-500 mb-2">75+</div>
+                <div className="text-3xl font-bold text-blue-500 mb-2">75+</div>
                 <div className="text-sm text-slate-400">Commercial Buildings</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-orange-500 mb-2">$50M+</div>
+                <div className="text-3xl font-bold text-blue-500 mb-2">$50M+</div>
                 <div className="text-sm text-slate-400">Total Project Value</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-orange-500 mb-2">100%</div>
+                <div className="text-3xl font-bold text-blue-500 mb-2">100%</div>
                 <div className="text-sm text-slate-400">Client Satisfaction</div>
               </div>
             </div>
@@ -105,10 +105,10 @@ export default function MarketsPage() {
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center mb-12 md:mb-16">
             <div>
               <div className="flex items-center mb-4">
-                <div className="p-3 bg-orange-100 rounded-lg mr-4">
-                  <Building2 className="h-8 w-8 text-orange-600" />
+                <div className="p-3 bg-blue-100 rounded-lg mr-4">
+                  <Building2 className="h-8 w-8 text-blue-600" />
                 </div>
-                <Badge className="bg-orange-500 text-white">60% Commercial Focus</Badge>
+                <Badge className="bg-blue-500 text-white">Commercial Specialists</Badge>
               </div>
               <h2 className="text-4xl font-bold text-slate-900 mb-6">Commercial Construction</h2>
               <p className="text-lg text-slate-600 mb-6">
@@ -118,23 +118,23 @@ export default function MarketsPage() {
               </p>
               <div className="grid sm:grid-cols-2 gap-4 md:gap-6 mb-6 md:mb-8">
                 <div className="flex items-center">
-                  <Users className="h-5 w-5 text-orange-500 mr-2" />
+                  <Users className="h-5 w-5 text-blue-500 mr-2" />
                   <span className="text-slate-700">Banks & Financial</span>
                 </div>
                 <div className="flex items-center">
-                  <Award className="h-5 w-5 text-orange-500 mr-2" />
+                  <Award className="h-5 w-5 text-blue-500 mr-2" />
                   <span className="text-slate-700">Schools & Education</span>
                 </div>
                 <div className="flex items-center">
-                  <Clock className="h-5 w-5 text-orange-500 mr-2" />
+                  <Clock className="h-5 w-5 text-blue-500 mr-2" />
                   <span className="text-slate-700">Medical Buildings</span>
                 </div>
                 <div className="flex items-center">
-                  <DollarSign className="h-5 w-5 text-orange-500 mr-2" />
+                  <DollarSign className="h-5 w-5 text-blue-500 mr-2" />
                   <span className="text-slate-700">Warehousing</span>
                 </div>
               </div>
-              <Button asChild size="lg" className="bg-orange-500 hover:bg-orange-600">
+              <Button asChild size="lg" className="bg-blue-500 hover:bg-blue-600">
                 <Link href="/quote">
                   Get Commercial Quote
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -150,7 +150,7 @@ export default function MarketsPage() {
                 className="rounded-lg shadow-xl"
               />
               <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-lg shadow-lg">
-                <div className="text-2xl font-bold text-orange-500 mb-1">75+</div>
+                <div className="text-2xl font-bold text-blue-500 mb-1">75+</div>
                 <div className="text-sm text-slate-600">Commercial Projects</div>
                 <div className="text-xs text-slate-500 mt-1">Including Bonan Towers</div>
               </div>
@@ -174,11 +174,11 @@ export default function MarketsPage() {
                     <span>•</span>
                     <span>{project.size}</span>
                   </div>
-                  <div className="text-orange-600 font-semibold mb-4">{project.budget}</div>
+                  <div className="text-blue-600 font-semibold mb-4">{project.budget}</div>
                   <div className="space-y-1">
                     {project.features.map((feature, idx) => (
                       <div key={idx} className="text-sm text-slate-600 flex items-center">
-                        <div className="w-1.5 h-1.5 bg-orange-500 rounded-full mr-2" />
+                        <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2" />
                         {feature}
                       </div>
                     ))}
@@ -203,17 +203,17 @@ export default function MarketsPage() {
                 className="rounded-lg shadow-xl"
               />
               <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-lg shadow-lg">
-                <div className="text-2xl font-bold text-orange-500 mb-1">500+</div>
+                <div className="text-2xl font-bold text-blue-500 mb-1">500+</div>
                 <div className="text-sm text-slate-600">Residential Projects</div>
                 <div className="text-xs text-slate-500 mt-1">Custom Homes & Renovations</div>
               </div>
             </div>
             <div className="order-1 lg:order-2">
               <div className="flex items-center mb-4">
-                <div className="p-3 bg-orange-100 rounded-lg mr-4">
-                  <Home className="h-8 w-8 text-orange-600" />
+                <div className="p-3 bg-blue-100 rounded-lg mr-4">
+                  <Home className="h-8 w-8 text-blue-600" />
                 </div>
-                <Badge className="bg-orange-500 text-white">40% Residential Focus</Badge>
+                <Badge className="bg-blue-500 text-white">40% Residential Focus</Badge>
               </div>
               <h2 className="text-4xl font-bold text-slate-900 mb-6">Residential Construction</h2>
               <p className="text-lg text-slate-600 mb-6">
@@ -223,23 +223,23 @@ export default function MarketsPage() {
               </p>
               <div className="grid sm:grid-cols-2 gap-4 md:gap-6 mb-6 md:mb-8">
                 <div className="flex items-center">
-                  <Users className="h-5 w-5 text-orange-500 mr-2" />
+                  <Users className="h-5 w-5 text-blue-500 mr-2" />
                   <span className="text-slate-700">Custom Homes</span>
                 </div>
                 <div className="flex items-center">
-                  <Award className="h-5 w-5 text-orange-500 mr-2" />
+                  <Award className="h-5 w-5 text-blue-500 mr-2" />
                   <span className="text-slate-700">Quality Craftsmanship</span>
                 </div>
                 <div className="flex items-center">
-                  <Clock className="h-5 w-5 text-orange-500 mr-2" />
+                  <Clock className="h-5 w-5 text-blue-500 mr-2" />
                   <span className="text-slate-700">Timely Delivery</span>
                 </div>
                 <div className="flex items-center">
-                  <DollarSign className="h-5 w-5 text-orange-500 mr-2" />
+                  <DollarSign className="h-5 w-5 text-blue-500 mr-2" />
                   <span className="text-slate-700">Value Engineering</span>
                 </div>
               </div>
-              <Button asChild size="lg" className="bg-orange-500 hover:bg-orange-600">
+              <Button asChild size="lg" className="bg-blue-500 hover:bg-blue-600">
                 <Link href="/quote">
                   Get Residential Quote
                   <ArrowRight className="ml-2 h-4 w-4" />
@@ -265,11 +265,11 @@ export default function MarketsPage() {
                     <span>•</span>
                     <span>{project.size}</span>
                   </div>
-                  <div className="text-orange-600 font-semibold mb-4">{project.budget}</div>
+                  <div className="text-blue-600 font-semibold mb-4">{project.budget}</div>
                   <div className="space-y-1">
                     {project.features.map((feature, idx) => (
                       <div key={idx} className="text-sm text-slate-600 flex items-center">
-                        <div className="w-1.5 h-1.5 bg-orange-500 rounded-full mr-2" />
+                        <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2" />
                         {feature}
                       </div>
                     ))}
@@ -286,7 +286,7 @@ export default function MarketsPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <Badge className="bg-orange-500 text-white mb-4 px-4 py-2">Featured Project</Badge>
+              <Badge className="bg-blue-500 text-white mb-4 px-4 py-2">Featured Project</Badge>
               <h2 className="text-4xl font-bold text-slate-900 mb-4">Bonan Towers</h2>
               <p className="text-lg text-slate-600 max-w-3xl mx-auto">
                 Our flagship commercial project showcasing 81,000 square feet of exceptional construction 
@@ -307,11 +307,11 @@ export default function MarketsPage() {
               <div>
                 <div className="grid grid-cols-2 gap-6 mb-8">
                   <div className="text-center p-6 bg-slate-50 rounded-lg">
-                    <div className="text-3xl font-bold text-orange-500 mb-2">81K</div>
+                    <div className="text-3xl font-bold text-blue-500 mb-2">81K</div>
                     <div className="text-sm text-slate-600">Square Feet</div>
                   </div>
                   <div className="text-center p-6 bg-slate-50 rounded-lg">
-                    <div className="text-3xl font-bold text-orange-500 mb-2">4</div>
+                    <div className="text-3xl font-bold text-blue-500 mb-2">4</div>
                     <div className="text-sm text-slate-600">Years</div>
                   </div>
                 </div>
@@ -320,7 +320,7 @@ export default function MarketsPage() {
                   featuring advanced systems, quality materials, and meticulous attention to detail throughout 
                   the construction process.
                 </p>
-                <Button asChild size="lg" className="bg-orange-500 hover:bg-orange-600">
+                <Button asChild size="lg" className="bg-blue-500 hover:bg-blue-600">
                   <Link href="/projects">
                     View All Projects
                     <ArrowRight className="ml-2 h-4 w-4" />
@@ -341,7 +341,7 @@ export default function MarketsPage() {
             and professional service.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="bg-orange-500 hover:bg-orange-600 px-8 py-4 text-lg">
+            <Button asChild size="lg" className="bg-blue-500 hover:bg-blue-600 px-8 py-4 text-lg">
               <Link href="/quote">Schedule Consultation</Link>
             </Button>
             <Button

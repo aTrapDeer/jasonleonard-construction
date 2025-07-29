@@ -117,11 +117,11 @@ export default function AboutPage() {
               </p>
               <div className="grid grid-cols-2 gap-4 md:gap-6">
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-orange-500 mb-2">1990</div>
+                  <div className="text-3xl font-bold text-blue-500 mb-2">1990</div>
                   <div className="text-sm text-slate-400">Founded</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-orange-500 mb-2">2000+</div>
+                  <div className="text-3xl font-bold text-blue-500 mb-2">2000+</div>
                   <div className="text-sm text-slate-400">Projects Completed</div>
                 </div>
               </div>
@@ -202,8 +202,8 @@ export default function AboutPage() {
               return (
                 <Card key={index} className="text-center hover:shadow-lg transition-shadow">
                   <CardContent className="p-8">
-                    <div className="p-4 bg-orange-100 rounded-full w-16 h-16 mx-auto mb-6 flex items-center justify-center">
-                      <Icon className="h-8 w-8 text-orange-600" />
+                    <div className="p-4 bg-blue-100 rounded-full w-16 h-16 mx-auto mb-6 flex items-center justify-center">
+                      <Icon className="h-8 w-8 text-blue-600" />
                     </div>
                     <h3 className="text-xl font-semibold text-slate-900 mb-4">{value.title}</h3>
                     <p className="text-slate-600">{value.description}</p>
@@ -228,8 +228,8 @@ export default function AboutPage() {
 
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="p-2 bg-orange-100 rounded-lg flex-shrink-0">
-                    <Shield className="h-5 w-5 text-orange-600" />
+                  <div className="p-2 bg-blue-100 rounded-lg flex-shrink-0">
+                    <Shield className="h-5 w-5 text-blue-600" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-2">Perfect Safety Record</h3>
@@ -240,8 +240,8 @@ export default function AboutPage() {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="p-2 bg-orange-100 rounded-lg flex-shrink-0">
-                    <Award className="h-5 w-5 text-orange-600" />
+                  <div className="p-2 bg-blue-100 rounded-lg flex-shrink-0">
+                    <Award className="h-5 w-5 text-blue-600" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-2">100% Satisfaction</h3>
@@ -252,8 +252,8 @@ export default function AboutPage() {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="p-2 bg-orange-100 rounded-lg flex-shrink-0">
-                    <Handshake className="h-5 w-5 text-orange-600" />
+                  <div className="p-2 bg-blue-100 rounded-lg flex-shrink-0">
+                    <Handshake className="h-5 w-5 text-blue-600" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-2">Trusted by Financial Institutions</h3>
@@ -264,8 +264,8 @@ export default function AboutPage() {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="p-2 bg-orange-100 rounded-lg flex-shrink-0">
-                    <Target className="h-5 w-5 text-orange-600" />
+                  <div className="p-2 bg-blue-100 rounded-lg flex-shrink-0">
+                    <Target className="h-5 w-5 text-blue-600" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-2">Full Service Design-Build</h3>
@@ -276,8 +276,8 @@ export default function AboutPage() {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="p-2 bg-orange-100 rounded-lg flex-shrink-0">
-                    <Users className="h-5 w-5 text-orange-600" />
+                  <div className="p-2 bg-blue-100 rounded-lg flex-shrink-0">
+                    <Users className="h-5 w-5 text-blue-600" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-2">Family Owned Values</h3>
@@ -298,7 +298,7 @@ export default function AboutPage() {
                 className="rounded-lg shadow-xl"
               />
               <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-lg shadow-lg">
-                <div className="text-2xl font-bold text-orange-500 mb-1">$50M+</div>
+                <div className="text-2xl font-bold text-blue-500 mb-1">$50M+</div>
                 <div className="text-sm text-slate-600">Total Project Value</div>
                 <div className="text-xs text-slate-500 mt-1">2,000+ Projects</div>
               </div>
@@ -331,7 +331,7 @@ export default function AboutPage() {
                     />
                   </div>
                   <h3 className="text-xl font-semibold text-slate-900 mb-1">{member.name}</h3>
-                  <p className="text-orange-600 font-medium mb-2">{member.title}</p>
+                  <p className="text-blue-600 font-medium mb-2">{member.title}</p>
                   <Badge variant="secondary" className="mb-4">
                     {member.experience}
                   </Badge>
@@ -363,15 +363,15 @@ export default function AboutPage() {
           <div className="max-w-4xl mx-auto">
             <div className="relative">
               {/* Timeline line */}
-              <div className="absolute left-4 md:left-8 top-0 bottom-0 w-0.5 bg-orange-200 hidden sm:block" />
+              <div className="absolute left-4 md:left-8 top-0 bottom-0 w-0.5 bg-blue-200 hidden sm:block" />
 
               <div className="space-y-8">
                 {timeline.map((item, index) => (
                   <div key={index} className="relative flex items-start">
-                    <div className="hidden sm:flex absolute left-2 md:left-6 w-4 h-4 bg-orange-500 rounded-full border-4 border-white shadow-lg" />
+                    <div className="hidden sm:flex absolute left-2 md:left-6 w-4 h-4 bg-blue-500 rounded-full border-4 border-white shadow-lg" />
                     <div className="sm:ml-8 md:ml-16 bg-slate-50 rounded-lg p-4 md:p-6 w-full">
                       <div className="flex items-center mb-2">
-                        <Badge className="bg-orange-500 text-white mr-3">{item.year}</Badge>
+                        <Badge className="bg-blue-500 text-white mr-3">{item.year}</Badge>
                         <h3 className="text-xl font-semibold text-slate-900">{item.title}</h3>
                       </div>
                       <p className="text-slate-600">{item.description}</p>
@@ -393,7 +393,7 @@ export default function AboutPage() {
             with a conversation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="bg-orange-500 hover:bg-orange-600 px-8 py-4 text-lg">
+            <Button asChild size="lg" className="bg-blue-500 hover:bg-blue-600 px-8 py-4 text-lg">
               <Link href="/quote">
                 Get Your Quote
                 <ArrowRight className="ml-2 h-5 w-5" />

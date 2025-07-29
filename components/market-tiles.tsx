@@ -57,11 +57,11 @@ export function MarketTiles() {
             const Icon = market.icon
             return (
               <Link key={index} href={market.href}>
-                <Card className="h-full hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-slate-200 hover:border-orange-200">
-                  <CardContent className="p-4 md:p-6">
+                <Card className="h-full hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border-slate-200 hover:border-blue-200">
+                  <CardContent className="p-4 md:p-6 h-full flex flex-col">
                     <div className="flex items-center mb-3 md:mb-4">
-                      <div className="p-2 md:p-3 bg-orange-100 rounded-lg mr-3 md:mr-4">
-                        <Icon className="h-5 w-5 md:h-6 md:w-6 text-orange-600" />
+                      <div className="p-2 md:p-3 bg-blue-100 rounded-lg mr-3 md:mr-4">
+                        <Icon className="h-5 w-5 md:h-6 md:w-6 text-blue-600" />
                       </div>
                       <h3 className="text-lg md:text-xl font-semibold text-slate-900">{market.title}</h3>
                     </div>

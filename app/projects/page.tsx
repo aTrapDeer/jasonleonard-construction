@@ -279,19 +279,19 @@ export default function ProjectsPage() {
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8 max-w-3xl mx-auto">
               <div className="text-center">
-                <div className="text-3xl font-bold text-orange-500 mb-2">575+</div>
+                <div className="text-3xl font-bold text-blue-500 mb-2">575+</div>
                 <div className="text-sm text-slate-400">Projects Completed</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-orange-500 mb-2">$50M+</div>
+                <div className="text-3xl font-bold text-blue-500 mb-2">$50M+</div>
                 <div className="text-sm text-slate-400">Total Project Value</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-orange-500 mb-2">2M+</div>
+                <div className="text-3xl font-bold text-blue-500 mb-2">2M+</div>
                 <div className="text-sm text-slate-400">Square Feet Built</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-orange-500 mb-2">100%</div>
+                <div className="text-3xl font-bold text-blue-500 mb-2">100%</div>
                 <div className="text-sm text-slate-400">Satisfaction Rating</div>
               </div>
             </div>
@@ -400,7 +400,7 @@ export default function ProjectsPage() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                     <div className="absolute top-4 left-4">
-                      <Badge className="bg-orange-500 text-white">{project.category}</Badge>
+                      <Badge className="bg-blue-500 text-white">{project.category}</Badge>
                     </div>
                     <div className="absolute top-4 right-4">
                       <Badge variant="secondary" className="bg-white/90 text-slate-800">
@@ -431,7 +431,7 @@ export default function ProjectsPage() {
                       <DialogTrigger asChild>
                         <Button
                           variant="outline"
-                          className="w-full bg-transparent hover:bg-orange-50 hover:border-orange-200"
+                          className="w-full bg-transparent hover:bg-blue-50 hover:border-blue-200"
                           onClick={() => setSelectedProject(project)}
                         >
                           <Eye className="mr-2 h-4 w-4" />
@@ -456,7 +456,7 @@ export default function ProjectsPage() {
                         className="object-cover"
                       />
                       <div className="absolute top-4 left-4">
-                        <Badge className="bg-orange-500 text-white">{project.category}</Badge>
+                        <Badge className="bg-blue-500 text-white">{project.category}</Badge>
                       </div>
                     </div>
                     <CardContent className="flex-1 p-6">
@@ -475,15 +475,15 @@ export default function ProjectsPage() {
 
                       <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-4">
                         <div className="flex items-center text-sm">
-                          <Ruler className="h-4 w-4 mr-2 text-orange-500" />
+                          <Ruler className="h-4 w-4 mr-2 text-blue-500" />
                           <span>{project.size}</span>
                         </div>
                         <div className="flex items-center text-sm">
-                          <Calendar className="h-4 w-4 mr-2 text-orange-500" />
+                          <Calendar className="h-4 w-4 mr-2 text-blue-500" />
                           <span>{project.duration}</span>
                         </div>
                         <div className="flex items-center text-sm">
-                          <Filter className="h-4 w-4 mr-2 text-orange-500" />
+                          <Filter className="h-4 w-4 mr-2 text-blue-500" />
                           <span>{project.market}</span>
                         </div>
                       </div>
@@ -492,7 +492,7 @@ export default function ProjectsPage() {
                         <DialogTrigger asChild>
                           <Button
                             variant="outline"
-                            className="bg-transparent hover:bg-orange-50 hover:border-orange-200"
+                            className="bg-transparent hover:bg-blue-50 hover:border-blue-200"
                             onClick={() => setSelectedProject(project)}
                           >
                             <Eye className="mr-2 h-4 w-4" />
@@ -537,26 +537,26 @@ export default function ProjectsPage() {
                   className="object-cover"
                 />
                 <div className="absolute top-4 left-4">
-                  <Badge className="bg-orange-500 text-white">{selectedProject.category}</Badge>
+                  <Badge className="bg-blue-500 text-white">{selectedProject.category}</Badge>
                 </div>
               </div>
 
               {/* Project Stats */}
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 p-4 bg-slate-50 rounded-lg">
                 <div className="text-center">
-                  <div className="text-lg font-semibold text-orange-600">{selectedProject.size}</div>
+                  <div className="text-lg font-semibold text-blue-600">{selectedProject.size}</div>
                   <div className="text-sm text-slate-600">Size</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-lg font-semibold text-orange-600">{selectedProject.budget}</div>
+                  <div className="text-lg font-semibold text-blue-600">{selectedProject.budget}</div>
                   <div className="text-sm text-slate-600">Budget</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-lg font-semibold text-orange-600">{selectedProject.duration}</div>
+                  <div className="text-lg font-semibold text-blue-600">{selectedProject.duration}</div>
                   <div className="text-sm text-slate-600">Duration</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-lg font-semibold text-orange-600">{selectedProject.completionYear}</div>
+                  <div className="text-lg font-semibold text-blue-600">{selectedProject.completionYear}</div>
                   <div className="text-sm text-slate-600">Completed</div>
                 </div>
               </div>
@@ -584,7 +584,7 @@ export default function ProjectsPage() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                     {selectedProject.features.map((feature, index) => (
                       <div key={index} className="flex items-center">
-                        <div className="w-2 h-2 bg-orange-500 rounded-full mr-3" />
+                        <div className="w-2 h-2 bg-blue-500 rounded-full mr-3" />
                         <span className="text-slate-600">{feature}</span>
                       </div>
                     ))}
@@ -596,7 +596,7 @@ export default function ProjectsPage() {
                   <h3 className="text-lg font-semibold mb-3">Services Provided</h3>
                   <div className="flex flex-wrap gap-2">
                     {selectedProject.services.map((service, index) => (
-                      <Badge key={index} variant="secondary" className="bg-orange-100 text-orange-800">
+                      <Badge key={index} variant="secondary" className="bg-blue-100 text-blue-800">
                         {service}
                       </Badge>
                     ))}
@@ -605,7 +605,7 @@ export default function ProjectsPage() {
 
                 {/* Testimonial */}
                 {selectedProject.testimonial && (
-                  <div className="bg-orange-50 border border-orange-200 rounded-lg p-6">
+                  <div className="bg-blue-50 border border-blue-200 rounded-lg p-6">
                     <blockquote className="text-slate-700 mb-4 italic">
                       "{selectedProject.testimonial.quote}"
                     </blockquote>
@@ -619,7 +619,7 @@ export default function ProjectsPage() {
 
               {/* CTA */}
               <div className="flex gap-4 pt-4 border-t">
-                <Button asChild className="bg-orange-500 hover:bg-orange-600">
+                <Button asChild className="bg-blue-500 hover:bg-blue-600">
                   <Link href="/quote">
                     Start Your Project
                     <ExternalLink className="ml-2 h-4 w-4" />
