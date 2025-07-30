@@ -47,7 +47,7 @@ Fox School District - Meramec Heights Elementary School
 Working to provide accessibility for disabled 
 
 (homepage featuring)
-Bonan Towers (highlight) ~4 years
+Bonan Towers (highlight) ~4 year management contract
 81k sq feet
 https://bonantowers.com/wp-content/uploads/2024/12/04-3.jpg
 https://bonantowers.com/wp-content/uploads/2025/03/0002-1-2.jpg

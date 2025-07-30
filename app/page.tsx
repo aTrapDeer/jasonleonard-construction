@@ -147,7 +147,7 @@ export default function HomePage() {
             }}
           >
             <Badge className="bg-blue-500/20 text-blue-300 border-blue-500/30 mb-8 px-8 py-3 text-lg font-medium backdrop-blur-sm">
-              Family Owned • Veteran Founded • Since 2003
+              Family Owned • Veteran Founded • Since 1990
             </Badge>
             <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-thin mb-12 leading-none tracking-tight px-4">
               Taylor Leonard
@@ -247,19 +247,19 @@ export default function HomePage() {
               {
                 title: "Design-Build",
                 description: "Complete design and construction services from concept to completion",
-                image: "/placeholder.svg?height=400&width=600&text=Design+Build",
+                image: "/images/homepage/designbuild.jpg",
                 delay: "0ms",
               },
               {
                 title: "Commercial Construction",
                 description: "Banks, schools, medical buildings, and warehousing projects",
-                image: "/placeholder.svg?height=400&width=600&text=Commercial",
+                image: "/images/markets/pnb-bank.jpg",
                 delay: "300ms",
               },
               {
                 title: "Residential Construction",
                 description: "Custom homes and residential projects with exceptional craftsmanship",
-                image: "/placeholder.svg?height=400&width=600&text=Residential",
+                image: "/images/homepage/residentialconstruction.jpg",
                 delay: "600ms",
               },
             ].map((service, index) => (
@@ -308,7 +308,7 @@ export default function HomePage() {
                 </h2>
                 <p className="text-2xl font-light text-slate-300 leading-relaxed">
                   A stunning 81,000 sq ft commercial development that showcases our expertise in large-scale construction. 
-                  Completed over 4 years with exceptional attention to detail and quality craftsmanship.
+                  Currently under a 4-year management and maintenance contract, demonstrating our commitment to long-term client partnerships.
                 </p>
                 <div className="grid grid-cols-2 gap-12">
                   <div className="text-center">
@@ -317,7 +317,7 @@ export default function HomePage() {
                   </div>
                   <div className="text-center">
                     <div className="text-5xl font-thin text-blue-400 mb-3">4</div>
-                    <div className="text-lg font-medium text-slate-400 tracking-wide">YEARS</div>
+                    <div className="text-lg font-medium text-slate-400 tracking-wide">YEAR CONTRACT</div>
                   </div>
                 </div>
                 <Button

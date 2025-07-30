@@ -54,7 +54,7 @@ const mainServices = [
     id: "commercial-construction",
     title: "Commercial Construction",
     icon: Building2,
-    gradient: "from-orange-500 to-red-500",
+    gradient: "from-blue-600 to-blue-700",
     description: "Specialized construction for banks, schools, medical buildings, and warehousing facilities.",
     features: [
       "Bank and financial institution expertise",
@@ -78,7 +78,7 @@ const mainServices = [
     id: "residential-construction",
     title: "Residential Construction",
     icon: HardHat,
-    gradient: "from-green-500 to-emerald-600",
+    gradient: "from-slate-500 to-slate-600",
     description: "Custom residential construction with exceptional craftsmanship and attention to detail.",
     features: [
       "Custom home construction",
@@ -102,7 +102,7 @@ const mainServices = [
     id: "property-management",
     title: "Property Management Services",
     icon: Settings,
-    gradient: "from-purple-500 to-pink-500",
+    gradient: "from-blue-400 to-blue-500",
     description: "Resident general contractor services tailored for commercial buildings and ongoing maintenance.",
     features: [
       "Resident GC services",
@@ -126,7 +126,7 @@ const mainServices = [
     id: "construction-management",
     title: "Construction Management",
     icon: Calculator,
-    gradient: "from-red-500 to-rose-600",
+    gradient: "from-slate-600 to-slate-700",
     description: "Professional oversight and coordination ensuring quality, schedule, and budget objectives.",
     features: [
       "Professional project oversight",
@@ -150,7 +150,7 @@ const mainServices = [
     id: "consulting",
     title: "Construction Consulting",
     icon: Lightbulb,
-    gradient: "from-teal-500 to-cyan-600",
+    gradient: "from-blue-300 to-blue-400",
     description: "Expert guidance and strategic advice throughout your construction journey.",
     features: [
       "Expert industry knowledge",
@@ -211,18 +211,18 @@ export default function ServicesPage() {
   }
 
   return (
-    <div className="min-h-screen bg-slate-50 pt-16">
+    <div className="min-h-screen bg-white pt-16">
       {/* Hero Section */}
       <section className="py-16 md:py-24 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white relative overflow-hidden">
         <div className="absolute inset-0 construction-texture opacity-10" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <Badge className="bg-orange-500 text-white mb-6 px-4 py-2 text-sm">
+            <Badge className="bg-blue-500 text-white mb-6 px-4 py-2 text-sm">
               Full Service Design-Build Construction
             </Badge>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               Expert Services for
-              <span className="text-orange-500 block">Every Construction Need</span>
+              <span className="text-blue-500 block">Every Construction Need</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-300 mb-8 max-w-3xl mx-auto">
               From initial design schematics to final construction, we deliver excellence at every stage. 
@@ -230,7 +230,7 @@ export default function ServicesPage() {
               on budget, and beyond expectations.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-orange-500 hover:bg-orange-600 px-8 py-4 text-lg">
+              <Button asChild size="lg" className="bg-blue-500 hover:bg-blue-600 px-8 py-4 text-lg">
                 <Link href="/quote">
                   Get Your Quote
                   <ArrowRight className="ml-2 h-5 w-5" />
@@ -253,7 +253,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Main Services Grid */}
-      <section className="py-16 md:py-20">
+      <section className="py-16 md:py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Our Core Services</h2>
@@ -305,7 +305,7 @@ export default function ServicesPage() {
                         <ul className="space-y-2">
                           {service.features.slice(0, 3).map((feature, idx) => (
                             <li key={idx} className="text-slate-600 text-sm flex items-start">
-                              <div className="w-1.5 h-1.5 bg-orange-500 rounded-full mt-2 mr-3 flex-shrink-0" />
+                              <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 mr-3 flex-shrink-0" />
                               {feature}
                             </li>
                           ))}
@@ -369,7 +369,7 @@ export default function ServicesPage() {
 
                             <div className="mt-6 pt-4 border-t">
                               <div className="flex gap-3">
-                                <Button asChild size="sm" className="bg-orange-500 hover:bg-orange-600 flex-1">
+                                <Button asChild size="sm" className="bg-blue-500 hover:bg-blue-600 flex-1">
                                   <Link href="/quote">Get Quote</Link>
                                 </Button>
                                 <Button asChild size="sm" variant="outline" className="flex-1 bg-transparent">
@@ -390,7 +390,7 @@ export default function ServicesPage() {
                       <Button
                         variant="ghost"
                         size="sm"
-                        className="text-orange-600 hover:text-orange-700 hover:bg-orange-50"
+                        className="text-blue-600 hover:text-blue-700 hover:bg-blue-50"
                       >
                         {isExpanded ? "Show Less" : "Learn More"}
                         <ArrowRight className={`ml-2 h-4 w-4 transition-transform ${isExpanded ? "rotate-90" : ""}`} />
@@ -405,7 +405,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Specialty Services */}
-      <section className="py-16 md:py-20 bg-white">
+      <section className="py-16 md:py-20 bg-slate-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Specialty Services</h2>
@@ -433,7 +433,7 @@ export default function ServicesPage() {
                     <div className="space-y-2">
                       {service.features.map((feature, idx) => (
                         <div key={idx} className="text-sm text-slate-500 flex items-center justify-center">
-                          <div className="w-1.5 h-1.5 bg-orange-500 rounded-full mr-2" />
+                          <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2" />
                           {feature}
                         </div>
                       ))}
@@ -447,7 +447,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Why Choose Taylor Leonard Corp */}
-      <section className="py-16 md:py-20 bg-slate-50">
+      <section className="py-16 md:py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Why Choose Taylor Leonard Corp?</h2>
@@ -457,7 +457,7 @@ export default function ServicesPage() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center">
-                <div className="w-16 h-16 bg-orange-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Award className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-slate-900 mb-2">30+ Years</h3>
@@ -471,14 +471,14 @@ export default function ServicesPage() {
                 <p className="text-slate-600">No Safety Violations</p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Users className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-slate-900 mb-2">Family Owned</h3>
                 <p className="text-slate-600">Veteran Founded</p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Target className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-slate-900 mb-2">100%</h3>
@@ -497,7 +497,7 @@ export default function ServicesPage() {
             Let's discuss which service is the perfect fit for your construction needs and bring your vision to life.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="bg-orange-500 hover:bg-orange-600 px-8 py-4 text-lg">
+            <Button asChild size="lg" className="bg-blue-500 hover:bg-blue-600 px-8 py-4 text-lg">
               <Link href="/quote">
                 Get Your Quote
                 <ArrowRight className="ml-2 h-5 w-5" />

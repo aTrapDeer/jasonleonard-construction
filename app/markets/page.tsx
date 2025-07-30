@@ -42,7 +42,7 @@ const commercialProjects = [
     size: "8,000 SQ FT",
     budget: "$1.2M - $1.8M",
     duration: "14 months",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/images/markets/pnb-bank.jpg",
     features: ["Security systems", "Vault construction", "Customer areas", "Drive-through facilities"],
   },
   {
@@ -51,7 +51,7 @@ const commercialProjects = [
     size: "15,000 SQ FT",
     budget: "$2.5M - $3.2M",
     duration: "16 months",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/images/markets/foxschool.jpg",
     features: ["ADA compliance", "Safety-first design", "Flexible classrooms", "Modern HVAC"],
   },
   {
@@ -60,7 +60,7 @@ const commercialProjects = [
     size: "12,000 SQ FT",
     budget: "$2.0M - $2.8M",
     duration: "18 months",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/images/markets/medical.webp",
     features: ["Medical-grade systems", "Patient accessibility", "Specialized equipment", "Infection control"],
   },
 ]
@@ -289,8 +289,8 @@ export default function MarketsPage() {
               <Badge className="bg-blue-500 text-white mb-4 px-4 py-2">Featured Project</Badge>
               <h2 className="text-4xl font-bold text-slate-900 mb-4">Bonan Towers</h2>
               <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-                Our flagship commercial project showcasing 81,000 square feet of exceptional construction 
-                over 4 years, demonstrating our expertise in large-scale commercial development.
+                Our flagship commercial project showcasing 81,000 square feet of exceptional construction. 
+                Currently serving under a 4-year management and maintenance contract, demonstrating our expertise in ongoing commercial facility management.
               </p>
             </div>
             

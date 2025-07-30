@@ -21,20 +21,20 @@ const projects = [
     completionYear: 2024,
     size: "81,000 SQ FT",
     budget: "Major Commercial Project",
-    duration: "4 years",
+    duration: "4-year management contract",
     image: "https://bonantowers.com/wp-content/uploads/2024/12/04-3.jpg",
     gallery: [
       "https://bonantowers.com/wp-content/uploads/2024/12/04-3.jpg",
       "https://bonantowers.com/wp-content/uploads/2025/03/0002-1-2.jpg",
     ],
     description:
-      "Our flagship commercial development showcasing 81,000 square feet of exceptional construction over 4 years, demonstrating our expertise in large-scale commercial projects.",
+      "Our flagship commercial development showcasing 81,000 square feet of exceptional construction. Currently under a 4-year management and maintenance contract, demonstrating our expertise in ongoing commercial facility management.",
     challenge:
-      "Managing a large-scale commercial development with complex systems and coordination requirements over an extended timeline.",
+      "Providing comprehensive management and maintenance services for a large-scale commercial development with complex systems and coordination requirements.",
     solution:
-      "Implemented comprehensive project management systems with phased construction approach, ensuring quality control throughout the 4-year development process.",
+      "Implemented comprehensive facility management systems with ongoing maintenance programs, ensuring optimal building performance throughout our 4-year service contract.",
     results:
-      "Successfully delivered a landmark commercial development that stands as a testament to our construction capabilities and attention to detail.",
+      "Successfully managing a landmark commercial development that stands as a testament to our construction capabilities and long-term client partnership commitment.",
     features: ["Large-scale construction", "Advanced building systems", "Quality materials", "Professional project management", "Long-term development"],
     services: ["Design-Build", "Commercial Construction", "Project Management"],
     testimonial: {
@@ -53,9 +53,9 @@ const projects = [
     size: "Educational Facility",
     budget: "Educational Project",
     duration: "18 months",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/images/markets/foxschool.jpg",
     gallery: [
-      "/placeholder.svg?height=400&width=600",
+      "/images/markets/foxschool.jpg",
       "/placeholder.svg?height=400&width=600",
       "/placeholder.svg?height=400&width=600",
     ],
@@ -92,9 +92,9 @@ const projects = [
     size: "8,000 SQ FT",
     budget: "Commercial Project",
     duration: "14 months",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/images/markets/pnb-bank.jpg",
     gallery: [
-      "/placeholder.svg?height=400&width=600",
+      "/images/markets/pnb-bank.jpg",
       "/placeholder.svg?height=400&width=600",
       "/placeholder.svg?height=400&width=600",
     ],
@@ -170,9 +170,9 @@ const projects = [
     size: "12,000 SQ FT",
     budget: "Medical Project",
     duration: "16 months",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/images/markets/medical.webp",
     gallery: [
-      "/placeholder.svg?height=400&width=600",
+      "/images/markets/medical.webp",
       "/placeholder.svg?height=400&width=600",
       "/placeholder.svg?height=400&width=600",
     ],

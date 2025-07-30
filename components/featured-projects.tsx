@@ -15,7 +15,7 @@ const projects = [
     market: "Healthcare",
     location: "Downtown District",
     size: "125,000 SQ FT",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/images/markets/medical.webp",
     description: "State-of-the-art medical facility featuring advanced patient care areas and surgical suites.",
   },
   {
@@ -33,7 +33,7 @@ const projects = [
     market: "Commercial",
     location: "Innovation District",
     size: "200,000 SQ FT",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/images/markets/pnb-bank.jpg",
     description: "Cutting-edge office complex designed for technology companies and startups.",
   },
   {
@@ -42,7 +42,7 @@ const projects = [
     market: "Education",
     location: "Central District",
     size: "85,000 SQ FT",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/images/markets/foxschool.jpg",
     description: "Complete renovation and expansion of historic high school facility.",
   },
 ]
