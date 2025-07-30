@@ -13,12 +13,45 @@ export default function HomePage() {
   const statsRef = useRef<HTMLElement>(null)
   const servicesRef = useRef<HTMLElement>(null)
   const projectRef = useRef<HTMLElement>(null)
+  const videoRef = useRef<HTMLVideoElement>(null)
   const testimonialRef = useRef<HTMLElement>(null)
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY)
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+
+  // Ensure video plays on mobile
+  useEffect(() => {
+    const video = videoRef.current
+    if (video) {
+             const playVideo = async () => {
+         try {
+           video.volume = 0 // Ensure completely silent
+           video.muted = true
+           await video.play()
+         } catch (error) {
+           console.log("Video autoplay prevented:", error)
+           // Fallback - try to play after user interaction
+           const playOnInteraction = () => {
+             video.volume = 0
+             video.muted = true
+             video.play().catch(() => {})
+             document.removeEventListener('touchstart', playOnInteraction)
+             document.removeEventListener('click', playOnInteraction)
+           }
+           document.addEventListener('touchstart', playOnInteraction, { once: true })
+           document.addEventListener('click', playOnInteraction, { once: true })
+         }
+       }
+      
+      if (video.readyState >= 2) {
+        playVideo()
+      } else {
+        video.addEventListener('canplay', playVideo, { once: true })
+      }
+    }
   }, [])
 
   useEffect(() => {
@@ -74,13 +107,23 @@ export default function HomePage() {
         <div className="absolute inset-0 z-0">
           {/* Video Background */}
           <video
+            ref={videoRef}
             autoPlay
             muted
             loop
             playsInline
+            webkit-playsinline="true"
+            preload="auto"
+            controls={false}
+            disablePictureInPicture
             className="absolute inset-0 w-full h-full object-cover"
             style={{
               transform: `scale(${1 + scrollY * 0.0005}) translateY(${scrollY * 0.3}px)`,
+            }}
+            onCanPlay={(e) => {
+              e.currentTarget.play().catch(() => {
+                // Fallback if autoplay fails
+              });
             }}
           >
             <source src="https://d2v2b8qxbz0m8k.cloudfront.net/ConstructionBRoll.mp4" type="video/mp4" />
