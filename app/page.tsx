@@ -72,26 +72,27 @@ export default function HomePage() {
       {/* Hero Section - Immersive Full Screen */}
       <section ref={heroRef} className="relative h-screen flex items-center justify-center">
         <div className="absolute inset-0 z-0">
-          <div
-            className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-black"
-            style={{
-              transform: `translateY(${scrollY * 0.5}px)`,
-            }}
-          />
-          <div
-            className="absolute inset-0 opacity-30"
+          {/* Video Background */}
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
             style={{
               transform: `scale(${1 + scrollY * 0.0005}) translateY(${scrollY * 0.3}px)`,
             }}
           >
-            <Image
-              src="/placeholder.svg?height=1080&width=1920&text=Modern+Architecture"
-              alt="Modern Construction"
-              fill
-              className="object-cover"
-              priority
-            />
-          </div>
+            <source src="https://d2v2b8qxbz0m8k.cloudfront.net/ConstructionBRoll.mp4" type="video/mp4" />
+          </video>
+          
+          {/* Video Overlay */}
+          <div
+            className="absolute inset-0 bg-slate-900/60"
+            style={{
+              transform: `translateY(${scrollY * 0.5}px)`,
+            }}
+          />
         </div>
 
         <div className="relative z-10 text-center max-w-6xl mx-auto px-4">
