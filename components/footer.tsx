@@ -42,7 +42,7 @@ export function Footer() {
               </div>
             </div>
             <p className="text-slate-300 mb-6 max-w-md">
-              Family-owned, veteran-founded construction company since 2003. Full-service design-build specialists 
+              Family-owned, veteran-founded construction company since 1990. Full-service design-build specialists 
               trusted by top financial institutions with no safety violations on record.
             </p>
 

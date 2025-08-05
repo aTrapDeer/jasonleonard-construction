@@ -1,0 +1,13 @@
+- Remove the veteran on frontpage
+- add chiropractor office part of the edward jones
+- add details abour residential upgrades and editing
+- verbage change
+- remove the 100% satisfaction (maybe keep one or two areas about persisting customers happy)
+- Vendor roller showcasing logos of various vendors that work with Taylor ()
+- Create a Careers page
+- Change the "100% satisfaction Rating" on home page to 100% satisfaction guranteed
+- Our Expertise section should have anohter one called, Building Solutions (highlighting cleaning, property management and maintence)
+- remove 100% satisfaction from the projects page
+- reference the structure of https://www.circadia.net/ and the clarity of the site
+- add links - components to Our Expertise
+- remove pages that don't exisit from the footer

@@ -157,7 +157,7 @@ export default function AboutPage() {
               </p>
 
               <p className="mb-6">
-                Originally founded as Brush Ups in 1990, our company was rebranded and reorganized as Taylor Leonard Corp 
+                Originally founded in 1990, our company was rebranded and reorganized as Taylor Leonard Corp 
                 in 2003. This transformation marked the beginning of our current era of excellence, bringing together 
                 veteran leadership and a commitment to exceptional service.
               </p>
