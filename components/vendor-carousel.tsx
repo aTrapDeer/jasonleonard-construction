@@ -103,7 +103,7 @@ export default function VendorCarousel() {
     <section ref={sectionRef} className="py-32 bg-gradient-to-b from-slate-900 to-black relative overflow-hidden">
       <div className="container mx-auto px-4">
         <div className={`text-center mb-20 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <h2 className="text-6xl md:text-7xl font-thin text-white mb-8">Our Trusted Partners</h2>
+          <h2 className="text-6xl md:text-7xl font-thin text-white mb-8">Our Trusted Vendors</h2>
           <p className="text-2xl font-light text-slate-400 max-w-4xl mx-auto leading-relaxed">
             Working with industry-leading vendors to deliver exceptional quality and reliability
           </p>
