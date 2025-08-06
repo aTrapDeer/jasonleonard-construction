@@ -97,6 +97,35 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Accessibility & mobile ergonomics */
+:root {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+input, button, select, textarea {
+  font: inherit;
+}
+@media (hover: none) {
+  .hover\:scale-110:hover,
+  .hover-lift:hover,
+  .group:hover .group-hover\:opacity-100,
+  .group:hover .group-hover\:shadow-2xl {
+    /* Disable heavy hover effects on touch devices */
+    transform: none !important;
+    box-shadow: none !important;
+    opacity: 1 !important;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 /* Zoom and focal point animations */
 .zoom-animate {
   will-change: transform, opacity;
@@ -387,4 +416,11 @@ body {
 
 .animate-fade-in-right {
   animation: fadeInRight 1s ease-out forwards;
+}
+
+/* Slow down marquee on mobile for smoother feel */
+@media (max-width: 640px) {
+  .animate-scroll {
+    animation-duration: 50s !important;
+  }
 }

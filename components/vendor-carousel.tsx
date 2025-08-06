@@ -103,8 +103,8 @@ export default function VendorCarousel() {
     <section ref={sectionRef} className="py-32 bg-gradient-to-b from-slate-900 to-black relative overflow-hidden">
       <div className="container mx-auto px-4">
         <div className={`text-center mb-20 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          <h2 className="text-6xl md:text-7xl font-thin text-white mb-8">Our Trusted Vendors</h2>
-          <p className="text-2xl font-light text-slate-400 max-w-4xl mx-auto leading-relaxed">
+          <h2 className="text-4xl sm:text-5xl md:text-7xl font-thin text-white mb-8">Our Trusted Vendors</h2>
+          <p className="text-lg sm:text-xl md:text-2xl font-light text-slate-400 max-w-4xl mx-auto leading-relaxed">
             Working with industry-leading vendors to deliver exceptional quality and reliability
           </p>
           <div className="w-32 h-1 bg-gradient-to-r from-blue-500 to-blue-600 mx-auto mt-8" />
@@ -112,20 +112,20 @@ export default function VendorCarousel() {
 
         <div className="relative max-w-7xl mx-auto">
           {/* Gradient overlays for smooth fade effect */}
-          <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-slate-900 to-transparent z-10 pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-slate-900 to-transparent z-10 pointer-events-none" />
+          <div className="absolute left-0 top-0 bottom-0 w-16 sm:w-24 md:w-32 bg-gradient-to-r from-slate-900 to-transparent z-10 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-16 sm:w-24 md:w-32 bg-gradient-to-l from-slate-900 to-transparent z-10 pointer-events-none" />
           
           {/* Carousel container */}
-          <div className="flex space-x-16 overflow-hidden">
+          <div className="flex space-x-10 sm:space-x-16 overflow-hidden">
             {/* First set of vendors */}
-            <div className="flex space-x-16 animate-scroll">
+            <div className="flex space-x-10 sm:space-x-16 animate-scroll motion-reduce:animate-none">
               {vendors.map((vendor, index) => (
                 <div
                   key={`first-${index}`}
                   className={`flex-shrink-0 group transition-all duration-700 hover:scale-110 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
                   style={{ transitionDelay: vendor.delay }}
                 >
-                  <div className={`relative backdrop-blur-sm rounded-2xl p-8 border transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20 min-w-[200px] h-[120px] flex items-center justify-center ${
+                  <div className={`relative rounded-2xl p-6 sm:p-8 border transition-all duration-500 min-w-[160px] sm:min-w-[200px] h-[100px] sm:h-[120px] flex items-center justify-center ${
                     vendor.hasWhiteText 
                       ? 'bg-black border-slate-700/50 hover:border-blue-500/50' 
                       : 'bg-white border-slate-300/50 hover:border-blue-500/50'
@@ -136,17 +136,18 @@ export default function VendorCarousel() {
                         alt={vendor.name}
                         width={160}
                         height={80}
-                        className="object-contain max-w-full max-h-full opacity-70 group-hover:opacity-100 transition-all duration-500"
+                        loading="lazy"
+                        className="object-contain max-w-full max-h-full opacity-70 group-hover:opacity-100 transition-all duration-500 hover:motion-safe:opacity-100"
                         style={{ 
                           transform: vendor.scale ? `scale(${vendor.scale})` : 'scale(1)'
                         }}
                       />
-                      {/* Hover overlay */}
-                      <div className={`absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${
+                      {/* Hover overlay - only on hover-capable devices */}
+                      <div className={`absolute inset-0 rounded-2xl opacity-0 transition-opacity duration-500 ${
                         vendor.hasWhiteText 
                           ? 'bg-gradient-to-br from-blue-500/10 to-transparent' 
                           : 'bg-gradient-to-br from-blue-500/5 to-transparent'
-                      }`} />
+                      } md:group-hover:opacity-100`} />
                     </div>
                   </div>
                 </div>
@@ -154,13 +155,13 @@ export default function VendorCarousel() {
             </div>
             
             {/* Duplicate set for seamless loop */}
-            <div className="flex space-x-16 animate-scroll">
+            <div className="flex space-x-10 sm:space-x-16 animate-scroll motion-reduce:animate-none">
               {vendors.map((vendor, index) => (
                 <div
                   key={`second-${index}`}
                   className="flex-shrink-0 group transition-all duration-700 hover:scale-110"
                 >
-                  <div className={`relative backdrop-blur-sm rounded-2xl p-8 border transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20 min-w-[200px] h-[120px] flex items-center justify-center ${
+                  <div className={`relative rounded-2xl p-6 sm:p-8 border transition-all duration-500 min-w-[160px] sm:min-w-[200px] h-[100px] sm:h-[120px] flex items-center justify-center ${
                     vendor.hasWhiteText 
                       ? 'bg-black border-slate-700/50 hover:border-blue-500/50' 
                       : 'bg-white border-slate-300/50 hover:border-blue-500/50'
@@ -171,17 +172,18 @@ export default function VendorCarousel() {
                         alt={vendor.name}
                         width={160}
                         height={80}
-                        className="object-contain max-w-full max-h-full opacity-70 group-hover:opacity-100 transition-all duration-500"
+                        loading="lazy"
+                        className="object-contain max-w-full max-h-full opacity-70 group-hover:opacity-100 transition-all duration-500 hover:motion-safe:opacity-100"
                         style={{ 
                           transform: vendor.scale ? `scale(${vendor.scale})` : 'scale(1)'
                         }}
                       />
-                      {/* Hover overlay */}
-                      <div className={`absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 ${
+                      {/* Hover overlay - only on hover-capable devices */}
+                      <div className={`absolute inset-0 rounded-2xl opacity-0 transition-opacity duration-500 ${
                         vendor.hasWhiteText 
                           ? 'bg-gradient-to-br from-blue-500/10 to-transparent' 
                           : 'bg-gradient-to-br from-blue-500/5 to-transparent'
-                      }`} />
+                      } md:group-hover:opacity-100`} />
                     </div>
                   </div>
                 </div>
