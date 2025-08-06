@@ -295,10 +295,10 @@ export default function HomePage() {
       </section>
 
       {/* Featured Project - Cinematic Reveal */}
-      <section ref={projectRef} className="py-32 bg-gradient-to-b from-black to-slate-900 relative overflow-hidden">
+      <section ref={projectRef} className="py-20 md:py-32 bg-gradient-to-b from-black to-slate-900 relative overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="zoom-animate max-w-7xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="grid lg:grid-cols-2 gap-10 md:gap-16 items-center">
               <div className="space-y-8">
                 <Badge className="bg-blue-500/20 text-blue-300 border-blue-500/30 px-6 py-3 text-lg backdrop-blur-sm">
                   Featured Project
@@ -352,7 +352,7 @@ export default function HomePage() {
       </section>
 
       {/* Testimonial - Floating Quote */}
-      <section ref={testimonialRef} className="py-32 bg-gradient-to-b from-slate-900 to-black relative overflow-hidden">
+      <section ref={testimonialRef} className="pt-12 pb-24 md:py-32 bg-gradient-to-b from-slate-900 to-black relative overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="zoom-animate max-w-6xl mx-auto text-center">
             <div className="relative">
