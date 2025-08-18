@@ -14,18 +14,43 @@ import {
   CheckCircle,
   Lightbulb,
   Settings,
-  Truck,
   HardHat,
   Calculator,
   Phone,
   Star,
   Target,
   Zap,
+  Home,
+  Wrench,
 } from "lucide-react"
 import Link from "next/link"
 import { useState } from "react"
 
 const mainServices = [
+  {
+    id: "commercial-construction",
+    title: "Commercial Construction",
+    icon: Building2,
+    gradient: "from-blue-600 to-blue-700",
+    description: "Comprehensive commercial construction services including new construction, full-scale building solutions, tenant buildout/finish, property management, maintenance, 24/7 emergency service, and cleaning services.",
+    features: [
+      "New Construction & Full-Scale Building Solutions",
+      "Tenant Buildout & Finish Work",
+      "Property Management & Maintenance",
+      "24/7 On-Call Emergency Service",
+      "Cleaning Services & Facility Management",
+    ],
+    process: [
+      "Project Planning & Resource Allocation",
+      "Permit Acquisition & Approvals",
+      "Trade Coordination & Scheduling",
+      "Quality Control & Inspections",
+      "Project Completion & Handover",
+    ],
+    idealFor: ["Commercial buildings", "Office complexes", "Retail centers", "Industrial facilities", "Multi-tenant properties"],
+    image: "/placeholder.svg?height=300&width=400&text=Commercial+Construction",
+    stats: { experience: "30+ Years", projects: "75+", satisfaction: "100%" },
+  },
   {
     id: "design-build",
     title: "Design-Build",
@@ -51,41 +76,17 @@ const mainServices = [
     stats: { experience: "30+ Years", projects: "575+", satisfaction: "100%" },
   },
   {
-    id: "commercial-construction",
-    title: "Commercial Construction",
-    icon: Building2,
-    gradient: "from-blue-600 to-blue-700",
-    description: "Specialized construction for banks, schools, medical buildings, and warehousing facilities.",
-    features: [
-      "Bank and financial institution expertise",
-      "Educational facility construction",
-      "Medical building specialization",
-      "Warehousing and industrial projects",
-      "Security-focused construction",
-    ],
-    process: [
-      "Project Planning & Resource Allocation",
-      "Permit Acquisition & Approvals",
-      "Trade Coordination & Scheduling",
-      "Quality Control & Inspections",
-      "Project Completion & Handover",
-    ],
-    idealFor: ["Banks and financial institutions", "Schools and educational facilities", "Medical buildings"],
-    image: "/placeholder.svg?height=300&width=400&text=Commercial+Construction",
-    stats: { experience: "30+ Years", projects: "75+", satisfaction: "100%" },
-  },
-  {
     id: "residential-construction",
     title: "Residential Construction",
     icon: HardHat,
     gradient: "from-slate-500 to-slate-600",
-    description: "Custom residential construction with exceptional craftsmanship and attention to detail.",
+    description: "Comprehensive residential construction services including design/build, custom homes, renovations, and full-scale interior/exterior work.",
     features: [
-      "Custom home construction",
-      "Residential renovations",
-      "Quality craftsmanship",
-      "Personalized service",
-      "Timely project delivery",
+      "Design/Build & New Construction",
+      "Custom Homes & Additions",
+      "Kitchens/Baths/Basement Renovations",
+      "Full-Scale Interior/Exterior Work",
+      "Structural Construction & Framing",
     ],
     process: [
       "Design Consultation & Planning",
@@ -94,7 +95,7 @@ const mainServices = [
       "Systems Installation & Finishing",
       "Final Walkthrough & Handover",
     ],
-    idealFor: ["Custom homes", "Residential renovations", "Family residences"],
+    idealFor: ["Custom homes", "Residential renovations", "Home additions", "Kitchen/bath remodels"],
     image: "/placeholder.svg?height=300&width=400&text=Residential+Construction",
     stats: { experience: "30+ Years", projects: "500+", satisfaction: "100%" },
   },
@@ -174,32 +175,46 @@ const mainServices = [
 
 const specialtyServices = [
   {
-    title: "Financial Institution Construction",
-    description: "Specialized construction for banks with security-focused design and implementation",
-    icon: Shield,
-    color: "bg-blue-100 text-blue-600",
-    features: ["Security-first design", "Vault construction", "Regulatory compliance"],
-  },
-  {
-    title: "Educational Facilities",
-    description: "Creating safe and inspiring learning environments for schools and educational institutions",
+    title: "New Construction",
+    description: "Complete new building construction from foundation to finish with modern design and efficiency",
     icon: Building2,
+    color: "bg-blue-100 text-blue-600",
+    features: ["Modern design", "Energy efficiency", "Quality construction"],
+  },
+  {
+    title: "Tenant Buildout & Finish",
+    description: "Custom interior buildout and finishing services for commercial tenant spaces",
+    icon: Settings,
     color: "bg-green-100 text-green-600",
-    features: ["Safety-first design", "Flexible spaces", "ADA compliance"],
+    features: ["Custom design", "Quality finishes", "Timely completion"],
   },
   {
-    title: "Medical Buildings",
-    description: "Specialized medical facility construction with strict compliance requirements",
-    icon: Award,
+    title: "Property Management",
+    description: "Comprehensive property management and maintenance services for commercial buildings",
+    icon: Shield,
     color: "bg-emerald-100 text-emerald-600",
-    features: ["Medical-grade systems", "Infection control", "Regulatory compliance"],
+    features: ["Ongoing maintenance", "Vendor coordination", "Emergency response"],
   },
   {
-    title: "Warehousing & Industrial",
-    description: "Large-scale industrial and warehousing construction with focus on functionality",
-    icon: Truck,
+    title: "24/7 Emergency Services",
+    description: "Round-the-clock emergency response and repair services for commercial properties",
+    icon: Clock,
     color: "bg-red-100 text-red-600",
-    features: ["Large-scale construction", "Industrial systems", "Efficient design"],
+    features: ["24/7 availability", "Rapid response", "Expert repairs"],
+  },
+  {
+    title: "Custom Homes",
+    description: "Personalized home designs and construction tailored to your vision and lifestyle",
+    icon: Home,
+    color: "bg-purple-100 text-purple-600",
+    features: ["Custom design", "Quality craftsmanship", "Personalized service"],
+  },
+  {
+    title: "Kitchen & Bath Renovations",
+    description: "Complete kitchen and bathroom renovations with modern design and functionality",
+    icon: Wrench,
+    color: "bg-orange-100 text-orange-600",
+    features: ["Modern design", "Quality materials", "Functional layouts"],
   },
 ]
 
@@ -218,16 +233,16 @@ export default function ServicesPage() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <Badge className="bg-blue-500 text-white mb-6 px-4 py-2 text-sm">
-              Full Service Design-Build Construction
+              Commercial Construction Specialists
             </Badge>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-              Expert Services for
-              <span className="text-blue-500 block">Every Construction Need</span>
+              Comprehensive Commercial
+              <span className="text-blue-500 block">Construction Services</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-300 mb-8 max-w-3xl mx-auto">
-              From initial design schematics to final construction, we deliver excellence at every stage. 
-              Our comprehensive suite of construction services ensures your project succeeds on time, 
-              on budget, and beyond expectations.
+              From new construction to property management, we provide complete commercial construction solutions. 
+              Our expertise spans new construction, tenant buildout, maintenance, and 24/7 emergency services 
+              to keep your commercial properties operating at peak performance.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-blue-500 hover:bg-blue-600 px-8 py-4 text-lg">
@@ -258,8 +273,8 @@ export default function ServicesPage() {
           <div className="text-center mb-12 md:mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Our Core Services</h2>
             <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto">
-              Six specialized service areas designed to meet every construction challenge with precision and expertise.
-              60% Commercial • 40% Residential
+              Comprehensive commercial construction services designed to meet every business need with precision and expertise.
+              From new construction to ongoing maintenance, we're your complete commercial construction partner.
             </p>
           </div>
 

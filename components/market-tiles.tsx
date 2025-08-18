@@ -37,7 +37,7 @@ const markets = [
     icon: Wrench,
     title: "Design-Build",
     description: "Integrated design and construction services",
-    href: "/services/design-build",
+    href: "/services",
   },
 ]
 

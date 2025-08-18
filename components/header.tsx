@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet"
 import { Menu } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
 
 const navigation = [
@@ -95,8 +96,14 @@ export function Header() {
       <nav className="container mx-auto px-4 h-20 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-3 group">
-          <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-            <span className="text-white font-bold text-lg md:text-xl">TL</span>
+          <div className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+            <Image
+              src="/images/Logos/NoTextLogoFIXED.png"
+              alt="Taylor Leonard Corp Logo"
+              width={48}
+              height={48}
+              className="w-full h-full object-contain"
+            />
           </div>
           <div className="hidden sm:block">
             <div className="font-bold text-white text-lg md:text-xl leading-tight tracking-wide">
@@ -156,8 +163,14 @@ export function Header() {
                 {/* Mobile Logo */}
                 <div className="flex items-center justify-between px-6 pb-6 pt-6 border-b border-slate-800">
                   <div className="flex items-center space-x-3">
-                    <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg">
-                      <span className="text-white font-bold text-xl">TL</span>
+                    <div className="w-12 h-12 flex items-center justify-center shadow-lg">
+                      <Image
+                        src="/images/Logos/NoTextLogoFIXED.png"
+                        alt="Taylor Leonard Corp Logo"
+                        width={48}
+                        height={48}
+                        className="w-full h-full object-contain"
+                      />
                     </div>
                     <div>
                       <div className="font-bold text-white text-lg leading-tight">Taylor Leonard Corp</div>

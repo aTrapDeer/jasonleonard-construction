@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { ArrowRight, Home, Building2, Users, Award, Clock, DollarSign } from "lucide-react"
+import { ArrowRight, Home, Building2, Users, Award, Clock, DollarSign, Wrench, Sparkles } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -112,26 +112,34 @@ export default function MarketsPage() {
               </div>
               <h2 className="text-4xl font-bold text-slate-900 mb-6">Commercial Construction</h2>
               <p className="text-lg text-slate-600 mb-6">
-                We specialize in commercial construction with a focus on banks, schools, medical buildings, and 
-                warehousing facilities. Our expertise in security-focused construction makes us trusted by top 
-                financial institutions across the region.
+                We provide comprehensive commercial construction services including new construction, full-scale building solutions, 
+                tenant buildout/finish, property management, maintenance, 24/7 emergency service, and cleaning services. 
+                Our expertise makes us trusted by top institutions across the region.
               </p>
               <div className="grid sm:grid-cols-2 gap-4 md:gap-6 mb-6 md:mb-8">
                 <div className="flex items-center">
                   <Users className="h-5 w-5 text-blue-500 mr-2" />
-                  <span className="text-slate-700">Banks & Financial</span>
+                  <span className="text-slate-700">New Construction</span>
                 </div>
                 <div className="flex items-center">
                   <Award className="h-5 w-5 text-blue-500 mr-2" />
-                  <span className="text-slate-700">Schools & Education</span>
+                  <span className="text-slate-700">Full-Scale Building Solutions</span>
                 </div>
                 <div className="flex items-center">
                   <Clock className="h-5 w-5 text-blue-500 mr-2" />
-                  <span className="text-slate-700">Medical Buildings</span>
+                  <span className="text-slate-700">Tenant Buildout/Finish</span>
                 </div>
                 <div className="flex items-center">
                   <DollarSign className="h-5 w-5 text-blue-500 mr-2" />
-                  <span className="text-slate-700">Warehousing</span>
+                  <span className="text-slate-700">Property Management</span>
+                </div>
+                <div className="flex items-center">
+                  <Wrench className="h-5 w-5 text-blue-500 mr-2" />
+                  <span className="text-slate-700">24/7 Emergency Service</span>
+                </div>
+                <div className="flex items-center">
+                  <Sparkles className="h-5 w-5 text-blue-500 mr-2" />
+                  <span className="text-slate-700">Cleaning Services</span>
                 </div>
               </div>
               <Button asChild size="lg" className="bg-blue-500 hover:bg-blue-600">
@@ -217,26 +225,34 @@ export default function MarketsPage() {
               </div>
               <h2 className="text-4xl font-bold text-slate-900 mb-6">Residential Construction</h2>
               <p className="text-lg text-slate-600 mb-6">
-                Our residential construction services focus on custom homes and renovations with exceptional 
-                craftsmanship and attention to detail. We work closely with families to create homes that 
+                Comprehensive residential construction services including design/build, custom homes, renovations, 
+                and full-scale interior/exterior work. We work closely with families to create homes that 
                 reflect their unique vision and lifestyle needs.
               </p>
               <div className="grid sm:grid-cols-2 gap-4 md:gap-6 mb-6 md:mb-8">
                 <div className="flex items-center">
                   <Users className="h-5 w-5 text-blue-500 mr-2" />
-                  <span className="text-slate-700">Custom Homes</span>
+                  <span className="text-slate-700">Design/Build</span>
                 </div>
                 <div className="flex items-center">
                   <Award className="h-5 w-5 text-blue-500 mr-2" />
-                  <span className="text-slate-700">Quality Craftsmanship</span>
+                  <span className="text-slate-700">Custom Homes</span>
                 </div>
                 <div className="flex items-center">
                   <Clock className="h-5 w-5 text-blue-500 mr-2" />
-                  <span className="text-slate-700">Timely Delivery</span>
+                  <span className="text-slate-700">Kitchens/Baths</span>
                 </div>
                 <div className="flex items-center">
                   <DollarSign className="h-5 w-5 text-blue-500 mr-2" />
-                  <span className="text-slate-700">Value Engineering</span>
+                  <span className="text-slate-700">Full Renovations</span>
+                </div>
+                <div className="flex items-center">
+                  <Wrench className="h-5 w-5 text-blue-500 mr-2" />
+                  <span className="text-slate-700">Structural Work</span>
+                </div>
+                <div className="flex items-center">
+                  <Sparkles className="h-5 w-5 text-blue-500 mr-2" />
+                  <span className="text-slate-700">Finish Work</span>
                 </div>
               </div>
               <Button asChild size="lg" className="bg-blue-500 hover:bg-blue-600">

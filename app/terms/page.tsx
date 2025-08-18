@@ -1,265 +1,216 @@
+"use client"
+
+import { Button } from "@/components/ui/button"
+import { ArrowLeft } from "lucide-react"
+import Link from "next/link"
+
 export default function TermsOfServicePage() {
   return (
     <div className="min-h-screen bg-slate-50 pt-16">
-      <div className="container mx-auto px-4 py-16 max-w-4xl">
-        <div className="bg-white rounded-lg shadow-lg p-8 md:p-12">
-          <h1 className="text-4xl font-bold text-slate-900 mb-8">Terms of Service</h1>
-
-          <div className="prose prose-lg max-w-none text-slate-600">
-            <p className="text-sm text-slate-500 mb-8">
-              <strong>Last Updated:</strong> {new Date().toLocaleDateString()}
+      {/* Hero Section */}
+      <section className="py-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-center mb-8">
+              <Button asChild variant="ghost" className="text-white hover:bg-white/10 mr-4">
+                <Link href="/">
+                  <ArrowLeft className="h-5 w-5 mr-2" />
+                  Back to Home
+                </Link>
+              </Button>
+            </div>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Terms of Service</h1>
+            <p className="text-lg md:text-xl text-slate-300">
+              These terms govern your use of Taylor Leonard Corp's website and services. Please read them carefully.
             </p>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-slate-900 mb-4">Agreement to Terms</h2>
-              <p>
-                These Terms of Service ("Terms") constitute a legally binding agreement between you and Jason Leonard
-                Taylor Construction ("JLTC," "we," "us," or "our") regarding your use of our website, services, and any
-                related applications or platforms (collectively, the "Services").
-              </p>
-              <p>
-                By accessing or using our Services, you agree to be bound by these Terms. If you do not agree to these
-                Terms, please do not use our Services.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-slate-900 mb-4">Description of Services</h2>
-              <p>JLTC provides construction services including but not limited to:</p>
-              <ul className="list-disc pl-6 mb-4">
-                <li>Residential construction and renovation</li>
-                <li>Commercial construction and development</li>
-                <li>Design-build services</li>
-                <li>Project management and consultation</li>
-                <li>General contracting services</li>
-                <li>Construction-related consulting and advisory services</li>
-              </ul>
-              <p>
-                Our website provides information about our services, allows you to request quotes, and facilitates
-                communication between you and our team.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-slate-900 mb-4">User Responsibilities</h2>
-
-              <h3 className="text-xl font-semibold text-slate-800 mb-3">Accurate Information</h3>
-              <p>You agree to provide accurate, current, and complete information when:</p>
-              <ul className="list-disc pl-6 mb-4">
-                <li>Requesting quotes or consultations</li>
-                <li>Filling out contact forms</li>
-                <li>Communicating with our team</li>
-                <li>Entering into contracts for services</li>
-              </ul>
-
-              <h3 className="text-xl font-semibold text-slate-800 mb-3">Prohibited Uses</h3>
-              <p>You agree not to use our Services to:</p>
-              <ul className="list-disc pl-6 mb-4">
-                <li>Violate any applicable laws or regulations</li>
-                <li>Infringe on intellectual property rights</li>
-                <li>Transmit harmful, offensive, or inappropriate content</li>
-                <li>Attempt to gain unauthorized access to our systems</li>
-                <li>Interfere with the proper functioning of our Services</li>
-                <li>Use our Services for any fraudulent or deceptive purposes</li>
-                <li>Collect or harvest information about other users</li>
-              </ul>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-slate-900 mb-4">Quotes and Estimates</h2>
-              <p>Quotes and estimates provided through our Services are preliminary and subject to change based on:</p>
-              <ul className="list-disc pl-6 mb-4">
-                <li>Site inspection and detailed project assessment</li>
-                <li>Changes in project scope or specifications</li>
-                <li>Material cost fluctuations</li>
-                <li>Permit requirements and regulatory changes</li>
-                <li>Unforeseen site conditions</li>
-                <li>Timeline modifications</li>
-              </ul>
-              <p>
-                All quotes are valid for 30 days unless otherwise specified. Final pricing will be established in a
-                formal contract after detailed project assessment.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-slate-900 mb-4">Contracts and Project Terms</h2>
-              <p>Construction services are provided under separate written contracts that will include:</p>
-              <ul className="list-disc pl-6 mb-4">
-                <li>Detailed project specifications and scope of work</li>
-                <li>Timeline and milestone schedules</li>
-                <li>Payment terms and schedule</li>
-                <li>Change order procedures</li>
-                <li>Warranty and guarantee provisions</li>
-                <li>Insurance and liability terms</li>
-              </ul>
-              <p>
-                These Terms of Service do not constitute a contract for construction services. All construction work is
-                subject to separate contractual agreements.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibent text-slate-900 mb-4">Intellectual Property</h2>
-              <p>
-                All content on our website, including text, graphics, logos, images, and software, is the property of
-                JLTC or our licensors and is protected by copyright, trademark, and other intellectual property laws.
-              </p>
-              <p>You may not:</p>
-              <ul className="list-disc pl-6 mb-4">
-                <li>Copy, modify, or distribute our content without permission</li>
-                <li>Use our trademarks or logos without authorization</li>
-                <li>Create derivative works based on our content</li>
-                <li>Reverse engineer any software or systems</li>
-              </ul>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-slate-900 mb-4">Privacy and Data Protection</h2>
-              <p>
-                Your privacy is important to us. Our collection and use of personal information is governed by our
-                Privacy Policy, which is incorporated into these Terms by reference. By using our Services, you consent
-                to the collection and use of your information as described in our Privacy Policy.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-slate-900 mb-4">Disclaimers and Limitations</h2>
-
-              <h3 className="text-xl font-semibold text-slate-800 mb-3">Service Availability</h3>
-              <p>
-                We strive to maintain continuous availability of our Services, but we do not guarantee uninterrupted
-                access. Our Services may be temporarily unavailable due to maintenance, updates, or technical issues.
-              </p>
-
-              <h3 className="text-xl font-semibold text-slate-800 mb-3">Information Accuracy</h3>
-              <p>
-                While we make every effort to ensure the accuracy of information on our website, we do not warrant that
-                all information is complete, current, or error-free. Project timelines, pricing, and specifications are
-                subject to change.
-              </p>
-
-              <h3 className="text-xl font-semibold text-slate-800 mb-3">Third-Party Content</h3>
-              <p>
-                Our website may contain links to third-party websites or reference third-party products or services. We
-                are not responsible for the content, accuracy, or availability of external sites or services.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-slate-900 mb-4">Limitation of Liability</h2>
-              <p>
-                To the fullest extent permitted by law, JLTC shall not be liable for any indirect, incidental, special,
-                consequential, or punitive damages, including but not limited to loss of profits, data, or business
-                opportunities, arising from:
-              </p>
-              <ul className="list-disc pl-6 mb-4">
-                <li>Your use of or inability to use our Services</li>
-                <li>Any errors or omissions in our content</li>
-                <li>Any interruption or cessation of our Services</li>
-                <li>Any defects, viruses, or harmful components</li>
-                <li>Any loss or damage to your data or systems</li>
-              </ul>
-              <p>
-                Our total liability for any claims arising from these Terms or your use of our Services shall not exceed
-                the amount you paid to us in the twelve months preceding the claim.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-slate-900 mb-4">Indemnification</h2>
-              <p>
-                You agree to indemnify, defend, and hold harmless JLTC, its officers, directors, employees, and agents
-                from any claims, damages, losses, or expenses (including reasonable attorney fees) arising from:
-              </p>
-              <ul className="list-disc pl-6 mb-4">
-                <li>Your use of our Services</li>
-                <li>Your violation of these Terms</li>
-                <li>Your violation of any applicable laws or regulations</li>
-                <li>Your infringement of any third-party rights</li>
-              </ul>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-slate-900 mb-4">Termination</h2>
-              <p>
-                We reserve the right to terminate or suspend your access to our Services at any time, with or without
-                notice, for any reason, including violation of these Terms.
-              </p>
-              <p>
-                Upon termination, your right to use our Services will cease immediately, but the provisions of these
-                Terms that by their nature should survive termination will remain in effect.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-slate-900 mb-4">Governing Law and Dispute Resolution</h2>
-              <p>
-                These Terms are governed by and construed in accordance with the laws of British Columbia, Canada,
-                without regard to conflict of law principles.
-              </p>
-              <p>
-                Any disputes arising from these Terms or your use of our Services will be resolved through binding
-                arbitration in accordance with the rules of the British Columbia International Commercial Arbitration
-                Centre, except that either party may seek injunctive relief in court for intellectual property
-                violations or breaches of confidentiality.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-slate-900 mb-4">Changes to Terms</h2>
-              <p>
-                We reserve the right to modify these Terms at any time. We will notify users of material changes by
-                posting the updated Terms on our website and updating the "Last Updated" date. Your continued use of our
-                Services after such changes constitutes acceptance of the modified Terms.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-slate-900 mb-4">Severability</h2>
-              <p>
-                If any provision of these Terms is found to be unenforceable or invalid, the remaining provisions will
-                continue in full force and effect. The unenforceable provision will be replaced with an enforceable
-                provision that most closely reflects the original intent.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-slate-900 mb-4">Entire Agreement</h2>
-              <p>
-                These Terms, together with our Privacy Policy and any separate construction contracts, constitute the
-                entire agreement between you and JLTC regarding your use of our Services and supersede all prior
-                agreements and understandings.
-              </p>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-slate-900 mb-4">Contact Information</h2>
-              <p>If you have any questions about these Terms of Service, please contact us:</p>
-              <div className="bg-slate-50 p-6 rounded-lg mt-4">
-                <p>
-                  <strong>Jason Leonard Taylor Construction</strong>
-                </p>
-                <p>
-                  123 Construction Way
-                  <br />
-                  Builder City, BC 12345
-                </p>
-                <p>Phone: (555) 123-4567</p>
-                <p>Email: legal@jltconstruction.com</p>
-              </div>
-            </section>
-
-            <div className="bg-orange-50 border border-orange-200 rounded-lg p-6 mt-8">
-              <p className="text-sm text-orange-800">
-                <strong>Important:</strong> These Terms of Service apply to website usage and general inquiries. All
-                construction services are subject to separate written contracts with specific terms, conditions, and
-                warranties. Please consult with our team for project-specific agreements.
-              </p>
+            <div className="text-sm text-slate-400 mt-4">
+              Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      {/* Terms of Service Content */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto prose prose-lg">
+            <div className="space-y-8">
+              <section>
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">1. Acceptance of Terms</h2>
+                <div className="space-y-4 text-slate-700">
+                  <p>
+                    By accessing and using the Taylor Leonard Corp website and services, you accept and agree to be bound by the terms and provision of this agreement. If you do not agree to abide by the above, please do not use this service.
+                  </p>
+                </div>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">2. Description of Services</h2>
+                <div className="space-y-4 text-slate-700">
+                  <p>
+                    Taylor Leonard Corp provides construction services including but not limited to:
+                  </p>
+                  <ul className="list-disc pl-6 space-y-2">
+                    <li>Commercial construction and development</li>
+                    <li>Residential construction and renovations</li>
+                    <li>Design-build services</li>
+                    <li>Property management and maintenance</li>
+                    <li>Emergency repair services</li>
+                    <li>Construction consulting and project management</li>
+                    <li>General contracting services</li>
+                  </ul>
+                  <p>
+                    Our website provides information about our services, allows you to request quotes, and facilitates communication between you and our team.
+                  </p>
+                </div>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">3. Use License</h2>
+                <div className="space-y-4 text-slate-700">
+                  <p>
+                    Permission is granted to temporarily download one copy of the materials (information or software) on Taylor Leonard Corp's website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
+                  </p>
+                  <ul className="list-disc pl-6 space-y-2">
+                    <li>Modify or copy the materials</li>
+                    <li>Use the materials for any commercial purpose or for any public display</li>
+                    <li>Attempt to reverse engineer any software contained on the website</li>
+                    <li>Remove any copyright or other proprietary notations from the materials</li>
+                    <li>Transfer the materials to another person or "mirror" the materials on any other server</li>
+                  </ul>
+                  <p>
+                    This license shall automatically terminate if you violate any of these restrictions and may be terminated by Taylor Leonard Corp at any time.
+                  </p>
+                </div>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">4. User Conduct</h2>
+                <div className="space-y-4 text-slate-700">
+                  <p>
+                    When using our website and services, you agree not to:
+                  </p>
+                  <ul className="list-disc pl-6 space-y-2">
+                    <li>Submit false, misleading, or fraudulent information</li>
+                    <li>Use the website for any unlawful purpose</li>
+                    <li>Attempt to gain unauthorized access to our systems</li>
+                    <li>Interfere with or disrupt the website or servers</li>
+                    <li>Transmit viruses, malware, or other harmful code</li>
+                    <li>Harass, abuse, or harm other users</li>
+                    <li>Violate any applicable laws or regulations</li>
+                  </ul>
+                </div>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">5. Quote Requests and Communications</h2>
+                <div className="space-y-4 text-slate-700">
+                  <p>
+                    When you submit a quote request or contact us through our website:
+                  </p>
+                  <ul className="list-disc pl-6 space-y-2">
+                    <li>You agree to provide accurate and complete information</li>
+                    <li>We will use your information to respond to your inquiry</li>
+                    <li>Quote requests are estimates only and subject to change</li>
+                    <li>We reserve the right to decline any project or request</li>
+                    <li>All communications are subject to our privacy policy</li>
+                  </ul>
+                </div>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">6. Intellectual Property</h2>
+                <div className="space-y-4 text-slate-700">
+                  <p>
+                    The materials on Taylor Leonard Corp's website are provided on an 'as is' basis. Taylor Leonard Corp makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
+                  </p>
+                  <p>
+                    All content on this website, including but not limited to text, graphics, logos, images, and software, is the property of Taylor Leonard Corp and is protected by copyright and other intellectual property laws.
+                  </p>
+                </div>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">7. Disclaimer</h2>
+                <div className="space-y-4 text-slate-700">
+                  <p>
+                    The information on this website is provided for general informational purposes only. While we strive to keep the information up to date and correct, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the website or the information, products, services, or related graphics contained on the website for any purpose.
+                  </p>
+                  <p>
+                    Any reliance you place on such information is therefore strictly at your own risk. In no event will we be liable for any loss or damage including without limitation, indirect or consequential loss or damage, arising from loss of data or profits arising out of, or in connection with, the use of this website.
+                  </p>
+                </div>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">8. Limitation of Liability</h2>
+                <div className="space-y-4 text-slate-700">
+                  <p>
+                    In no event shall Taylor Leonard Corp or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on Taylor Leonard Corp's website, even if Taylor Leonard Corp or a Taylor Leonard Corp authorized representative has been notified orally or in writing of the possibility of such damage.
+                  </p>
+                  <p>
+                    Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.
+                  </p>
+                </div>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">9. Links to Third-Party Websites</h2>
+                <div className="space-y-4 text-slate-700">
+                  <p>
+                    Our website may contain links to third-party websites or services that are not owned or controlled by Taylor Leonard Corp. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party websites or services.
+                  </p>
+                  <p>
+                    You acknowledge and agree that Taylor Leonard Corp shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with the use of or reliance on any such content, goods, or services available on or through any such websites or services.
+                  </p>
+                </div>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">10. Governing Law</h2>
+                <div className="space-y-4 text-slate-700">
+                  <p>
+                    These terms and conditions are governed by and construed in accordance with the laws of the State of Missouri, and you irrevocably submit to the exclusive jurisdiction of the courts in that state or location.
+                  </p>
+                </div>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">11. Changes to Terms</h2>
+                <div className="space-y-4 text-slate-700">
+                  <p>
+                    Taylor Leonard Corp may revise these terms of service for its website at any time without notice. By using this website, you are agreeing to be bound by the then current version of these Terms and Conditions of Use.
+                  </p>
+                </div>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">12. Severability</h2>
+                <div className="space-y-4 text-slate-700">
+                  <p>
+                    If any provision of these terms is found to be unenforceable or invalid under any applicable law, such unenforceability or invalidity shall not render these terms unenforceable or invalid as a whole, and such provisions shall be deleted without affecting the remaining provisions herein.
+                  </p>
+                </div>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-bold text-slate-900 mb-4">13. Contact Information</h2>
+                <div className="space-y-4 text-slate-700">
+                  <p>
+                    If you have any questions about these Terms of Service, please contact us:
+                  </p>
+                  <div className="bg-slate-50 p-6 rounded-lg">
+                    <p className="font-semibold">Taylor Leonard Corp</p>
+                    <p>2017 S Moor Dr, Foristell, MO 63348</p>
+                    <p>Phone: 314-489-3229</p>
+                    <p>Email: taylorleonardcorp@gmail.com</p>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }

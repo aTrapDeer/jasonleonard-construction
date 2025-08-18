@@ -2,20 +2,21 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Facebook, Twitter, Linkedin, Instagram, MapPin, Phone, Mail } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 const markets = [
-  { name: "Commercial", href: "/markets/commercial" },
-  { name: "Residential", href: "/markets/residential" },
-  { name: "Healthcare", href: "/markets/healthcare" },
-  { name: "Education", href: "/markets/education" },
-  { name: "Industrial", href: "/markets/industrial" },
+  { name: "Commercial", href: "/markets" },
+  { name: "Residential", href: "/markets" },
+  { name: "Healthcare", href: "/markets" },
+  { name: "Education", href: "/markets" },
+  { name: "Industrial", href: "/markets" },
 ]
 
 const services = [
-  { name: "Design-Build", href: "/services/design-build" },
-  { name: "General Contracting", href: "/services/general-contracting" },
-  { name: "Preconstruction", href: "/services/preconstruction" },
-  { name: "Renovations", href: "/services/renovations" },
+  { name: "Design-Build", href: "/services" },
+  { name: "General Contracting", href: "/services" },
+  { name: "Preconstruction", href: "/services" },
+  { name: "Renovations", href: "/services" },
 ]
 
 const company = [
@@ -23,6 +24,8 @@ const company = [
   { name: "Projects", href: "/projects" },
   { name: "Contact", href: "/contact" },
   { name: "Get Quote", href: "/quote" },
+  { name: "Privacy Policy", href: "/privacy" },
+  { name: "Terms of Service", href: "/terms" },
 ]
 
 export function Footer() {
@@ -33,8 +36,14 @@ export function Footer() {
           {/* Company Info */}
           <div className="sm:col-span-2 lg:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">TL</span>
+              <div className="w-10 h-10 flex items-center justify-center">
+                <Image
+                  src="/images/Logos/NoTextLogoFIXED.png"
+                  alt="Taylor Leonard Corp Logo"
+                  width={40}
+                  height={40}
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div>
                 <div className="font-bold text-white text-lg">Taylor Leonard Corp</div>

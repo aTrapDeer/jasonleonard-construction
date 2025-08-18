@@ -8,17 +8,46 @@ import { Footer } from "@/components/footer"
 const inter = Inter({ subsets: ["latin"], display: "swap" })
 
 export const metadata: Metadata = {
-  title: "Jason Leonard Taylor Construction | Commercial & Residential Builder",
+  title: "Taylor Leonard Corp | Commercial & Residential Construction",
   description:
-    "JLTC delivers exceptional commercial and residential construction projects with 25+ years of experience, industry-leading safety standards, and turnkey solutions.",
+    "Taylor Leonard Corp delivers exceptional commercial and residential construction projects with 30+ years of experience, industry-leading safety standards, and comprehensive design-build solutions.",
   keywords:
-    "construction, commercial construction, residential construction, general contractor, design-build, safety-first construction",
-  metadataBase: new URL("https://example.com"),
+    "construction, commercial construction, residential construction, general contractor, design-build, property management, maintenance, emergency services, Taylor Leonard Corp",
+  metadataBase: new URL("https://taylorleonardcorp.com"),
   viewport: {
     width: "device-width",
     initialScale: 1,
     maximumScale: 1,
     viewportFit: "cover",
+  },
+  openGraph: {
+    title: "Taylor Leonard Corp | Commercial & Residential Construction",
+    description: "Family-owned, veteran-founded construction company since 1990. Full-service design-build specialists with 100% satisfaction rating.",
+    type: "website",
+    url: "https://taylorleonardcorp.com",
+    siteName: "Taylor Leonard Corp",
+    images: [
+      {
+        url: "/images/Logos/JasonLeonardLogo.png",
+        width: 1200,
+        height: 630,
+        alt: "Taylor Leonard Corp Logo",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Taylor Leonard Corp | Commercial & Residential Construction",
+    description: "Family-owned, veteran-founded construction company since 1990. Full-service design-build specialists.",
+    images: ["/images/Logos/JasonLeonardLogo.png"],
+  },
+  icons: {
+    icon: [
+      { url: "/site-icon.ico", sizes: "32x32", type: "image/x-icon" },
+      { url: "/site-icon.ico", sizes: "16x16", type: "image/x-icon" },
+    ],
+    apple: "/images/Logos/NoTextLogoFIXED.png",
+    shortcut: "/site-icon.ico",
   },
   other: {
     "color-scheme": "light dark",

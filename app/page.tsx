@@ -5,11 +5,13 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, Calendar, Award, Users, Building, Shield, ChevronDown } from "lucide-react"
+import { ArrowRight, Calendar, Award, Users, Building, Shield, ChevronDown, X, Building2, Wrench, Sparkles, Settings, Home } from "lucide-react"
 import VendorCarousel from "@/components/vendor-carousel"
 
 export default function HomePage() {
   const [scrollY, setScrollY] = useState(0)
+  const [showCommercialModal, setShowCommercialModal] = useState(false)
+  const [showResidentialModal, setShowResidentialModal] = useState(false)
   const heroRef = useRef<HTMLElement>(null)
   const statsRef = useRef<HTMLElement>(null)
   const servicesRef = useRef<HTMLElement>(null)
@@ -150,12 +152,15 @@ export default function HomePage() {
             <Badge className="bg-blue-500/20 text-blue-300 border-blue-500/30 mb-8 px-8 py-3 text-lg font-medium backdrop-blur-sm">
               Family Owned • Veteran Founded • Since 1990
             </Badge>
-            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-thin mb-12 leading-none tracking-tight px-4">
-              Taylor Leonard
-              <span className="block font-extralight text-blue-400 transform hover:scale-105 transition-transform duration-500">
-                Corp
-              </span>
-            </h1>
+            <div className="mb-12 px-4">
+              <Image
+                src="/images/Logos/JasonLeonardLogo.png"
+                alt="Taylor Leonard Corp Logo"
+                width={400}
+                height={150}
+                className="mx-auto max-w-full h-auto"
+              />
+            </div>
             <p className="text-2xl md:text-3xl font-light text-slate-300 mb-16 max-w-4xl mx-auto leading-relaxed">
               Full Service Design-Build Construction Excellence
             </p>
@@ -253,13 +258,13 @@ export default function HomePage() {
               },
               {
                 title: "Commercial Construction",
-                description: "Banks, schools, medical buildings, and warehousing projects",
+                description: "Complete commercial construction and property management services",
                 image: "/images/markets/pnb-bank.jpg",
                 delay: "300ms",
               },
               {
                 title: "Residential Construction",
-                description: "Custom homes and residential projects with exceptional craftsmanship",
+                description: "Design/build, custom homes, renovations, and full-scale interior/exterior work",
                 image: "/images/homepage/residentialconstruction.jpg",
                 delay: "600ms",
               },
@@ -282,10 +287,43 @@ export default function HomePage() {
                     <p className="text-slate-300 font-light leading-relaxed text-lg mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-200">
                       {service.description}
                     </p>
-                    <div className="flex items-center text-blue-400 group-hover:translate-x-2 transition-transform duration-300 opacity-0 group-hover:opacity-100 delay-300">
-                      <span className="text-lg font-medium tracking-wide">EXPLORE SERVICE</span>
-                      <ArrowRight className="ml-3 h-5 w-5" />
-                    </div>
+                    {service.title === "Commercial Construction" ? (
+                      <div className="flex items-center text-blue-400 group-hover:translate-x-2 transition-transform duration-300 opacity-0 group-hover:opacity-100 delay-300">
+                        <Button
+                          onClick={(e) => {
+                            e.stopPropagation()
+                            setShowCommercialModal(true)
+                          }}
+                          className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium"
+                        >
+                          View All Services
+                        </Button>
+                      </div>
+                    ) : service.title === "Residential Construction" ? (
+                      <div className="flex items-center text-blue-400 group-hover:translate-x-2 transition-transform duration-300 opacity-0 group-hover:opacity-100 delay-300">
+                        <Button
+                          onClick={(e) => {
+                            e.stopPropagation()
+                            setShowResidentialModal(true)
+                          }}
+                          className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-medium"
+                        >
+                          View All Services
+                        </Button>
+                      </div>
+                    ) : service.title === "Design-Build" ? (
+                      <div className="flex items-center text-blue-400 group-hover:translate-x-2 transition-transform duration-300 opacity-0 group-hover:opacity-100 delay-300">
+                        <Link href="/services" className="flex items-center">
+                          <span className="text-lg font-medium tracking-wide">EXPLORE SERVICE</span>
+                          <ArrowRight className="ml-3 h-5 w-5" />
+                        </Link>
+                      </div>
+                    ) : (
+                      <div className="flex items-center text-blue-400 group-hover:translate-x-2 transition-transform duration-300 opacity-0 group-hover:opacity-100 delay-300">
+                        <span className="text-lg font-medium tracking-wide">EXPLORE SERVICE</span>
+                        <ArrowRight className="ml-3 h-5 w-5" />
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
@@ -417,6 +455,242 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Commercial Services Modal */}
+      {showCommercialModal && (
+        <div 
+          className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+          onClick={() => setShowCommercialModal(false)}
+        >
+          <div 
+            className="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="p-4 md:p-8">
+              <div className="flex items-center justify-between mb-6 md:mb-8">
+                <h2 className="text-2xl md:text-3xl font-bold text-slate-900">Commercial Construction Services</h2>
+                <Button
+                  onClick={() => setShowCommercialModal(false)}
+                  variant="ghost"
+                  size="icon"
+                  className="rounded-full hover:bg-slate-100"
+                >
+                  <X className="h-5 w-5 md:h-6 md:w-6" />
+                </Button>
+              </div>
+              
+              <div className="grid gap-4 md:gap-6">
+                <div className="flex items-start space-x-3 md:space-x-4 p-3 md:p-4 bg-blue-50 rounded-xl">
+                  <Building2 className="h-5 w-5 md:h-6 md:w-6 text-blue-600 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold text-slate-900 mb-1 md:mb-2 text-sm md:text-base">New Construction</h3>
+                    <p className="text-slate-600 text-sm">Complete new building construction from foundation to finish</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-3 md:space-x-4 p-3 md:p-4 bg-blue-50 rounded-xl">
+                  <Building2 className="h-5 w-5 md:h-6 md:w-6 text-blue-600 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold text-slate-900 mb-1 md:mb-2 text-sm md:text-base">Full-Scale Building Solutions</h3>
+                    <p className="text-slate-600 text-sm">Comprehensive building solutions for complex commercial projects</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-3 md:space-x-4 p-3 md:p-4 bg-blue-50 rounded-xl">
+                  <Settings className="h-5 w-5 md:h-6 md:w-6 text-blue-600 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold text-slate-900 mb-1 md:mb-2 text-sm md:text-base">Tenant Buildout/Finish</h3>
+                    <p className="text-slate-600 text-sm">Custom interior buildout and finishing for tenant spaces</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-3 md:space-x-4 p-3 md:p-4 bg-blue-50 rounded-xl">
+                  <Settings className="h-5 w-5 md:h-6 md:w-6 text-blue-600 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold text-slate-900 mb-1 md:mb-2 text-sm md:text-base">Property Management</h3>
+                    <p className="text-slate-600 text-sm">Ongoing property management and maintenance services</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-3 md:space-x-4 p-3 md:p-4 bg-blue-50 rounded-xl">
+                  <Wrench className="h-5 w-5 md:h-6 md:w-6 text-blue-600 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold text-slate-900 mb-1 md:mb-2 text-sm md:text-base">Maintenance</h3>
+                    <p className="text-slate-600 text-sm">Regular maintenance and repair services for commercial properties</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-3 md:space-x-4 p-3 md:p-4 bg-blue-50 rounded-xl">
+                  <Wrench className="h-5 w-5 md:h-6 md:w-6 text-blue-600 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold text-slate-900 mb-1 md:mb-2 text-sm md:text-base">24/7 On-Call Emergency Service</h3>
+                    <p className="text-slate-600 text-sm">Round-the-clock emergency response and repair services</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-3 md:space-x-4 p-3 md:p-4 bg-blue-50 rounded-xl">
+                  <Sparkles className="h-5 w-5 md:h-6 md:w-6 text-blue-600 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold text-slate-900 mb-1 md:mb-2 text-sm md:text-base">Cleaning Services</h3>
+                    <p className="text-slate-600 text-sm">Professional cleaning and facility management services</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="mt-6 md:mt-8 flex justify-end">
+                <Button
+                  onClick={() => setShowCommercialModal(false)}
+                  className="bg-blue-500 hover:bg-blue-600 text-white px-4 md:px-6 py-2 md:py-3 rounded-full text-sm md:text-base"
+                >
+                  Close
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Residential Services Modal */}
+      {showResidentialModal && (
+        <div 
+          className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+          onClick={() => setShowResidentialModal(false)}
+        >
+          <div 
+            className="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="p-4 md:p-8">
+              <div className="flex items-center justify-between mb-6 md:mb-8">
+                <h2 className="text-2xl md:text-3xl font-bold text-slate-900">Residential Construction Services</h2>
+                <Button
+                  onClick={() => setShowResidentialModal(false)}
+                  variant="ghost"
+                  size="icon"
+                  className="rounded-full hover:bg-slate-100"
+                >
+                  <X className="h-5 w-5 md:h-6 md:w-6" />
+                </Button>
+              </div>
+              
+              <div className="grid gap-4 md:gap-6">
+                <div className="flex items-start space-x-3 md:space-x-4 p-3 md:p-4 bg-blue-50 rounded-xl">
+                  <Building2 className="h-5 w-5 md:h-6 md:w-6 text-blue-600 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold text-slate-900 mb-1 md:mb-2 text-sm md:text-base">Design/Build</h3>
+                    <p className="text-slate-600 text-sm">Complete design and construction services under one roof</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-3 md:space-x-4 p-3 md:p-4 bg-blue-50 rounded-xl">
+                  <Building2 className="h-5 w-5 md:h-6 md:w-6 text-blue-600 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold text-slate-900 mb-1 md:mb-2 text-sm md:text-base">New Construction</h3>
+                    <p className="text-slate-600 text-sm">Custom homes built from the ground up</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-3 md:space-x-4 p-3 md:p-4 bg-blue-50 rounded-xl">
+                  <Home className="h-5 w-5 md:h-6 md:w-6 text-blue-600 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold text-slate-900 mb-1 md:mb-2 text-sm md:text-base">Custom Homes</h3>
+                    <p className="text-slate-600 text-sm">Personalized home designs tailored to your vision</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-3 md:space-x-4 p-3 md:p-4 bg-blue-50 rounded-xl">
+                  <Settings className="h-5 w-5 md:h-6 md:w-6 text-blue-600 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold text-slate-900 mb-1 md:mb-2 text-sm md:text-base">Additions</h3>
+                    <p className="text-slate-600 text-sm">Home additions and expansions</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-3 md:space-x-4 p-3 md:p-4 bg-blue-50 rounded-xl">
+                  <Wrench className="h-5 w-5 md:h-6 md:w-6 text-blue-600 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold text-slate-900 mb-1 md:mb-2 text-sm md:text-base">Kitchens/Baths/Basement</h3>
+                    <p className="text-slate-600 text-sm">Complete kitchen, bathroom, and basement renovations</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-3 md:space-x-4 p-3 md:p-4 bg-blue-50 rounded-xl">
+                  <Sparkles className="h-5 w-5 md:h-6 md:w-6 text-blue-600 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold text-slate-900 mb-1 md:mb-2 text-sm md:text-base">Full Scale Interior/Exterior</h3>
+                    <p className="text-slate-600 text-sm">Comprehensive interior and exterior renovations</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-3 md:space-x-4 p-3 md:p-4 bg-blue-50 rounded-xl">
+                  <Building2 className="h-5 w-5 md:h-6 md:w-6 text-blue-600 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold text-slate-900 mb-1 md:mb-2 text-sm md:text-base">Structural Construction</h3>
+                    <p className="text-slate-600 text-sm">Foundation, framing, and structural work</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-3 md:space-x-4 p-3 md:p-4 bg-blue-50 rounded-xl">
+                  <Wrench className="h-5 w-5 md:h-6 md:w-6 text-blue-600 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold text-slate-900 mb-1 md:mb-2 text-sm md:text-base">Framing & Drywall</h3>
+                    <p className="text-slate-600 text-sm">Professional framing and drywall installation</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-3 md:space-x-4 p-3 md:p-4 bg-blue-50 rounded-xl">
+                  <Sparkles className="h-5 w-5 md:h-6 md:w-6 text-blue-600 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold text-slate-900 mb-1 md:mb-2 text-sm md:text-base">Painting</h3>
+                    <p className="text-slate-600 text-sm">Interior and exterior painting services</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-3 md:space-x-4 p-3 md:p-4 bg-blue-50 rounded-xl">
+                  <Settings className="h-5 w-5 md:h-6 md:w-6 text-blue-600 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold text-slate-900 mb-1 md:mb-2 text-sm md:text-base">Windows & Doors</h3>
+                    <p className="text-slate-600 text-sm">Window and door installation and replacement</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-3 md:space-x-4 p-3 md:p-4 bg-blue-50 rounded-xl">
+                  <Building2 className="h-5 w-5 md:h-6 md:w-6 text-blue-600 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold text-slate-900 mb-1 md:mb-2 text-sm md:text-base">Siding</h3>
+                    <p className="text-slate-600 text-sm">Exterior siding installation and repair</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-3 md:space-x-4 p-3 md:p-4 bg-blue-50 rounded-xl">
+                  <Wrench className="h-5 w-5 md:h-6 md:w-6 text-blue-600 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold text-slate-900 mb-1 md:mb-2 text-sm md:text-base">Finish Carpentry</h3>
+                    <p className="text-slate-600 text-sm">Custom trim, molding, and finish work</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-3 md:space-x-4 p-3 md:p-4 bg-blue-50 rounded-xl">
+                  <Sparkles className="h-5 w-5 md:h-6 md:w-6 text-blue-600 mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold text-slate-900 mb-1 md:mb-2 text-sm md:text-base">Tile & Flooring</h3>
+                    <p className="text-slate-600 text-sm">Tile installation and flooring services</p>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="mt-6 md:mt-8 flex justify-end">
+                <Button
+                  onClick={() => setShowResidentialModal(false)}
+                  className="bg-blue-500 hover:bg-blue-600 text-white px-4 md:px-6 py-2 md:py-3 rounded-full text-sm md:text-base"
+                >
+                  Close
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }

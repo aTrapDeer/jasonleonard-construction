@@ -47,7 +47,7 @@ const timeline = [
   {
     year: "2010",
     title: "Commercial Expansion",
-    description: "Expanded into major commercial construction, focusing on banks, schools, and medical buildings.",
+    description: "Expanded into major commercial construction, focusing on comprehensive building solutions and property management services.",
   },
   {
     year: "2015",
@@ -164,7 +164,8 @@ export default function AboutPage() {
 
               <p className="mb-6">
                 As a family-owned, veteran-founded business, we've grown to serve both commercial and residential markets, 
-                with 60% of our work in commercial construction including banks, schools, medical buildings, and warehousing, 
+                with 60% of our work in commercial construction including new construction, full-scale building solutions, 
+                tenant buildout/finish, property management, maintenance, 24/7 emergency service, and cleaning services, 
                 and 40% in residential projects. We provide complete design-build services, handling everything from initial 
                 schematics through final construction.
               </p>
