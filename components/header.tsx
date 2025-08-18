@@ -93,7 +93,7 @@ export function Header() {
 
   return (
     <header className={getHeaderClasses()} style={getHeaderStyle()}>
-      <nav className="container mx-auto px-4 h-20 flex items-center justify-between">
+      <nav className="container mx-auto px-4 h-20 flex items-center justify-between pb-4 md:pb-0">
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-3 group">
           <div className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">

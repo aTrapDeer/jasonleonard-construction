@@ -141,7 +141,7 @@ export default function HomePage() {
           />
         </div>
 
-        <div className="relative z-10 text-center max-w-6xl mx-auto px-4">
+        <div className="relative z-10 text-center max-w-6xl mx-auto px-4 sm:px-6">
           <div
             className="transform transition-all duration-1000"
             style={{
@@ -149,27 +149,27 @@ export default function HomePage() {
               opacity: Math.max(1 - scrollY * 0.002, 0),
             }}
           >
-            <Badge className="bg-blue-500/20 text-blue-300 border-blue-500/30 mb-8 px-8 py-3 text-lg font-medium backdrop-blur-sm">
+            <Badge className="bg-blue-500/20 text-blue-300 border-blue-500/30 mb-4 sm:mb-6 md:mb-8 px-4 sm:px-6 md:px-8 py-2 sm:py-3 text-sm sm:text-base md:text-lg font-medium backdrop-blur-sm">
               Family Owned • Veteran Founded • Since 1990
             </Badge>
-            <div className="mb-12 px-4">
+            <div className="mb-8 sm:mb-10 md:mb-12 px-2 sm:px-4">
               <Image
                 src="/images/Logos/JasonLeonardLogo.png"
                 alt="Taylor Leonard Corp Logo"
                 width={400}
                 height={150}
-                className="mx-auto max-w-full h-auto"
+                className="mx-auto max-w-[50%] sm:max-w-[60%] md:max-w-[70%] lg:max-w-full h-auto"
               />
             </div>
-            <p className="text-2xl md:text-3xl font-light text-slate-300 mb-16 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-light text-slate-300 mb-12 sm:mb-14 md:mb-16 max-w-4xl mx-auto leading-relaxed px-4 sm:px-6 md:px-8 lg:px-0">
               Full Service Design-Build Construction Excellence
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 md:gap-8 justify-center items-center">
               <Button
                 size="lg"
                 asChild
-                className="bg-blue-500 hover:bg-blue-600 text-white px-16 py-6 text-xl font-medium rounded-full shadow-2xl hover:shadow-blue-500/25 transition-all duration-500 hover:scale-105"
+                className="bg-blue-500 hover:bg-blue-600 text-white px-8 sm:px-12 md:px-16 py-4 sm:py-5 md:py-6 text-base sm:text-lg md:text-xl font-medium rounded-full shadow-2xl hover:shadow-blue-500/25 transition-all duration-500 hover:scale-105 w-full sm:w-auto"
               >
                 <Link href="/projects">Explore Our Work</Link>
               </Button>
@@ -177,10 +177,10 @@ export default function HomePage() {
                 size="lg"
                 variant="outline"
                 asChild
-                className="border-white/30 text-white hover:bg-white hover:text-slate-900 px-16 py-6 text-xl font-medium rounded-full bg-transparent backdrop-blur-sm transition-all duration-500 hover:scale-105"
+                className="border-white/30 text-white hover:bg-white hover:text-slate-900 px-8 sm:px-12 md:px-16 py-4 sm:py-5 md:py-6 text-base sm:text-lg md:text-xl font-medium rounded-full bg-transparent backdrop-blur-sm transition-all duration-500 hover:scale-105 w-full sm:w-auto"
               >
                 <Link href="/contact">
-                  <Calendar className="mr-3 h-6 w-6" />
+                  <Calendar className="mr-2 sm:mr-3 h-5 w-5 sm:h-6 sm:w-6" />
                   Start Your Project
                 </Link>
               </Button>
@@ -190,14 +190,14 @@ export default function HomePage() {
 
         {/* Animated Scroll Indicator */}
         <div
-          className="absolute bottom-12 left-1/2 transform -translate-x-1/2 z-10"
+          className="absolute bottom-4 sm:bottom-6 left-1/2 transform -translate-x-1/2 z-10"
           style={{
             opacity: Math.max(1 - scrollY * 0.01, 0),
           }}
         >
           <div className="flex flex-col items-center text-white/60 animate-bounce">
-            <span className="text-sm font-light mb-4 tracking-widest">SCROLL TO EXPLORE</span>
-            <ChevronDown className="h-8 w-8" />
+            <span className="text-xs sm:text-sm font-light mb-2 sm:mb-4 tracking-widest">SCROLL TO EXPLORE</span>
+            <ChevronDown className="h-6 w-6 sm:h-8 sm:w-8" />
           </div>
         </div>
       </section>
