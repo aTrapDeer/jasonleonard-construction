@@ -22,6 +22,10 @@ import {
   Zap,
   Home,
   Wrench,
+  Droplets,
+  Flame,
+  TreePine,
+  Palette,
 } from "lucide-react"
 import Link from "next/link"
 import { useState } from "react"
@@ -429,7 +433,7 @@ export default function ServicesPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
             {specialtyServices.map((service, index) => {
               const Icon = service.icon
               return (
@@ -457,6 +461,113 @@ export default function ServicesPage() {
                 </Card>
               )
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* Strategic Partnerships */}
+      <section className="py-16 md:py-20 bg-slate-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">Strategic Partnerships</h2>
+            <p className="text-lg md:text-xl text-slate-600 mb-8">
+              We've built strong relationships with trusted specialists across all construction trades, ensuring seamless project delivery and comprehensive solutions for every client.
+            </p>
+            <p className="text-slate-700">
+              When we don't directly provide a service, our trusted partners step in to deliver the same level of quality and professionalism you expect from Taylor Leonard Corp.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+            <Card className="text-center hover:shadow-lg transition-all duration-300 border-0 bg-white">
+              <CardContent className="p-6">
+                <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Zap className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-lg font-bold text-slate-900 mb-2">Electrical</h3>
+                <p className="text-sm text-slate-600">Licensed electrical contractors for all wiring, lighting, and electrical system needs</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center hover:shadow-lg transition-all duration-300 border-0 bg-white">
+              <CardContent className="p-6">
+                <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Droplets className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-lg font-bold text-slate-900 mb-2">Plumbing</h3>
+                <p className="text-sm text-slate-600">Expert plumbing contractors for water, gas, and drainage systems</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center hover:shadow-lg transition-all duration-300 border-0 bg-white">
+              <CardContent className="p-6">
+                <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Settings className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-lg font-bold text-slate-900 mb-2">Mechanical</h3>
+                <p className="text-sm text-slate-600">HVAC and mechanical system specialists for climate control and ventilation</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center hover:shadow-lg transition-all duration-300 border-0 bg-white">
+              <CardContent className="p-6">
+                <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Building2 className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-lg font-bold text-slate-900 mb-2">Roofing</h3>
+                <p className="text-sm text-slate-600">Professional roofing contractors for all types of roof installations and repairs</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center hover:shadow-lg transition-all duration-300 border-0 bg-white">
+              <CardContent className="p-6">
+                <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Shield className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-lg font-bold text-slate-900 mb-2">Concrete & Foundations</h3>
+                <p className="text-sm text-slate-600">Foundation specialists and concrete flatwork experts for structural integrity</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center hover:shadow-lg transition-all duration-300 border-0 bg-white">
+              <CardContent className="p-6">
+                <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Flame className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-lg font-bold text-slate-900 mb-2">Storm/Fire/Water Mitigation</h3>
+                <p className="text-sm text-slate-600">Emergency response and damage restoration specialists</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center hover:shadow-lg transition-all duration-300 border-0 bg-white">
+              <CardContent className="p-6">
+                <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <TreePine className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-lg font-bold text-slate-900 mb-2">Land Clearing</h3>
+                <p className="text-sm text-slate-600">Site preparation and land clearing services for new construction projects</p>
+              </CardContent>
+            </Card>
+
+            <Card className="text-center hover:shadow-lg transition-all duration-300 border-0 bg-white">
+              <CardContent className="p-6">
+                <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Palette className="h-8 w-8 text-white" />
+                </div>
+                <h3 className="text-lg font-bold text-slate-900 mb-2">Landscaping</h3>
+                <p className="text-sm text-slate-600">Professional landscaping and outdoor design services</p>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center mt-12">
+            <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 max-w-2xl mx-auto">
+              <h3 className="text-xl font-bold text-slate-900 mb-3">Seamless Project Coordination</h3>
+              <p className="text-slate-700">
+                Our partnership network ensures that every aspect of your project is handled by qualified professionals. 
+                We coordinate all trades, manage timelines, and maintain quality control throughout the entire process.
+              </p>
+            </div>
           </div>
         </div>
       </section>
