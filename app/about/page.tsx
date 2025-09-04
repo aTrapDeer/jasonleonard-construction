@@ -8,25 +8,25 @@ import Link from "next/link"
 const teamMembers = [
   {
     name: "Jason",
-    title: "Founder & CEO",
+    title: "President & CEO",
     image: "/placeholder.svg?height=300&width=300",
-    bio: "Veteran founder with extensive experience in construction. Jason leads Taylor Leonard Corp with a commitment to quality and client satisfaction across all projects.",
+    bio: "Jason leads Taylor Leonard Corp with extensive experience in construction and a commitment to quality and client satisfaction across all projects.",
     experience: "30+ years",
     specialties: ["Project Leadership", "Client Relations", "Strategic Planning"],
   },
   {
-    name: "Sam",
-    title: "Operations Manager",
+    name: "Samantha",
+    title: "Operations Scheduling Manager",
     image: "/placeholder.svg?height=300&width=300",
-    bio: "Sam brings operational excellence to Taylor Leonard Corp, ensuring smooth project execution and quality control across all construction activities.",
+    bio: "Samantha brings operational excellence to Taylor Leonard Corp, ensuring smooth project execution and quality control across all construction activities.",
     experience: "20+ years",
     specialties: ["Operations Management", "Quality Control", "Team Leadership"],
   },
   {
-    name: "Joe",
-    title: "Project Manager",
+    name: "Joseph",
+    title: "Field Project Manager",
     image: "/placeholder.svg?height=300&width=300",
-    bio: "Joe's project management expertise helps tackle complex construction challenges with precision and ensures projects are delivered on time and within budget.",
+    bio: "Joseph's project management expertise helps tackle complex construction challenges with precision and ensures projects are delivered on time and within budget.",
     experience: "15+ years",
     specialties: ["Project Management", "Construction Coordination", "Client Communication"],
   },
@@ -92,7 +92,7 @@ const coreValues = [
   {
     icon: Users,
     title: "Family Owned",
-    description: "Veteran founded and family owned business with deep commitment to our community.",
+    description: "Family owned business with deep commitment to our community.",
   },
   {
     icon: Clock,
@@ -111,7 +111,7 @@ export default function AboutPage() {
             <div>
               <h1 className="text-3xl md:text-5xl font-bold mb-4 md:mb-6">About Taylor Leonard Corp</h1>
               <p className="text-lg md:text-xl text-slate-300 mb-6 md:mb-8">
-                Since 1990, we've been a family-owned, veteran-founded construction company delivering exceptional 
+                Since 1990, we've been a family-owned construction company delivering exceptional 
                 results across commercial and residential markets. Our commitment to quality and safety has earned 
                 us a 100% satisfaction rating across over 2,000 completed projects.
               </p>
@@ -159,11 +159,11 @@ export default function AboutPage() {
               <p className="mb-6">
                 Originally founded in 1990, our company was rebranded and reorganized as Taylor Leonard Corp 
                 in 2003. This transformation marked the beginning of our current era of excellence, bringing together 
-                veteran leadership and a commitment to exceptional service.
+                experienced leadership and a commitment to exceptional service.
               </p>
 
               <p className="mb-6">
-                As a family-owned, veteran-founded business, we've grown to serve both commercial and residential markets, 
+                As a family-owned business, we've grown to serve both commercial and residential markets, 
                 with 60% of our work in commercial construction including new construction, full-scale building solutions, 
                 tenant buildout/finish, property management, maintenance, 24/7 emergency service, and cleaning services, 
                 and 40% in residential projects. We provide complete design-build services, handling everything from initial 
@@ -283,7 +283,7 @@ export default function AboutPage() {
                   <div>
                     <h3 className="font-semibold text-slate-900 mb-2">Family Owned Values</h3>
                     <p className="text-slate-600">
-                      Veteran founded and family owned business with personal commitment to every client relationship.
+                      Family owned business with personal commitment to every client relationship.
                     </p>
                   </div>
                 </div>

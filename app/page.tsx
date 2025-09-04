@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, Calendar, Award, Users, Building, Shield, ChevronDown, X, Building2, Wrench, Sparkles, Settings, Home } from "lucide-react"
+import { ArrowRight, Calendar, Award, Building, Shield, ChevronDown, X, Building2, Wrench, Sparkles, Settings, Home } from "lucide-react"
 import VendorCarousel from "@/components/vendor-carousel"
 
 export default function HomePage() {
@@ -150,7 +150,7 @@ export default function HomePage() {
             }}
           >
             <Badge className="bg-blue-500/20 text-blue-300 border-blue-500/30 mb-4 sm:mb-6 md:mb-8 px-4 sm:px-6 md:px-8 py-2 sm:py-3 text-sm sm:text-base md:text-lg font-medium backdrop-blur-sm">
-              Family Owned • Veteran Founded • Since 1990
+              Family Owned • Community Trusted • Est. 1990
             </Badge>
             <div className="mb-8 sm:mb-10 md:mb-12 px-2 sm:px-4">
               <Image
@@ -210,12 +210,11 @@ export default function HomePage() {
             <div className="w-32 h-1 bg-gradient-to-r from-blue-500 to-blue-600 mx-auto" />
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 max-w-7xl mx-auto">
             {[
               { number: "30+", label: "Years of Excellence", icon: Award, delay: "0ms" },
               { number: "2M+", label: "Square Feet Built", icon: Building, delay: "200ms" },
-              { number: "575+", label: "Projects Completed", icon: Users, delay: "400ms" },
-              { number: "100%", label: "Satisfaction Rating", icon: Shield, delay: "600ms" },
+              { number: "100%", label: "Satisfaction Rating", icon: Shield, delay: "400ms" },
             ].map((stat, index) => (
               <div key={index} className="zoom-animate group cursor-pointer" style={{ transitionDelay: stat.delay }}>
                 <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-4 sm:p-6 lg:p-8 shadow-2xl hover:shadow-blue-500/20 transition-all duration-700 group-hover:scale-110 group-hover:-translate-y-4 border border-slate-700/50">
@@ -337,38 +336,43 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="zoom-animate max-w-7xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-10 md:gap-16 items-center">
-              <div className="space-y-8">
-                <Badge className="bg-blue-500/20 text-blue-300 border-blue-500/30 px-6 py-3 text-lg backdrop-blur-sm">
-                  Featured Project
-                </Badge>
-                <h2 className="text-6xl md:text-7xl font-thin leading-tight">
-                  Bonan
-                  <span className="block text-blue-400 font-extralight">Towers</span>
-                </h2>
-                <p className="text-2xl font-light text-slate-300 leading-relaxed">
-                  A stunning 81,000 sq ft commercial development that showcases our expertise in large-scale construction. 
-                  Currently under a 4-year management and maintenance contract, demonstrating our commitment to long-term client partnerships.
-                </p>
-                <div className="grid grid-cols-2 gap-12">
-                  <div className="text-center">
-                    <div className="text-5xl font-thin text-blue-400 mb-3">81K</div>
-                    <div className="text-lg font-medium text-slate-400 tracking-wide">SQUARE FEET</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-5xl font-thin text-blue-400 mb-3">4</div>
-                    <div className="text-lg font-medium text-slate-400 tracking-wide">YEAR CONTRACT</div>
+              <div className="space-y-12">
+                <div className="space-y-6">
+                  <Badge className="bg-blue-500/20 text-blue-300 border-blue-500/30 px-6 py-3 text-lg backdrop-blur-sm">
+                    Recent Project
+                  </Badge>
+                  <h2 className="text-6xl md:text-7xl font-thin leading-tight">
+                    Bonan
+                    <span className="block text-blue-400 font-extralight">Towers</span>
+                  </h2>
+                  <p className="text-2xl font-light text-slate-300 leading-relaxed">
+                    A stunning 81,000 sq ft commercial development that showcases our expertise in large-scale construction.
+                  </p>
+                </div>
+                
+                {/* Left-aligned Statistics Section */}
+                <div className="relative py-4">
+                  <div className="flex justify-start">
+                    <div className="text-left bg-gradient-to-br from-slate-800/50 to-slate-900/50 rounded-xl px-8 py-6 border border-slate-700/30 backdrop-blur-sm">
+                      <div className="text-4xl md:text-5xl font-thin text-blue-400 mb-2">81K</div>
+                      <div className="w-12 h-0.5 bg-gradient-to-r from-blue-500 to-blue-600 mb-2"></div>
+                      <div className="text-base font-medium text-slate-300 tracking-wide">SQUARE FEET</div>
+                    </div>
                   </div>
                 </div>
-                <Button
-                  asChild
-                  size="lg"
-                  className="bg-blue-500 hover:bg-blue-600 text-white px-12 py-6 rounded-full font-medium text-xl hover:scale-105 transition-all duration-300"
-                >
-                  <Link href="/projects">
-                    View All Projects
-                    <ArrowRight className="ml-3 h-6 w-6" />
-                  </Link>
-                </Button>
+
+                <div className="pt-4">
+                  <Button
+                    asChild
+                    size="lg"
+                    className="bg-blue-500 hover:bg-blue-600 text-white px-12 py-6 rounded-full font-medium text-xl hover:scale-105 transition-all duration-300"
+                  >
+                    <Link href="/projects">
+                      View All Projects
+                      <ArrowRight className="ml-3 h-6 w-6" />
+                    </Link>
+                  </Button>
+                </div>
               </div>
               <div className="relative">
                 <div className="zoom-animate">
@@ -401,20 +405,9 @@ export default function HomePage() {
                 Their attention to detail is extraordinary.
                 <span className="text-blue-400 text-8xl absolute -bottom-8 -right-4 opacity-50">"</span>
               </blockquote>
-              <div className="flex items-center justify-center space-x-6">
-                <div className="w-20 h-20 rounded-full overflow-hidden border-4 border-blue-500/30">
-                  <Image
-                    src="/placeholder.svg?height=80&width=80&text=Client"
-                    alt="Client"
-                    width={80}
-                    height={80}
-                    className="object-cover"
-                  />
-                </div>
-                <div className="text-left">
-                  <div className="text-2xl font-medium text-white">Project Owner</div>
-                  <div className="text-xl text-slate-400 font-light">Bonan Towers Development</div>
-                </div>
+              <div className="text-center">
+                <div className="text-2xl font-medium text-white">Bill Bonan</div>
+                <div className="text-xl text-slate-400 font-light">Chairman of the Board, Peoples National Bank</div>
               </div>
             </div>
           </div>

@@ -53,7 +53,7 @@ const mainServices = [
     ],
     idealFor: ["Commercial buildings", "Office complexes", "Retail centers", "Industrial facilities", "Multi-tenant properties"],
     image: "/placeholder.svg?height=300&width=400&text=Commercial+Construction",
-    stats: { experience: "30+ Years", projects: "75+", satisfaction: "100%" },
+    stats: { experience: "30+ Years", satisfaction: "100%" },
   },
   {
     id: "design-build",
@@ -77,7 +77,7 @@ const mainServices = [
     ],
     idealFor: ["Complex commercial projects", "Custom residential homes", "Banks and financial institutions"],
     image: "/placeholder.svg?height=300&width=400&text=Design-Build+Projects",
-    stats: { experience: "30+ Years", projects: "575+", satisfaction: "100%" },
+    stats: { experience: "30+ Years", satisfaction: "100%" },
   },
   {
     id: "residential-construction",
@@ -101,7 +101,7 @@ const mainServices = [
     ],
     idealFor: ["Custom homes", "Residential renovations", "Home additions", "Kitchen/bath remodels"],
     image: "/placeholder.svg?height=300&width=400&text=Residential+Construction",
-    stats: { experience: "30+ Years", projects: "500+", satisfaction: "100%" },
+    stats: { experience: "30+ Years", satisfaction: "100%" },
   },
   {
     id: "property-management",
@@ -125,7 +125,7 @@ const mainServices = [
     ],
     idealFor: ["Commercial buildings", "Office complexes", "Multi-tenant facilities"],
     image: "/placeholder.svg?height=300&width=400&text=Property+Management",
-    stats: { experience: "30+ Years", projects: "100+", satisfaction: "100%" },
+    stats: { experience: "30+ Years", satisfaction: "100%" },
   },
   {
     id: "construction-management",
@@ -149,7 +149,7 @@ const mainServices = [
     ],
     idealFor: ["Large-scale projects", "Complex coordination needs", "Multi-phase developments"],
     image: "/placeholder.svg?height=300&width=400&text=Construction+Management",
-    stats: { experience: "30+ Years", projects: "200+", satisfaction: "100%" },
+    stats: { experience: "30+ Years", satisfaction: "100%" },
   },
   {
     id: "consulting",
@@ -173,7 +173,7 @@ const mainServices = [
     ],
     idealFor: ["Feasibility studies", "Project evaluation", "Due diligence"],
     image: "/placeholder.svg?height=300&width=400&text=Construction+Consulting",
-    stats: { experience: "30+ Years", projects: "150+", satisfaction: "100%" },
+    stats: { experience: "30+ Years", satisfaction: "100%" },
   },
 ]
 
@@ -301,10 +301,6 @@ export default function ServicesPage() {
                     <div className="flex items-start justify-between mb-4">
                       <div className={`p-4 rounded-xl bg-gradient-to-r ${service.gradient} shadow-lg`}>
                         <Icon className="h-8 w-8 text-white" />
-                      </div>
-                      <div className="text-right">
-                        <div className="text-2xl font-bold text-slate-900">{service.stats.projects}</div>
-                        <div className="text-sm text-slate-500">Projects</div>
                       </div>
                     </div>
 
@@ -601,7 +597,7 @@ export default function ServicesPage() {
                   <Users className="h-8 w-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-slate-900 mb-2">Family Owned</h3>
-                <p className="text-slate-600">Veteran Founded</p>
+                <p className="text-slate-600">Community Trusted</p>
               </div>
               <div className="text-center">
                 <div className="w-16 h-16 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
