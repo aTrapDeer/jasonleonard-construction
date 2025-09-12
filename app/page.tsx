@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge"
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, Calendar, Award, Building, Shield, ChevronDown, X, Building2, Wrench, Sparkles, Settings, Home } from "lucide-react"
-import VendorCarousel from "@/components/vendor-carousel"
+// import VendorCarousel from "@/components/vendor-carousel" // DISABLED
 
 export default function HomePage() {
   const [scrollY, setScrollY] = useState(0)
@@ -414,8 +414,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Vendor Carousel Section */}
-      <VendorCarousel />
+      {/* Vendor Carousel Section - DISABLED */}
+      {/* Re-Enable when the vendor's are ready */}
+      {/* <VendorCarousel /> */}
 
       {/* CTA Section - Final Impact */}
       <section className="py-32 bg-gradient-to-b from-black to-slate-900 relative overflow-hidden">
