@@ -45,28 +45,28 @@ const projects = [
   },
   {
     id: 2,
-    title: "Fox School District - Meramec Heights Elementary",
+    title: "Fox School District - Meramec Heights Middle School",
     category: "Commercial",
     market: "Educational",
-    location: "Fox School District, Missouri",
+    location: "Fox School District, St. Louis, Missouri",
     completionYear: 2023,
     size: "Educational Facility",
     budget: "Educational Project",
     duration: "18 months",
-    image: "/images/markets/foxschool.jpg",
+    image: "/images/properties/commercial/FoxMiddleSchool.jpg",
     gallery: [
-      "/images/markets/foxschool.jpg",
+      "/images/properties/commercial/FoxMiddleSchool.jpg",
       "/placeholder.svg?height=400&width=600",
       "/placeholder.svg?height=400&width=600",
     ],
     description:
-      "Educational facility construction focused on providing accessibility for disabled students and creating a safe, modern learning environment.",
+      "Educational facility construction focused on providing accessibility for disabled students and creating a safe, modern learning environment for middle school students.",
     challenge:
       "Ensuring full ADA compliance and accessibility features while maintaining a safe construction environment around an active school district.",
     solution:
       "Worked closely with school district officials to implement comprehensive accessibility features and safety protocols throughout construction.",
     results:
-      "Delivered a fully accessible educational facility that serves students with disabilities and provides a modern learning environment for all students.",
+      "Delivered a fully accessible middle school facility that serves students with disabilities and provides a modern learning environment for all students.",
     features: [
       "ADA compliance",
       "Accessibility features",
@@ -122,45 +122,6 @@ const projects = [
     },
   },
   {
-    id: 4,
-    title: "Custom Family Residence",
-    category: "Residential",
-    market: "Custom Homes",
-    location: "Missouri",
-    completionYear: 2023,
-    size: "3,500 SQ FT",
-    budget: "Residential Project",
-    duration: "12 months",
-    image: "/placeholder.svg?height=400&width=600",
-    gallery: [
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
-    ],
-    description:
-      "Custom home construction featuring quality craftsmanship and personalized design elements tailored to the family's specific needs.",
-    challenge:
-      "Creating a custom home that balances modern amenities with traditional craftsmanship while staying within budget and timeline.",
-    solution:
-      "Applied our residential construction expertise to deliver custom design elements with quality materials and exceptional attention to detail.",
-    results:
-      "Delivered a beautiful custom home that exceeds the family's expectations and demonstrates our commitment to residential construction excellence.",
-    features: [
-      "Custom design elements",
-      "Quality craftsmanship",
-      "Modern amenities",
-      "Energy efficient systems",
-      "Personalized features",
-    ],
-    services: ["Residential Construction", "Custom Design", "Quality Craftsmanship"],
-    testimonial: {
-      quote:
-        "Taylor Leonard Corp built our dream home with incredible attention to detail. Their craftsmanship and professionalism exceeded our expectations.",
-      author: "Homeowners",
-      role: "Custom Home Clients",
-    },
-  },
-  {
     id: 5,
     title: "Medical Office Building",
     category: "Commercial",
@@ -199,49 +160,480 @@ const projects = [
       role: "Healthcare Provider",
     },
   },
+  // New Residential Properties
   {
-    id: 6,
-    title: "Warehouse Facility",
-    category: "Commercial",
-    market: "Industrial",
-    location: "Missouri",
-    completionYear: 2022,
-    size: "25,000 SQ FT",
-    budget: "Industrial Project",
-    duration: "12 months",
-    image: "/placeholder.svg?height=400&width=600",
+    id: 7,
+    title: "109 Bellerosa Dr",
+    category: "Residential",
+    market: "Custom Homes",
+    location: "St. Louis, Missouri",
+    completionYear: 2023,
+    size: "Custom Home",
+    budget: "Residential Project",
+    duration: "Custom construction",
+    image: "/images/properties/homes/109BellerosaDr.jpg",
     gallery: [
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
-      "/placeholder.svg?height=400&width=600",
+      "/images/properties/homes/109BellerosaDr.jpg",
     ],
     description:
-      "Large-scale warehouse construction focusing on functionality, efficiency, and industrial-grade systems.",
+      "Custom residential construction showcasing quality craftsmanship and modern design elements tailored to the homeowner's vision.",
     challenge:
-      "Delivering a large-scale industrial facility with efficient design and robust systems within tight timeline constraints.",
+      "Creating a custom home that meets specific design requirements while maintaining quality construction standards and timeline.",
     solution:
-      "Applied our warehousing construction expertise to create an efficient layout with industrial-grade systems and materials.",
+      "Applied our residential construction expertise to deliver custom design elements with quality materials and exceptional attention to detail.",
     results:
-      "Successfully completed a functional warehouse facility that meets industrial operational requirements and provides efficient workflow.",
+      "Successfully completed a beautiful custom home that demonstrates our commitment to residential construction excellence.",
     features: [
-      "Large-scale construction",
-      "Industrial systems",
-      "Efficient design",
-      "Robust materials",
-      "Operational functionality",
+      "Quality construction",
+      "Modern design",
+      "Professional craftsmanship",
+      "Custom features",
+      "Residential expertise",
     ],
-    services: ["Industrial Construction", "Warehouse Design", "Large-Scale Projects"],
+    services: ["Residential Construction", "Custom Design", "Quality Craftsmanship"],
     testimonial: {
-      quote:
-        "Taylor Leonard Corp delivered exactly what we needed - a functional, well-built warehouse that supports our operations perfectly.",
-      author: "Operations Manager",
-      role: "Industrial Client",
+      quote: "Taylor Leonard Corp built our home with incredible attention to detail and quality throughout.",
+      author: "Homeowner",
+      role: "109 Bellerosa Dr",
+    },
+  },
+  {
+    id: 8,
+    title: "105 Bellerosa Dr",
+    category: "Residential",
+    market: "Custom Homes",
+    location: "St. Louis, Missouri",
+    completionYear: 2023,
+    size: "Custom Home",
+    budget: "Residential Project",
+    duration: "Custom construction",
+    image: "/images/properties/homes/105BellerosaDr.jpg",
+    gallery: [
+      "/images/properties/homes/105BellerosaDr.jpg",
+    ],
+    description:
+      "Quality residential construction featuring professional craftsmanship and modern amenities for comfortable family living.",
+    challenge:
+      "Delivering a quality home construction project that balances modern features with traditional craftsmanship standards.",
+    solution:
+      "Utilized our residential construction experience to create a well-built home with quality materials and professional finish work.",
+    results:
+      "Completed a quality residential home that serves as an example of our dedication to craftsmanship and client satisfaction.",
+    features: [
+      "Professional construction",
+      "Quality materials",
+      "Modern amenities",
+      "Skilled craftsmanship",
+      "Residential expertise",
+    ],
+    services: ["Residential Construction", "Quality Building", "Professional Craftsmanship"],
+    testimonial: {
+      quote: "The quality of construction and attention to detail exceeded our expectations.",
+      author: "Homeowner",
+      role: "105 Bellerosa Dr",
+    },
+  },
+  {
+    id: 9,
+    title: "38 Benton Pl",
+    category: "Residential",
+    market: "Custom Homes",
+    location: "St. Louis, Missouri",
+    completionYear: 2023,
+    size: "Custom Home",
+    budget: "Residential Project",
+    duration: "Custom construction",
+    image: "/images/properties/homes/38BentonPl.jpg",
+    gallery: [
+      "/images/properties/homes/38BentonPl.jpg",
+    ],
+    description:
+      "Custom home construction with focus on design excellence and quality building practices for modern residential living.",
+    challenge:
+      "Creating a custom residential design while ensuring construction quality and meeting homeowner expectations.",
+    solution:
+      "Applied comprehensive residential construction knowledge to deliver custom design with professional building standards.",
+    results:
+      "Successfully delivered a custom home that showcases our residential construction capabilities and design flexibility.",
+    features: [
+      "Custom design",
+      "Quality construction",
+      "Professional finish",
+      "Modern features",
+      "Residential craftsmanship",
+    ],
+    services: ["Custom Home Construction", "Residential Design", "Quality Building"],
+    testimonial: {
+      quote: "Taylor Leonard Corp delivered exactly what we envisioned with exceptional quality throughout.",
+      author: "Homeowner",
+      role: "38 Benton Pl",
+    },
+  },
+  {
+    id: 10,
+    title: "2000 Ruger St",
+    category: "Residential",
+    market: "Custom Homes",
+    location: "St. Louis, Missouri",
+    completionYear: 2023,
+    size: "Residential Home",
+    budget: "Residential Project",
+    duration: "Residential construction",
+    image: "/images/properties/homes/2000RugerSt.jpg",
+    gallery: [
+      "/images/properties/homes/2000RugerSt.jpg",
+    ],
+    description:
+      "Quality residential construction demonstrating professional craftsmanship and modern building techniques for family living.",
+    challenge:
+      "Providing quality residential construction services while maintaining high standards of craftsmanship and client satisfaction.",
+    solution:
+      "Leveraged our residential construction expertise to deliver quality building with professional attention to detail.",
+    results:
+      "Completed a well-built residential home that demonstrates our commitment to quality construction and customer service.",
+    features: [
+      "Quality construction",
+      "Residential expertise",
+      "Professional craftsmanship",
+      "Modern updates",
+      "Reliable building",
+    ],
+    services: ["Residential Construction", "Quality Building", "Professional Service"],
+    testimonial: {
+      quote: "Professional service and quality construction made this project a success.",
+      author: "Homeowner",
+      role: "2000 Ruger St",
+    },
+  },
+  {
+    id: 11,
+    title: "Gallery 720 Apartments",
+    category: "Residential",
+    market: "Multi-Family",
+    location: "St. Louis, Missouri",
+    completionYear: 2023,
+    size: "Multi-Family Development",
+    budget: "Residential Development",
+    duration: "Multi-family construction",
+    image: "/images/properties/homes/Gallery720Apartments.jpg",
+    gallery: [
+      "/images/properties/homes/Gallery720Apartments.jpg",
+    ],
+    description:
+      "Multi-family residential development featuring modern amenities and quality construction for urban apartment living.",
+    challenge:
+      "Managing multi-family residential construction with complex coordination requirements and quality standards.",
+    solution:
+      "Applied our multi-family construction experience to deliver quality apartment development with modern amenities.",
+    results:
+      "Successfully completed a multi-family development that provides quality urban living with professional construction standards.",
+    features: [
+      "Multi-family development",
+      "Modern amenities",
+      "Quality construction",
+      "Urban living",
+      "Professional development",
+    ],
+    services: ["Multi-Family Construction", "Residential Development", "Urban Construction"],
+    testimonial: {
+      quote: "Taylor Leonard Corp delivered a quality multi-family development that meets all our requirements.",
+      author: "Development Manager",
+      role: "Gallery 720 Apartments",
+    },
+  },
+  {
+    id: 12,
+    title: "Gallery 515 Millennium Luxury",
+    category: "Residential",
+    market: "Luxury Homes",
+    location: "St. Louis, Missouri",
+    completionYear: 2023,
+    size: "Luxury Development",
+    budget: "Premium Project",
+    duration: "Luxury construction",
+    image: "/images/properties/homes/Gallery515MillenniumLuxury.jpg",
+    gallery: [
+      "/images/properties/homes/Gallery515MillenniumLuxury.jpg",
+    ],
+    description:
+      "Premium luxury residential development featuring high-end finishes and superior construction quality for discerning clients.",
+    challenge:
+      "Delivering luxury residential construction that meets premium standards while managing complex high-end requirements.",
+    solution:
+      "Utilized our luxury construction expertise to provide premium materials, finishes, and craftsmanship throughout the project.",
+    results:
+      "Completed a luxury residential development that exemplifies our capability in high-end construction and premium quality.",
+    features: [
+      "Luxury finishes",
+      "Premium construction",
+      "High-end amenities",
+      "Quality craftsmanship",
+      "Luxury development",
+    ],
+    services: ["Luxury Construction", "Premium Development", "High-End Building"],
+    testimonial: {
+      quote: "The luxury and quality of this development exceeds expectations in every detail.",
+      author: "Luxury Client",
+      role: "Gallery 515 Millennium",
+    },
+  },
+  {
+    id: 13,
+    title: "6159 Lindell Blvd",
+    category: "Residential",
+    market: "Urban Homes",
+    location: "St. Louis, Missouri",
+    completionYear: 2023,
+    size: "Urban Residence",
+    budget: "Residential Project",
+    duration: "Renovation project",
+    image: "/images/properties/homes/6159LindellBlvd.jpg",
+    gallery: [
+      "/images/properties/homes/6159LindellBlvd.jpg",
+    ],
+    description:
+      "Urban residential renovation showcasing quality updates and professional construction in a prime city location.",
+    challenge:
+      "Renovating an urban residence while maintaining neighborhood character and implementing modern improvements.",
+    solution:
+      "Applied renovation expertise to blend modern updates with existing architecture while ensuring quality construction.",
+    results:
+      "Successfully renovated an urban residence that combines modern functionality with quality craftsmanship.",
+    features: [
+      "Urban location",
+      "Quality renovation",
+      "Modern updates",
+      "Professional finish",
+      "City construction",
+    ],
+    services: ["Urban Renovation", "Residential Updates", "Quality Construction"],
+    testimonial: {
+      quote: "The renovation transformed our home while maintaining its character and charm.",
+      author: "Homeowner",
+      role: "6159 Lindell Blvd",
+    },
+  },
+  {
+    id: 14,
+    title: "6023 Lindell Blvd",
+    category: "Residential",
+    market: "Urban Homes",
+    location: "St. Louis, Missouri",
+    completionYear: 2023,
+    size: "Urban Residence",
+    budget: "Residential Project",
+    duration: "Residential construction",
+    image: "/images/properties/homes/6023LindellBlvd.jpg",
+    gallery: [
+      "/images/properties/homes/6023LindellBlvd.jpg",
+    ],
+    description:
+      "Urban residential construction featuring quality building practices and modern design for city living.",
+    challenge:
+      "Delivering quality residential construction in an urban setting while meeting city requirements and standards.",
+    solution:
+      "Used our urban construction experience to navigate city requirements while delivering quality residential building.",
+    results:
+      "Completed a quality urban residence that demonstrates our ability to work effectively in city environments.",
+    features: [
+      "Urban construction",
+      "Quality building",
+      "City compliance",
+      "Modern design",
+      "Residential expertise",
+    ],
+    services: ["Urban Construction", "Residential Building", "City Projects"],
+    testimonial: {
+      quote: "Professional construction and quality work throughout the entire project.",
+      author: "Homeowner",
+      role: "6023 Lindell Blvd",
+    },
+  },
+  // New Commercial Properties
+  {
+    id: 15,
+    title: "AD Brown Building",
+    category: "Commercial",
+    market: "Commercial Development",
+    location: "St. Louis, Missouri",
+    completionYear: 2023,
+    size: "Commercial Building",
+    budget: "Commercial Project",
+    duration: "Commercial construction",
+    image: "/images/properties/commercial/AD Brown Building.jpg",
+    gallery: [
+      "/images/properties/commercial/AD Brown Building.jpg",
+    ],
+    description:
+      "Commercial building construction featuring professional design and quality materials for business operations.",
+    challenge:
+      "Delivering commercial construction that meets business operational needs while maintaining quality and timeline requirements.",
+    solution:
+      "Applied commercial construction expertise to create functional business space with quality materials and professional systems.",
+    results:
+      "Successfully completed a commercial building that serves business needs with quality construction and professional finish.",
+    features: [
+      "Commercial construction",
+      "Professional design",
+      "Quality materials",
+      "Modern systems",
+      "Business functionality",
+    ],
+    services: ["Commercial Construction", "Business Building", "Professional Development"],
+    testimonial: {
+      quote: "Taylor Leonard Corp delivered a quality commercial building that meets all our business requirements.",
+      author: "Business Owner",
+      role: "AD Brown Building",
+    },
+  },
+  {
+    id: 16,
+    title: "816 S Kirkwood Rd",
+    category: "Commercial",
+    market: "Commercial Development",
+    location: "St. Louis, Missouri",
+    completionYear: 2023,
+    size: "Commercial Property",
+    budget: "Commercial Project",
+    duration: "Commercial construction",
+    image: "/images/properties/commercial/816SKirkwoodRd.jpg",
+    gallery: [
+      "/images/properties/commercial/816SKirkwoodRd.jpg",
+    ],
+    description:
+      "Commercial property construction demonstrating professional expertise and quality finish for business use.",
+    challenge:
+      "Providing commercial construction services that balance functionality, quality, and business operational requirements.",
+    solution:
+      "Leveraged commercial construction experience to deliver professional building with quality finish and business functionality.",
+    results:
+      "Completed a commercial property that showcases our commitment to quality construction and professional service.",
+    features: [
+      "Commercial expertise",
+      "Professional construction",
+      "Quality finish",
+      "Modern features",
+      "Business focus",
+    ],
+    services: ["Commercial Construction", "Professional Building", "Business Development"],
+    testimonial: {
+      quote: "Professional service and quality construction made this commercial project successful.",
+      author: "Commercial Client",
+      role: "816 S Kirkwood Rd",
+    },
+  },
+  {
+    id: 17,
+    title: "Sunset Hill Family Chiropractic",
+    category: "Commercial",
+    market: "Healthcare",
+    location: "St. Louis, Missouri",
+    completionYear: 2023,
+    size: "Medical Office",
+    budget: "Healthcare Project",
+    duration: "Medical construction",
+    image: "/images/properties/commercial/SunsetHillFamilyChiropractic.jpg",
+    gallery: [
+      "/images/properties/commercial/SunsetHillFamilyChiropractic.jpg",
+    ],
+    description:
+      "Healthcare facility construction with specialized design for chiropractic practice and patient care requirements.",
+    challenge:
+      "Creating a medical facility that meets healthcare operational needs while ensuring patient comfort and accessibility.",
+    solution:
+      "Applied healthcare construction expertise to design and build a functional chiropractic facility with quality systems.",
+    results:
+      "Successfully completed a healthcare facility that serves patients effectively with professional medical construction standards.",
+    features: [
+      "Healthcare construction",
+      "Professional design",
+      "Medical facility expertise",
+      "Quality craftsmanship",
+      "Patient focus",
+    ],
+    services: ["Healthcare Construction", "Medical Building", "Professional Development"],
+    testimonial: {
+      quote: "The facility perfectly supports our practice with quality construction and thoughtful design.",
+      author: "Dr. Chiropractic",
+      role: "Sunset Hill Family Chiropractic",
+    },
+  },
+  {
+    id: 18,
+    title: "Sq. Wires Restaurant And Market",
+    category: "Commercial",
+    market: "Hospitality",
+    location: "St. Louis, Missouri",
+    completionYear: 2023,
+    size: "Restaurant/Retail",
+    budget: "Commercial Project",
+    duration: "Restaurant construction",
+    image: "/images/properties/commercial/SqWiresRestaurantAndMarket.jpg",
+    gallery: [
+      "/images/properties/commercial/SqWiresRestaurantAndMarket.jpg",
+    ],
+    description:
+      "Restaurant and market construction featuring commercial kitchen design and retail space for food service operations.",
+    challenge:
+      "Building a combined restaurant and market facility that meets food service regulations and retail operational needs.",
+    solution:
+      "Used restaurant construction expertise to create functional kitchen and retail spaces with proper systems and finishes.",
+    results:
+      "Delivered a successful restaurant and market facility that supports food service operations with professional construction.",
+    features: [
+      "Restaurant construction",
+      "Commercial kitchen",
+      "Retail space",
+      "Professional finish",
+      "Food service systems",
+    ],
+    services: ["Restaurant Construction", "Commercial Kitchen", "Retail Building"],
+    testimonial: {
+      quote: "Our restaurant and market operates perfectly thanks to the quality construction and design.",
+      author: "Restaurant Owner",
+      role: "Sq. Wires Restaurant",
+    },
+  },
+  {
+    id: 19,
+    title: "Winter Opera St Louis",
+    category: "Commercial",
+    market: "Entertainment",
+    location: "St. Louis, Missouri",
+    completionYear: 2023,
+    size: "Entertainment Venue",
+    budget: "Commercial Project",
+    duration: "Specialized construction",
+    image: "/images/properties/commercial/WinterOperaStLouis.jpg",
+    gallery: [
+      "/images/properties/commercial/WinterOperaStLouis.jpg",
+    ],
+    description:
+      "Entertainment venue construction with specialized design for performance space and acoustic considerations.",
+    challenge:
+      "Creating an entertainment venue that meets performance requirements while ensuring quality construction and safety.",
+    solution:
+      "Applied specialized construction knowledge to build a performance venue with acoustic design and professional systems.",
+    results:
+      "Successfully completed an entertainment venue that provides excellent performance space with quality construction.",
+    features: [
+      "Entertainment venue",
+      "Specialized construction",
+      "Acoustic considerations",
+      "Professional craftsmanship",
+      "Performance space",
+    ],
+    services: ["Entertainment Construction", "Specialized Building", "Performance Venues"],
+    testimonial: {
+      quote: "The venue provides excellent acoustics and performance space with outstanding construction quality.",
+      author: "Arts Director",
+      role: "Winter Opera St Louis",
     },
   },
 ]
 
 const categories = ["All", "Residential", "Commercial"]
-const markets = ["All", "Commercial Development", "Educational", "Financial", "Custom Homes", "Healthcare", "Industrial"]
+const markets = ["All", "Commercial Development", "Educational", "Financial", "Custom Homes", "Multi-Family", "Luxury Homes", "Urban Homes", "Healthcare", "Hospitality", "Entertainment", "Industrial"]
 const years = ["All", "2024", "2023", "2022", "2021"]
 
 export default function ProjectsPage() {
