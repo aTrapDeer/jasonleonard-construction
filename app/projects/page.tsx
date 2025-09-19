@@ -163,7 +163,7 @@ const projects = [
   // New Residential Properties
   {
     id: 7,
-    title: "109 Bellerosa Dr",
+    title: "Bellerosa Drive Residence",
     category: "Residential",
     market: "Custom Homes",
     location: "St. Louis, Missouri",
@@ -194,12 +194,12 @@ const projects = [
     testimonial: {
       quote: "Taylor Leonard Corp built our home with incredible attention to detail and quality throughout.",
       author: "Homeowner",
-      role: "109 Bellerosa Dr",
+      role: "Bellerosa Drive Residence",
     },
   },
   {
     id: 8,
-    title: "105 Bellerosa Dr",
+    title: "Bellerosa Drive Residence",
     category: "Residential",
     market: "Custom Homes",
     location: "St. Louis, Missouri",
@@ -230,12 +230,12 @@ const projects = [
     testimonial: {
       quote: "The quality of construction and attention to detail exceeded our expectations.",
       author: "Homeowner",
-      role: "105 Bellerosa Dr",
+      role: "Bellerosa Drive Home",
     },
   },
   {
     id: 9,
-    title: "38 Benton Pl",
+    title: "Benton Place Residence",
     category: "Residential",
     market: "Custom Homes",
     location: "St. Louis, Missouri",
@@ -266,12 +266,12 @@ const projects = [
     testimonial: {
       quote: "Taylor Leonard Corp delivered exactly what we envisioned with exceptional quality throughout.",
       author: "Homeowner",
-      role: "38 Benton Pl",
+      role: "Benton Place Residence",
     },
   },
   {
     id: 10,
-    title: "2000 Ruger St",
+    title: "Ruger Street Residence",
     category: "Residential",
     market: "Custom Homes",
     location: "St. Louis, Missouri",
@@ -302,7 +302,7 @@ const projects = [
     testimonial: {
       quote: "Professional service and quality construction made this project a success.",
       author: "Homeowner",
-      role: "2000 Ruger St",
+      role: "Ruger Street Home",
     },
   },
   {
@@ -379,7 +379,7 @@ const projects = [
   },
   {
     id: 13,
-    title: "6159 Lindell Blvd",
+    title: "Lindell Boulevard Urban Home",
     category: "Residential",
     market: "Urban Homes",
     location: "St. Louis, Missouri",
@@ -410,12 +410,12 @@ const projects = [
     testimonial: {
       quote: "The renovation transformed our home while maintaining its character and charm.",
       author: "Homeowner",
-      role: "6159 Lindell Blvd",
+      role: "Lindell Boulevard Residence",
     },
   },
   {
     id: 14,
-    title: "6023 Lindell Blvd",
+    title: "Lindell Boulevard Residence",
     category: "Residential",
     market: "Urban Homes",
     location: "St. Louis, Missouri",
@@ -446,7 +446,7 @@ const projects = [
     testimonial: {
       quote: "Professional construction and quality work throughout the entire project.",
       author: "Homeowner",
-      role: "6023 Lindell Blvd",
+      role: "Lindell Boulevard Home",
     },
   },
   // New Commercial Properties
@@ -488,7 +488,7 @@ const projects = [
   },
   {
     id: 16,
-    title: "816 S Kirkwood Rd",
+    title: "Kirkwood Road Commercial Property",
     category: "Commercial",
     market: "Commercial Development",
     location: "St. Louis, Missouri",
@@ -519,7 +519,7 @@ const projects = [
     testimonial: {
       quote: "Professional service and quality construction made this commercial project successful.",
       author: "Commercial Client",
-      role: "816 S Kirkwood Rd",
+      role: "Kirkwood Road Property",
     },
   },
   {
