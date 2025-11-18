@@ -1,5 +1,5 @@
 import type React from "react"
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import { Header } from "@/components/header"
@@ -8,6 +8,13 @@ import { GoogleAnalytics } from "@/components/google-analytics"
 
 const inter = Inter({ subsets: ["latin"], display: "swap" })
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  viewportFit: "cover",
+}
+
 export const metadata: Metadata = {
   title: "Taylor Leonard Corp | Commercial & Residential Construction",
   description:
@@ -15,12 +22,6 @@ export const metadata: Metadata = {
   keywords:
     "construction, commercial construction, residential construction, general contractor, design-build, property management, maintenance, emergency services, Taylor Leonard Corp",
   metadataBase: new URL("https://taylorleonardcorp.com"),
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
-    viewportFit: "cover",
-  },
   openGraph: {
     title: "Taylor Leonard Corp | Commercial & Residential Construction",
     description: "Family-owned, veteran-founded construction company since 1990. Full-service design-build specialists with 100% satisfaction rating.",
