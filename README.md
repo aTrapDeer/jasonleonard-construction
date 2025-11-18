@@ -2,6 +2,25 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+### Environment Variables
+
+Before running the development server, set up your Google services:
+
+1. Create a `.env.local` file in the root directory
+2. Add your Google Analytics Measurement ID:
+   ```
+   NEXT_PUBLIC_GA_MEASUREMENT_ID=G-XXXXXXXXXX
+   ```
+   (Replace `G-XXXXXXXXXX` with your actual Google Analytics Measurement ID from your Google Analytics dashboard)
+
+3. Add your Google Search Console verification code (optional but recommended):
+   ```
+   NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION=your-verification-code-here
+   ```
+   (Get this from Google Search Console → Settings → Ownership verification → HTML tag method)
+
+### Running the Development Server
+
 First, run the development server:
 
 ```bash

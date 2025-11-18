@@ -4,6 +4,7 @@ import { Inter } from "next/font/google"
 import "./globals.css"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
+import { GoogleAnalytics } from "@/components/google-analytics"
 
 const inter = Inter({ subsets: ["latin"], display: "swap" })
 
@@ -51,6 +52,9 @@ export const metadata: Metadata = {
   },
   other: {
     "color-scheme": "light dark",
+    ...(process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION && {
+      "google-site-verification": process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+    }),
   },
 }
 
@@ -62,6 +66,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className} antialiased selection:bg-blue-500/20 selection:text-blue-900`}> 
+        <GoogleAnalytics />
         <Header />
         <main className="min-h-dvh">
           {children}
