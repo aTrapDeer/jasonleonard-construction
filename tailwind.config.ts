@@ -54,7 +54,20 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Construction brand colors - Blue theme
+        // Construction brand colors - Navy/Blue theme from docs-site-style.md
+        navy: {
+          DEFAULT: "#01224F", // Primary Navy - headings, nav, footer, buttons
+          light: "#043271",   // Deep Blue - section backgrounds, gradients
+          mid: "#0D3E8D",     // Mid Blue - icon accents, hover states
+          royal: "#1F4FAA",   // Royal Blue - highlights, links, secondary buttons
+        },
+        cyan: {
+          accent: "#01B7E7",  // Accent Cyan - CTA accent (sparingly)
+        },
+        teal: {
+          soft: "#7BA8B3",    // Soft Teal - background tint, dividers
+        },
+        offwhite: "#F7F8FB",  // Off-White - page background
         blue: {
           50: "#eff6ff",
           100: "#dbeafe",

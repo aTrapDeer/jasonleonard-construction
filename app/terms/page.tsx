@@ -8,7 +8,7 @@ export default function TermsOfServicePage() {
   return (
     <div className="min-h-screen bg-slate-50 pt-16">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
+      <section className="py-20 bg-gradient-to-br from-navy via-navy-light to-navy text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="flex items-center mb-8">

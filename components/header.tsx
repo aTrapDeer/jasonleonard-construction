@@ -74,15 +74,15 @@ export function Header() {
   // Different styles for homepage vs other pages
   const getHeaderClasses = () => {
     const baseTransform = `transform ${isVisible ? "translate-y-0" : "-translate-y-full"}`
-    
+
     if (isHomepage) {
-      // Homepage: transparent to black/blur on scroll + hide/show behavior
+      // Homepage: transparent to navy/blur on scroll + hide/show behavior
       return `fixed top-0 w-full z-50 transition-all duration-500 ${baseTransform} ${
-        isScrolled ? "bg-black/80 backdrop-blur-xl border-b border-white/10 shadow-2xl" : "bg-transparent"
+        isScrolled ? "bg-navy/90 backdrop-blur-xl border-b border-white/10 shadow-2xl" : "bg-transparent"
       }`
     } else {
-      // Other pages: black background + hide/show behavior
-      return `fixed top-0 w-full z-50 transition-all duration-500 bg-black/95 backdrop-blur-xl border-b border-white/10 shadow-2xl ${baseTransform}`
+      // Other pages: navy background + hide/show behavior
+      return `fixed top-0 w-full z-50 transition-all duration-500 bg-navy/95 backdrop-blur-xl border-b border-white/10 shadow-2xl ${baseTransform}`
     }
   }
 
@@ -156,12 +156,12 @@ export function Header() {
                 <Menu className={`h-6 w-6 transition-transform duration-200 ${isOpen ? "rotate-90" : "rotate-0"}`} />
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[86vw] max-w-sm bg-slate-900/95 backdrop-blur-xl border-slate-800 px-0 py-safe">
+            <SheetContent side="right" className="w-[86vw] max-w-sm bg-navy/95 backdrop-blur-xl border-navy-light px-0 py-safe">
               {/* Semantically required title for Radix Dialog (screen readers only) */}
               <SheetTitle className="sr-only">Mobile navigation</SheetTitle>
               <div className="flex flex-col h-full">
                 {/* Mobile Logo */}
-                <div className="flex items-center justify-between px-6 pb-6 pt-6 border-b border-slate-800">
+                <div className="flex items-center justify-between px-6 pb-6 pt-6 border-b border-navy-light">
                   <div className="flex items-center space-x-3">
                     <div className="w-12 h-12 flex items-center justify-center shadow-lg">
                       <Image
@@ -215,7 +215,7 @@ export function Header() {
                 </nav>
 
                 {/* Mobile CTA & Footer */}
-                <div className="border-t border-slate-800 p-6">
+                <div className="border-t border-navy-light p-6">
                   <Button asChild className="w-full bg-blue-500 hover:bg-blue-600 rounded-full py-3 transition-all duration-200 active:scale-95">
                     <Link href="/quote" onClick={() => setIsOpen(false)}>Get Quote</Link>
                   </Button>

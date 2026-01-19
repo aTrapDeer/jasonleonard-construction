@@ -30,7 +30,7 @@ const company = [
 
 export function Footer() {
   return (
-    <footer className="bg-slate-900 text-white">
+    <footer className="bg-navy text-white">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 md:gap-8">
           {/* Company Info */}
@@ -132,7 +132,7 @@ export function Footer() {
         </div>
 
         {/* Newsletter Signup */}
-        <div className="border-t border-slate-800 mt-12 pt-8">
+        <div className="border-t border-navy-light mt-12 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="mb-4 md:mb-0">
               <h3 className="font-semibold text-white mb-2">Stay Updated</h3>
@@ -142,7 +142,7 @@ export function Footer() {
               <Input
                 type="email"
                 placeholder="Enter your email"
-                className="bg-slate-800 border-slate-700 text-white placeholder-slate-400 rounded-r-none sm:rounded-r-none mb-2 sm:mb-0"
+                className="bg-navy-light border-navy-royal text-white placeholder-slate-400 rounded-r-none sm:rounded-r-none mb-2 sm:mb-0"
               />
               <Button className="bg-blue-500 hover:bg-blue-600 rounded-l-none sm:rounded-l-none">Subscribe</Button>
             </div>
@@ -150,7 +150,7 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-slate-800 mt-8 pt-8 flex flex-col md:flex-row items-center justify-between">
+        <div className="border-t border-navy-light mt-8 pt-8 flex flex-col md:flex-row items-center justify-between">
           <p className="text-slate-400 text-sm">
             © {new Date().getFullYear()} Taylor Leonard Corp. All rights reserved.
           </p>

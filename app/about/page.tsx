@@ -105,7 +105,7 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-slate-50 pt-16">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
+      <section className="py-20 bg-gradient-to-br from-navy via-navy-light to-navy text-white">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -386,7 +386,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-slate-900 text-white">
+      <section className="py-16 bg-navy text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Work Together?</h2>
           <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">

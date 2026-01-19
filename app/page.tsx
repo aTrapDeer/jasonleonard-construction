@@ -104,9 +104,9 @@ export default function HomePage() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-black text-white overflow-hidden">
+    <div className="min-h-screen bg-navy text-white overflow-hidden">
       {/* Hero Section - Immersive Full Screen */}
-      <section ref={heroRef} className="relative h-screen flex items-center justify-center">
+      <section ref={heroRef} className="relative min-h-screen flex items-center justify-center py-16 sm:py-20 md:py-24 lg:py-28 xl:py-0">
         <div className="absolute inset-0 z-0">
           {/* Video Background */}
           <video
@@ -134,42 +134,44 @@ export default function HomePage() {
           
           {/* Video Overlay */}
           <div
-            className="absolute inset-0 bg-slate-900/60"
+            className="absolute inset-0 bg-navy/60"
             style={{
               transform: `translateY(${scrollY * 0.5}px)`,
             }}
           />
         </div>
 
-        <div className="relative z-10 text-center max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="relative z-10 text-center max-w-6xl mx-auto px-4 sm:px-6 w-full pt-8 sm:pt-12 md:pt-16 lg:pt-20">
           <div
-            className="transform transition-all duration-1000"
+            className="transform transition-all duration-1000 space-y-4 sm:space-y-6 md:space-y-8 lg:space-y-10 xl:space-y-12"
             style={{
               transform: `translateY(${scrollY * 0.2}px)`,
               opacity: Math.max(1 - scrollY * 0.002, 0),
             }}
           >
-            <Badge className="bg-blue-500/20 text-blue-300 border-blue-500/30 mb-4 sm:mb-6 md:mb-8 px-4 sm:px-6 md:px-8 py-2 sm:py-3 text-sm sm:text-base md:text-lg font-medium backdrop-blur-sm">
+            <Badge className="bg-navy-royal/30 text-blue-200 border-navy-royal/50 mb-0 px-2 sm:px-4 md:px-6 lg:px-8 py-1.5 sm:py-2 md:py-2.5 lg:py-3 text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg font-medium backdrop-blur-sm inline-block scale-90 sm:scale-100">
               Family Owned • Community Trusted • Est. 1990
             </Badge>
-            <div className="mb-8 sm:mb-10 md:mb-12 px-2 sm:px-4">
+            
+            <div className="px-2 sm:px-4">
               <Image
                 src="/images/Logos/JasonLeonardLogo.png"
                 alt="Taylor Leonard Corp Logo"
                 width={400}
                 height={150}
-                className="mx-auto max-w-[50%] sm:max-w-[60%] md:max-w-[70%] lg:max-w-full h-auto"
+                className="mx-auto max-w-[45%] sm:max-w-[50%] md:max-w-[60%] lg:max-w-[70%] xl:max-w-[85%] 2xl:max-w-full h-auto scale-95 sm:scale-100"
               />
             </div>
-            <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-light text-slate-300 mb-12 sm:mb-14 md:mb-16 max-w-4xl mx-auto leading-relaxed px-4 sm:px-6 md:px-8 lg:px-0">
+            
+            <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl font-light text-slate-300 mb-0 max-w-4xl mx-auto leading-relaxed px-2 sm:px-4 md:px-6 lg:px-8 xl:px-0">
               Full Service Design-Build Construction Excellence
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 md:gap-8 justify-center items-center">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 md:gap-6 lg:gap-8 justify-center items-center pt-2 sm:pt-4 md:pt-6 lg:pt-8 pb-20 sm:pb-24 md:pb-28 lg:pb-36 xl:pb-40 2xl:pb-44">
               <Button
                 size="lg"
                 asChild
-                className="bg-blue-500 hover:bg-blue-600 text-white px-8 sm:px-12 md:px-16 py-4 sm:py-5 md:py-6 text-base sm:text-lg md:text-xl font-medium rounded-full shadow-2xl hover:shadow-blue-500/25 transition-all duration-500 hover:scale-105 w-full sm:w-auto"
+                className="bg-blue-500 hover:bg-blue-600 text-white px-6 sm:px-10 md:px-12 lg:px-16 py-3 sm:py-4 md:py-5 lg:py-6 text-sm sm:text-base md:text-lg lg:text-xl font-medium rounded-full shadow-2xl hover:shadow-blue-500/25 transition-all duration-500 hover:scale-105 w-full sm:w-auto min-w-[180px] sm:min-w-0 scale-95 sm:scale-100"
               >
                 <Link href="/projects">Explore Our Work</Link>
               </Button>
@@ -177,10 +179,10 @@ export default function HomePage() {
                 size="lg"
                 variant="outline"
                 asChild
-                className="border-white/30 text-white hover:bg-white hover:text-slate-900 px-8 sm:px-12 md:px-16 py-4 sm:py-5 md:py-6 text-base sm:text-lg md:text-xl font-medium rounded-full bg-transparent backdrop-blur-sm transition-all duration-500 hover:scale-105 w-full sm:w-auto"
+                className="border-white/30 text-white hover:bg-white hover:text-navy px-6 sm:px-10 md:px-12 lg:px-16 py-3 sm:py-4 md:py-5 lg:py-6 text-sm sm:text-base md:text-lg lg:text-xl font-medium rounded-full bg-transparent backdrop-blur-sm transition-all duration-500 hover:scale-105 w-full sm:w-auto min-w-[180px] sm:min-w-0 scale-95 sm:scale-100"
               >
                 <Link href="/contact">
-                  <Calendar className="mr-2 sm:mr-3 h-5 w-5 sm:h-6 sm:w-6" />
+                  <Calendar className="mr-1.5 sm:mr-2 md:mr-3 h-3.5 w-3.5 sm:h-4 sm:w-4 md:h-5 md:w-5 lg:h-6 lg:w-6" />
                   Start Your Project
                 </Link>
               </Button>
@@ -188,22 +190,22 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Animated Scroll Indicator */}
+        {/* Animated Scroll Indicator - hidden on small screens to prevent overlap */}
         <div
-          className="absolute bottom-4 sm:bottom-6 left-1/2 transform -translate-x-1/2 z-10"
+          className="absolute bottom-4 sm:bottom-6 md:bottom-8 lg:bottom-10 xl:bottom-16 2xl:bottom-20 left-1/2 transform -translate-x-1/2 z-10 hidden sm:block"
           style={{
             opacity: Math.max(1 - scrollY * 0.01, 0),
           }}
         >
           <div className="flex flex-col items-center text-white/60 animate-bounce">
-            <span className="text-xs sm:text-sm font-light mb-2 sm:mb-4 tracking-widest">SCROLL TO EXPLORE</span>
-            <ChevronDown className="h-6 w-6 sm:h-8 sm:w-8" />
+            <span className="text-[10px] sm:text-xs md:text-sm font-light mb-1 sm:mb-2 md:mb-4 tracking-widest">SCROLL TO EXPLORE</span>
+            <ChevronDown className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7 lg:h-8 lg:w-8" />
           </div>
         </div>
       </section>
 
       {/* Stats Section - Zooming Cards */}
-      <section ref={statsRef} className="py-32 bg-gradient-to-b from-black to-slate-900 relative overflow-hidden">
+      <section ref={statsRef} className="py-32 bg-gradient-to-b from-navy to-navy-light relative overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="zoom-animate text-center mb-20">
             <h2 className="text-6xl md:text-7xl font-thin text-white mb-8">Excellence in Numbers</h2>
@@ -217,7 +219,7 @@ export default function HomePage() {
               { number: "100%", label: "Satisfaction Rating", icon: Shield, delay: "400ms" },
             ].map((stat, index) => (
               <div key={index} className="zoom-animate group cursor-pointer" style={{ transitionDelay: stat.delay }}>
-                <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-3xl p-4 sm:p-6 lg:p-8 shadow-2xl hover:shadow-blue-500/20 transition-all duration-700 group-hover:scale-110 group-hover:-translate-y-4 border border-slate-700/50">
+                <div className="bg-gradient-to-br from-navy-light to-navy rounded-3xl p-4 sm:p-6 lg:p-8 shadow-2xl hover:shadow-cyan-accent/20 transition-all duration-700 group-hover:scale-110 group-hover:-translate-y-4 border border-navy-royal/30">
                   <div className="text-center">
                     <div className="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-5 lg:mb-6 group-hover:scale-125 transition-transform duration-500">
                       <stat.icon className="h-6 w-6 sm:h-7 sm:w-7 lg:h-8 lg:w-8 text-white" />
@@ -237,7 +239,7 @@ export default function HomePage() {
       </section>
 
       {/* Services Section - Expanding Cards */}
-      <section ref={servicesRef} className="py-32 bg-gradient-to-b from-slate-900 to-black relative overflow-hidden">
+      <section ref={servicesRef} className="py-32 bg-gradient-to-b from-navy-light to-navy relative overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="zoom-animate text-center mb-20">
             <h2 className="text-6xl md:text-7xl font-thin text-white mb-8">Our Expertise</h2>
@@ -269,7 +271,7 @@ export default function HomePage() {
               },
             ].map((service, index) => (
               <div key={index} className="zoom-animate group cursor-pointer" style={{ transitionDelay: service.delay }}>
-                <div className="relative overflow-hidden rounded-3xl bg-slate-900 h-96 group-hover:scale-105 transition-all duration-700 shadow-2xl hover:shadow-blue-500/20 border border-slate-700/50">
+                <div className="relative overflow-hidden rounded-3xl bg-navy h-96 group-hover:scale-105 transition-all duration-700 shadow-2xl hover:shadow-cyan-accent/20 border border-navy-royal/30">
                   <div className="absolute inset-0 group-hover:scale-110 transition-transform duration-1000">
                     <Image
                       src={service.image || "/placeholder.svg"}
@@ -278,7 +280,7 @@ export default function HomePage() {
                       className="object-cover opacity-40 group-hover:opacity-70 transition-opacity duration-700"
                     />
                   </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/50 to-transparent" />
                   <div className="absolute bottom-8 left-8 right-8 text-white transform group-hover:translate-y-0 translate-y-4 transition-transform duration-500">
                     <h3 className="text-3xl font-light mb-4 group-hover:text-blue-400 transition-colors duration-500">
                       {service.title}
@@ -332,7 +334,7 @@ export default function HomePage() {
       </section>
 
       {/* Featured Project - Cinematic Reveal */}
-      <section ref={projectRef} className="py-20 md:py-32 bg-gradient-to-b from-black to-slate-900 relative overflow-hidden">
+      <section ref={projectRef} className="py-20 md:py-32 bg-gradient-to-b from-navy to-navy-light relative overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="zoom-animate max-w-7xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-10 md:gap-16 items-center">
@@ -353,7 +355,7 @@ export default function HomePage() {
                 {/* Left-aligned Statistics Section */}
                 <div className="relative py-4">
                   <div className="flex justify-start">
-                    <div className="text-left bg-gradient-to-br from-slate-800/50 to-slate-900/50 rounded-xl px-8 py-6 border border-slate-700/30 backdrop-blur-sm">
+                    <div className="text-left bg-gradient-to-br from-navy-light/50 to-navy/50 rounded-xl px-8 py-6 border border-navy-royal/30 backdrop-blur-sm">
                       <div className="text-4xl md:text-5xl font-thin text-blue-400 mb-2">81K</div>
                       <div className="w-12 h-0.5 bg-gradient-to-r from-blue-500 to-blue-600 mb-2"></div>
                       <div className="text-base font-medium text-slate-300 tracking-wide">SQUARE FEET</div>
@@ -376,7 +378,7 @@ export default function HomePage() {
               </div>
               <div className="relative">
                 <div className="zoom-animate">
-                  <div className="relative rounded-3xl overflow-hidden shadow-2xl hover:shadow-blue-500/20 transition-all duration-700 group">
+                  <div className="relative rounded-3xl overflow-hidden shadow-2xl hover:shadow-cyan-accent/20 transition-all duration-700 group">
                     <Image
                       src="https://bonantowers.com/wp-content/uploads/2024/12/04-3.jpg"
                       alt="Bonan Towers"
@@ -394,7 +396,7 @@ export default function HomePage() {
       </section>
 
       {/* Testimonial - Floating Quote */}
-      <section ref={testimonialRef} className="pt-12 pb-24 md:py-32 bg-gradient-to-b from-slate-900 to-black relative overflow-hidden">
+      <section ref={testimonialRef} className="pt-12 pb-24 md:py-32 bg-gradient-to-b from-navy-light to-navy relative overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="zoom-animate max-w-6xl mx-auto text-center">
             <div className="relative">
@@ -419,7 +421,7 @@ export default function HomePage() {
       {/* <VendorCarousel /> */}
 
       {/* CTA Section - Final Impact */}
-      <section className="py-32 bg-gradient-to-b from-black to-slate-900 relative overflow-hidden">
+      <section className="py-32 bg-gradient-to-b from-navy to-navy-light relative overflow-hidden">
         <div className="container mx-auto px-4">
           <div className="zoom-animate text-center max-w-5xl mx-auto">
             <h2 className="text-6xl md:text-7xl font-thin text-white mb-12 leading-tight">
@@ -441,7 +443,7 @@ export default function HomePage() {
                 size="lg"
                 variant="outline"
                 asChild
-                className="border-slate-600 text-white hover:bg-white hover:text-slate-900 px-16 py-6 text-xl font-medium rounded-full transition-all duration-500 hover:scale-105 bg-transparent backdrop-blur-sm"
+                className="border-navy-royal text-white hover:bg-white hover:text-navy px-16 py-6 text-xl font-medium rounded-full transition-all duration-500 hover:scale-105 bg-transparent backdrop-blur-sm"
               >
                 <Link href="/quote">Get a Quote</Link>
               </Button>

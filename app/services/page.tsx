@@ -232,7 +232,7 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-white pt-16">
       {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white relative overflow-hidden">
+      <section className="py-16 md:py-24 bg-gradient-to-br from-navy via-navy-light to-navy text-white relative overflow-hidden">
         <div className="absolute inset-0 construction-texture opacity-10" />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
@@ -612,7 +612,7 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-20 bg-gradient-to-r from-slate-900 to-slate-800 text-white">
+      <section className="py-16 md:py-20 bg-gradient-to-r from-navy to-navy-light text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Start Your Project?</h2>
           <p className="text-lg md:text-xl text-slate-300 mb-8 max-w-3xl mx-auto">

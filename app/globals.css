@@ -236,16 +236,16 @@ input, button, select, textarea {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0f172a;
+  background: #01224F;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #3b82f6, #2563eb);
+  background: linear-gradient(to bottom, #1F4FAA, #043271);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(to bottom, #2563eb, #1d4ed8);
+  background: linear-gradient(to bottom, #01B7E7, #1F4FAA);
 }
 
 /* Focus styles for accessibility */
