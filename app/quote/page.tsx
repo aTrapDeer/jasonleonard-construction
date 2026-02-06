@@ -15,17 +15,57 @@ import { useState } from "react"
 export default function QuotePage() {
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitError, setSubmitError] = useState<string | null>(null)
   const [uploadedFiles, setUploadedFiles] = useState<string[]>([])
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
+    setSubmitError(null)
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 2000))
+    const form = e.currentTarget as HTMLFormElement
+    const formData = new FormData(form)
+    const payload: Record<string, string | string[]> = {}
 
-    setIsSubmitting(false)
-    setIsSubmitted(true)
+    for (const [key, rawValue] of formData.entries()) {
+      const value = typeof rawValue === "string" ? rawValue : rawValue.name
+      const existing = payload[key]
+
+      if (existing === undefined) {
+        payload[key] = value
+      } else if (Array.isArray(existing)) {
+        payload[key] = [...existing, value]
+      } else {
+        payload[key] = [existing, value]
+      }
+    }
+
+    if (uploadedFiles.length > 0) {
+      payload.uploadedFiles = uploadedFiles
+    }
+
+    payload.submittedAt = new Date().toISOString()
+
+    try {
+      const response = await fetch("/api/quote", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      })
+
+      if (!response.ok) {
+        const body = await response.json().catch(() => ({}))
+        const message =
+          body && typeof body.error === "string" ? body.error : "Failed to submit quote request. Please try again."
+        throw new Error(message)
+      }
+
+      setIsSubmitted(true)
+    } catch (error) {
+      setSubmitError(error instanceof Error ? error.message : "Failed to submit quote request. Please try again.")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -432,6 +472,8 @@ export default function QuotePage() {
                       <li>• Detailed quote delivery: 5-7 business days after site visit</li>
                     </ul>
                   </div>
+
+                  {submitError && <p className="text-sm text-red-600">{submitError}</p>}
 
                   <Button
                     type="submit"
