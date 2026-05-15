@@ -9,7 +9,7 @@ const teamMembers = [
   {
     name: "Jason",
     title: "President & CEO",
-    image: "/placeholder.svg?height=300&width=300",
+    image: "/images/about/Jason.jpg",
     bio: "Jason leads Taylor Leonard Corp with extensive experience in construction and a commitment to quality and client satisfaction across all projects.",
     experience: "30+ years",
     specialties: ["Project Leadership", "Client Relations", "Strategic Planning"],
@@ -128,11 +128,12 @@ export default function AboutPage() {
             </div>
             <div className="relative">
               <Image
-                src="/placeholder.svg?height=500&width=600"
-                alt="Taylor Leonard Corp team at construction site"
+                src="/images/about/Jason.jpg"
+                alt="Jason, President and CEO of Taylor Leonard Corp"
                 width={600}
                 height={500}
-                className="rounded-lg shadow-xl"
+                className="h-[420px] w-full rounded-lg object-cover object-[center_18%] shadow-xl md:h-[500px]"
+                priority
               />
             </div>
           </div>
@@ -323,7 +324,7 @@ export default function AboutPage() {
             {teamMembers.map((member, index) => (
               <Card key={index} className="text-center hover:shadow-lg transition-shadow">
                 <CardContent className="p-6">
-                  <div className="relative w-32 h-32 mx-auto mb-4">
+                  <div className="relative w-24 h-24 mx-auto mb-4">
                     <Image
                       src={member.image || "/placeholder.svg"}
                       alt={member.name}

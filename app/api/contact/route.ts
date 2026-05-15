@@ -13,19 +13,19 @@ export async function POST(request: Request) {
   }
 
   const fullName = [payload.firstName, payload.lastName].filter(Boolean).join(" ").trim()
-  const subject = fullName ? `New Quote Request - ${fullName}` : "New Quote Request"
+  const subject = fullName ? `New Contact Message - ${fullName}` : "New Contact Message"
 
   try {
     await sendSubmissionEmail({
-      heading: "New Quote Request",
-      intro: "A new quote request was submitted.",
+      heading: "New Contact Message",
+      intro: "A new contact message was submitted.",
       payload,
       subject,
     })
 
     return NextResponse.json({ ok: true })
   } catch (error) {
-    const message = error instanceof Error ? error.message : "Failed to send quote email."
+    const message = error instanceof Error ? error.message : "Failed to send contact email."
 
     return NextResponse.json({ error: message }, { status: 500 })
   }

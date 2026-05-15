@@ -14,16 +14,51 @@ import { useState } from "react"
 export default function ContactPage() {
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [submitError, setSubmitError] = useState<string | null>(null)
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
+    setSubmitError(null)
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 2000))
+    const form = e.currentTarget as HTMLFormElement
+    const formData = new FormData(form)
+    const payload: Record<string, string | string[]> = {}
 
-    setIsSubmitting(false)
-    setIsSubmitted(true)
+    for (const [key, rawValue] of formData.entries()) {
+      const value = typeof rawValue === "string" ? rawValue : rawValue.name
+      const existing = payload[key]
+
+      if (existing === undefined) {
+        payload[key] = value
+      } else if (Array.isArray(existing)) {
+        payload[key] = [...existing, value]
+      } else {
+        payload[key] = [existing, value]
+      }
+    }
+
+    payload.submittedAt = new Date().toISOString()
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      })
+
+      if (!response.ok) {
+        const body = await response.json().catch(() => ({}))
+        const message = body && typeof body.error === "string" ? body.error : "Failed to send message. Please try again."
+        throw new Error(message)
+      }
+
+      setIsSubmitted(true)
+    } catch (error) {
+      setSubmitError(error instanceof Error ? error.message : "Failed to send message. Please try again.")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   if (isSubmitted) {
@@ -240,6 +275,8 @@ export default function ContactPage() {
                         </Label>
                       </div>
                     </div>
+
+                    {submitError && <p className="text-sm text-red-600">{submitError}</p>}
 
                     <Button
                       type="submit"
