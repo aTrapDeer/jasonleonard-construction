@@ -149,7 +149,7 @@ export default function HomePage() {
               opacity: Math.max(1 - scrollY * 0.002, 0),
             }}
           >
-            <Badge className="bg-navy-royal/30 text-blue-200 border-navy-royal/50 mb-0 px-2 sm:px-4 md:px-6 lg:px-8 py-1.5 sm:py-2 md:py-2.5 lg:py-3 text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg font-medium backdrop-blur-sm inline-block scale-90 sm:scale-100">
+            <Badge className="bg-navy-royal/30 text-blue-200 border-navy-royal/50 mb-0 px-2 sm:px-4 md:px-6 lg:px-8 py-1.5 sm:py-2 md:py-2.5 lg:py-3 text-[10px] sm:text-xs md:text-sm lg:text-base xl:text-lg font-medium backdrop-blur-sm inline-block scale-90 sm:scale-100 xl:mt-8 2xl:mt-12">
               Family Owned • Community Trusted • Est. 1990
             </Badge>
             
@@ -277,10 +277,10 @@ export default function HomePage() {
                       src={service.image || "/placeholder.svg"}
                       alt={service.title}
                       fill
-                      className="object-cover opacity-40 group-hover:opacity-70 transition-opacity duration-700"
+                      className="object-cover opacity-65 group-hover:opacity-90 transition-opacity duration-700"
                     />
                   </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/50 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy/60 via-navy/20 to-transparent" />
                   <div className="absolute bottom-8 left-8 right-8 text-white transform group-hover:translate-y-0 translate-y-4 transition-transform duration-500">
                     <h3 className="text-3xl font-light mb-4 group-hover:text-blue-400 transition-colors duration-500">
                       {service.title}
